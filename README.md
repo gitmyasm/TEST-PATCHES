@@ -6,9 +6,9 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 
 ## Add this source to Morphe Manager
 
-`gitmyasm/TEST-PATCHES`
+`https://github.com/gitmyasm/TEST-PATCHES`
 
-[![Add to Morphe](.github/assets/add-to-morphe.svg)](https://morphe.software/add-source?github=gitmyasm/TEST-PATCHES)
+[![Add to Morphe](.github/assets/add-to-morphe.svg)](https://morphe.software/add-source?github=gitmyasm/TEST-PATCHES&name=Test%20Patches)
 
 ## Patches
 
