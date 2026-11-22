@@ -1,3 +1,9 @@
+## [1.0.0-dev.6](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.5...v1.0.0-dev.6) (2026-11-22)
+
+### 🐛 Bug Fixes
+
+* Remove manifest components from the application element ([379f4d0](https://github.com/gitmyasm/TEST-PATCHES/commit/379f4d0c5c0d686cb42cbe782462d7476725cc53))
+
 ## [1.0.0-dev.5](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.4...v1.0.0-dev.5) (2026-11-22)
 
 ### ✨ New Features
