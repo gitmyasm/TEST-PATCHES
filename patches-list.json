@@ -1,7 +1,88 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.4",
+  "version": "1.0.0-dev.5",
   "patches": [
+    {
+      "name": "Remove Ads",
+      "description": "Removes ad identifiers and promotional app-suggestion screens from Bangla Keyboard.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.bangla.keyboard.for.android",
+          "name": "Bangla Keyboard",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#1976D2",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "17.7.3",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Trackers",
+      "description": "Removes analytics, crash reporting, messaging and install-referrer components.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.bangla.keyboard.for.android",
+          "name": "Bangla Keyboard",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#1976D2",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "17.7.3",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Unnecessary Garbage",
+      "description": "Removes testing/debug screens and build-only files from Bangla Keyboard.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.bangla.keyboard.for.android",
+          "name": "Bangla Keyboard",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#1976D2",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "17.7.3",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
     {
       "name": "Unlock Premium",
       "description": "Unlocks Bangla Keyboard premium features that are checked locally.",

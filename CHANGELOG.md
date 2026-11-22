@@ -1,3 +1,9 @@
+## [1.0.0-dev.5](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.4...v1.0.0-dev.5) (2026-11-22)
+
+### ✨ New Features
+
+* Add selectable ad, tracker and junk removal patches ([0670d7b](https://github.com/gitmyasm/TEST-PATCHES/commit/0670d7b8902e8a3b055d3f1ee2770c503b0889fd))
+
 ## [1.0.0-dev.4](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-11-22)
 
 ### ✨ New Features
