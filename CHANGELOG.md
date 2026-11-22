@@ -1,3 +1,13 @@
+## [1.0.0-dev.5](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.4...v1.0.0-dev.5) (2026-11-22)
+
+### ✨ New Features
+
+* Add CamScanner clean-mod patch ([c3fcd25](https://github.com/gitmyasm/TEST-PATCHES/commit/c3fcd256c8ea1b1fb8d5ea1628f9a0ff43eea600))
+
+### 🐛 Bug Fixes
+
+* Recompute DEX checksum after marker removal ([1f6176a](https://github.com/gitmyasm/TEST-PATCHES/commit/1f6176a52ec4b1a3ada88df0d0b9b4a19d39a137))
+
 ## [1.0.0-dev.4](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-11-22)
 
 ### ✨ New Features
