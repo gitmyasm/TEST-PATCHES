@@ -13,12 +13,11 @@ plugins {
 group = "app.template"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
+        name = "Test Patches"
+        description = "Staging patches for gitmyasm. Test here before promoting to SM-PATCHES."
+        source = "git@github.com:gitmyasm/TEST-PATCHES.git"
+        author = "gitmyasm"
         contact = "na"
         website = "na"
         license = "GPLv3"
@@ -45,7 +44,7 @@ animalsniffer {
 
 tasks {
     register<JavaExec>("generatePatchesList") {
-        description = "Build patch with patch list"
+        description = "Staging patches for gitmyasm. Test here before promoting to SM-PATCHES."
 
         dependsOn(build)
 
@@ -89,7 +88,7 @@ tasks {
     }
 
     val checkAndroidApi = register<AnimalSniffer>("checkAndroidApi") {
-        description = "Checks that the patches file only uses APIs available on Android."
+        description = "Staging patches for gitmyasm. Test here before promoting to SM-PATCHES."
         group = "verification"
 
         source(extractPatchesClasses)
