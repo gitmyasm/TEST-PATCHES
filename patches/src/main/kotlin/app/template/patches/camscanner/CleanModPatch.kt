@@ -3,21 +3,24 @@ package app.template.patches.camscanner
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.deleteResource
 import app.morphe.patcher.patch.packageMetadata
-import app.morphe.patcher.patch.rawResourcePatch
-import java.security.MessageDigest
-import java.util.zip.Adler32
+import app.morphe.patcher.patch.patch
+import app.morphe.patcher.patch.replaceStrings
 
 /**
  * Removes the modder's traces from the supplied CamScanner mod.
  *
  * The modded build already contains the local Premium bypass
  * (AccountPreference.o〇0OOo〇0()Z returns true). This patch does not change that
- * behaviour; it only removes the injected marker strings from the DEX files and
- * the youarefinished signature files so the resulting APK is free of the
- * modder's branding.
+ * behaviour; it only removes the injected marker strings and the
+ * youarefinished signature files so the resulting APK is free of the modder's
+ * branding.
+ *
+ * Strings are replaced through Morphe's bytecode API so the DEX string table
+ * stays sorted and valid. Editing raw DEX string bytes directly would break
+ * ART's string_ids ordering and make the app crash on startup.
  */
 @Suppress("unused")
-val cleanCamScannerModPatch = rawResourcePatch(
+val cleanCamScannerModPatch = patch(
     name = "Clean CamScanner Mod",
     description = "Removes modder markers from the supplied CamScanner 7.29.5 modded APK.",
     default = true,
@@ -31,67 +34,17 @@ val cleanCamScannerModPatch = rawResourcePatch(
             )
         }
 
-        val markers = listOf(
-            "Patched by youarefinished " to " ".repeat("Patched by youarefinished ".length),
-            "Smob - Mod obfuscation tool v4.6 by Kirlif'" to
-                " ".repeat("Smob - Mod obfuscation tool v4.6 by Kirlif'".length),
+        val removed = replaceStrings(
+            "Patched by youarefinished " to "",
+            "Smob - Mod obfuscation tool v4.6 by Kirlif'" to "",
         )
-
-        var removed = 0
-        for (index in 1..16) {
-            val path = if (index == 1) "classes.dex" else "classes$index.dex"
-            val file = get(path, true)
-            val bytes = file.readBytes()
-            var changed = false
-
-            for ((marker, replacement) in markers) {
-                val needle = marker.toByteArray()
-                val blank = replacement.toByteArray()
-                while (true) {
-                    val position = indexOfBytes(bytes, needle)
-                    if (position < 0) break
-                    blank.copyInto(bytes, position)
-                    removed++
-                    changed = true
-                }
-            }
-            if (changed) {
-                fixDexHeader(bytes)
-                file.writeBytes(bytes)
-            }
-        }
-
         if (removed == 0) {
-            throw PatchException("No modder markers found; this is not the expected CamScanner mod.")
+            throw PatchException(
+                "No modder markers found; this is not the expected CamScanner mod.",
+            )
         }
 
         deleteResource("META-INF/YOUAREFINISHED.RSA")
         deleteResource("META-INF/YOUAREFINISHED.SF")
     }
-}
-
-/** Restore the DEX header checksum and SHA-1 signature after editing string data. */
-private fun fixDexHeader(bytes: ByteArray) {
-    require(bytes.size > 32) { "Invalid DEX file" }
-    val signature = MessageDigest.getInstance("SHA-1")
-        .digest(bytes.copyOfRange(32, bytes.size))
-    signature.copyInto(bytes, 12)
-
-    val adler = Adler32()
-    adler.update(bytes, 12, bytes.size - 12)
-    val checksum = adler.value.toInt()
-    bytes[8] = checksum.toByte()
-    bytes[9] = (checksum ushr 8).toByte()
-    bytes[10] = (checksum ushr 16).toByte()
-    bytes[11] = (checksum ushr 24).toByte()
-}
-
-private fun indexOfBytes(haystack: ByteArray, needle: ByteArray): Int {
-    outer@ for (start in 0..haystack.size - needle.size) {
-        for (offset in needle.indices) {
-            if (haystack[start + offset] != needle[offset]) continue@outer
-        }
-        return start
-    }
-    return -1
 }
