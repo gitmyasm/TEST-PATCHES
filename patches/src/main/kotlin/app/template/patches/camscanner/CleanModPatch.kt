@@ -1,6 +1,6 @@
 package app.template.patches.camscanner
 
-import app.morphe.patcher.extensions.replaceInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.classDefForEach
 import app.morphe.patcher.patch.deleteResource
