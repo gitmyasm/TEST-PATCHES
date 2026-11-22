@@ -13,9 +13,11 @@ internal fun editManifest(block: ResourceXml.() -> Unit) {
 
 /** Removes application components with any of [names] from [tag]. */
 internal fun ResourceXml.removeComponents(tag: String, names: Set<String>) {
-    root.children(tag)
-        .filter { it.attribute(ANDROID_NAME) in names }
-        .forEach(XmlElement::remove)
+    root.children("application")
+        .firstOrNull()
+        ?.children(tag)
+        ?.filter { it.attribute(ANDROID_NAME) in names }
+        ?.forEach(XmlElement::remove)
 }
 
 /** Removes application meta-data entries with any of [names]. */
