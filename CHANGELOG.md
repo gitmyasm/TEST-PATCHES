@@ -1,3 +1,11 @@
+## [1.0.0-dev.6](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.5...v1.0.0-dev.6) (2026-11-22)
+
+### 🐛 Bug Fixes
+
+* Correct replaceInstruction import ([f82fc21](https://github.com/gitmyasm/TEST-PATCHES/commit/f82fc2151523b014707e5067a8b48b40effa7e56))
+* Replace marker const-strings via bytecode ([ffd15c6](https://github.com/gitmyasm/TEST-PATCHES/commit/ffd15c6f9e7766ea776d76e167339d81464d98e3))
+* Replace marker strings through bytecode API ([3121e4c](https://github.com/gitmyasm/TEST-PATCHES/commit/3121e4c91eb89aa36d1980781d950cdbe7850df9))
+
 ## [1.0.0-dev.5](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.4...v1.0.0-dev.5) (2026-11-22)
 
 ### ✨ New Features
