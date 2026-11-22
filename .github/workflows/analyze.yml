@@ -1,0 +1,219 @@
+name: Analyze APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: 'Direct APK download URL (must be public)'
+        required: true
+        type: string
+      patch_name:
+        description: 'Patch name (e.g. Remove Ads)'
+        required: true
+        type: string
+      app_name:
+        description: 'App display name (blank = auto-detect)'
+        required: false
+        type: string
+      package_name:
+        description: 'Package name (blank = auto-detect)'
+        required: false
+        type: string
+      version_name:
+        description: 'Target version (blank = auto-detect)'
+        required: false
+        type: string
+      patch_description:
+        description: 'Patch description'
+        required: false
+        type: string
+      mode:
+        description: 'Patch behaviour'
+        required: true
+        default: 'return_early'
+        type: choice
+        options:
+          - return_early
+          - return_late
+          - insert_smali
+          - replace_string
+          - custom
+      target_class:
+        description: 'Target class, e.g. Lcom/example/AdManager;'
+        required: false
+        type: string
+      target_method:
+        description: 'Target method name'
+        required: false
+        type: string
+      return_type:
+        description: 'Method return type (V, Z, I, ... )'
+        required: false
+        type: string
+      parameters:
+        description: 'Method parameters, comma-separated (e.g. Landroid/os/Bundle;)'
+        required: false
+        type: string
+      string_literal:
+        description: 'String literal to filter or replace'
+        required: false
+        type: string
+      replacement:
+        description: 'Replacement string or smali instructions'
+        required: false
+        type: string
+      return_value:
+        description: 'Return value for return_early/return_late (void, false, true, 0, null)'
+        required: false
+        default: 'void'
+        type: string
+      app_icon_color:
+        description: 'App icon colour, 6 hex digits (blank = FF0045)'
+        required: false
+        type: string
+      push_patch:
+        description: 'Commit the generated patch to dev and build a pre-release'
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  analyze:
+    name: Analyze APK and generate patch
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      INPUT_APK_URL: ${{ inputs.apk_url }}
+      INPUT_PATCH_NAME: ${{ inputs.patch_name }}
+      INPUT_APP_NAME: ${{ inputs.app_name }}
+      INPUT_PACKAGE_NAME: ${{ inputs.package_name }}
+      INPUT_VERSION_NAME: ${{ inputs.version_name }}
+      INPUT_PATCH_DESCRIPTION: ${{ inputs.patch_description }}
+      INPUT_MODE: ${{ inputs.mode }}
+      INPUT_TARGET_CLASS: ${{ inputs.target_class }}
+      INPUT_TARGET_METHOD: ${{ inputs.target_method }}
+      INPUT_RETURN_TYPE: ${{ inputs.return_type }}
+      INPUT_PARAMETERS: ${{ inputs.parameters }}
+      INPUT_STRING_LITERAL: ${{ inputs.string_literal }}
+      INPUT_REPLACEMENT: ${{ inputs.replacement }}
+      INPUT_RETURN_VALUE: ${{ inputs.return_value }}
+      INPUT_APP_ICON_COLOR: ${{ inputs.app_icon_color }}
+
+    steps:
+      - name: Checkout dev
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+
+      - name: Setup Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install reversing tools
+        run: |
+          set -e
+          pip install --quiet androguard
+          curl -fsSL -o jadx.zip https://github.com/skylot/jadx/releases/download/v1.5.7/jadx-1.5.7.zip
+          unzip -q jadx.zip -d jadx
+          chmod +x jadx/bin/jadx
+          curl -fsSL -o apktool-script https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
+          curl -fsSL -o apktool.jar https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar
+          chmod +x apktool-script
+          sudo mv apktool-script /usr/local/bin/apktool
+          sudo mv apktool.jar /usr/local/bin/apktool.jar
+          echo "jadx: $(jadx/bin/jadx --version 2>&1 | tail -1)"
+          echo "apktool: $(apktool --version 2>&1 | tail -1)"
+          echo "androguard: $(python -c 'import androguard; print(androguard.__version__)')"
+
+      - name: Download APK
+        run: |
+          set -e
+          curl -fsSL --retry 3 --connect-timeout 20 -o target.apk "$INPUT_APK_URL"
+          file target.apk
+          echo "APK size: $(stat -c%s target.apk) bytes"
+
+      - name: Static analysis (Androguard)
+        run: python .github/scripts/analyze_apk.py
+
+      - name: Decompile (Jadx + Apktool)
+        run: |
+          mkdir -p out
+          jadx/bin/jadx -q -d out/jadx target.apk || echo "::warning::Jadx finished with errors"
+          apktool decode -f target.apk -o out/apktool || echo "::warning::Apktool finished with errors"
+
+      - name: Generate Morphe patch sources
+        run: python .github/scripts/generate_patch.py
+
+      - name: Package results
+        run: |
+          (cd out/jadx && zip -qr ../../jadx-sources.zip .) || true
+          (cd out/apktool && zip -qr ../../apktool-sources.zip .) || true
+          zip -qr generated-patches.zip patches/src/main/kotlin analysis.json patch-info.json
+          cp analysis.json SUMMARY.md.tmp || true
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: reversing-results
+          path: |
+            analysis.json
+            patch-info.json
+            jadx-sources.zip
+            apktool-sources.zip
+            generated-patches.zip
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: Commit patch to dev
+        id: commit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A patches/src/main/kotlin
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No patch changes to commit."
+          else
+            git commit -m "feat: Add $INPUT_PATCH_NAME"
+            git push origin HEAD:dev
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Pushed patch to dev."
+          fi
+
+      - name: Trigger pre-release build
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run release.yml --repo "$GITHUB_REPOSITORY" --ref dev
+
+      - name: Job summary
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          try:
+              d = json.loads(Path("analysis.json").read_text())
+          except Exception:
+              d = {}
+          print("## ReverseKit analysis complete\n")
+          print(f"- **App:** {d.get('app_name') or 'unknown'}")
+          print(f"- **Package:** `{d.get('package') or 'unknown'}`")
+          print(f"- **Version:** {d.get('version_name') or 'unknown'} ({d.get('version_code') or '?'})")
+          print(f"- **SDK:** {d.get('min_sdk') or '?'} – {d.get('target_sdk') or '?'}")
+          print(f"- **Classes:** {d.get('class_count', 0)}")
+          print(f"- **SHA-256:** `{d.get('sha256', '')}`")
+          print("\nDownload **reversing-results** from the Artifacts section for decompiled sources and the generated patch.")
+          PY

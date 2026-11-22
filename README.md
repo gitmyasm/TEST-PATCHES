@@ -16,9 +16,14 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 No patches yet. New patches will appear here after the first release.
 <!-- PATCHES_END -->
 
+## Cloud reversing (no local tools needed)
+
+Paste an APK URL into the **Analyze APK** action and let GitHub do the decompiling,
+analysis and patch generation. See [AUTOMATION.md](AUTOMATION.md) for the full guide.
+
 ## Workflow
 
-1. Generate a new patch with ReverseKit and push it to `dev` here (`feat:` commit).
+1. Generate a new patch with the **Analyze APK** action and push it to `dev` here (`feat:` commit).
 2. Download the pre-release `.mpp` from Releases and test it on the target app.
 3. When it works, tell ReverseKit: "move <patch> to SM Patches".
 4. ReverseKit copies the patch sources into `SM-PATCHES` on `dev`, then merges to `main`
