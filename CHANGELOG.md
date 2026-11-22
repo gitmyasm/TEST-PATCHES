@@ -1,3 +1,14 @@
+## [1.0.0-dev.3](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-11-22)
+
+### ✨ New Features
+
+* Add Nice Mind Prime unlock patches for 12.7.0 and 12.8.0 ([624ddd1](https://github.com/gitmyasm/TEST-PATCHES/commit/624ddd141beb2bab545c44fbf12ff01974c79c5f))
+
+### 🐛 Bug Fixes
+
+* Correct PatchException import ([ea5e7e9](https://github.com/gitmyasm/TEST-PATCHES/commit/ea5e7e93c3d9f52ddbb6c0ebd3da70c86c2951b6))
+* Import packageMetadata ([ee533b8](https://github.com/gitmyasm/TEST-PATCHES/commit/ee533b83b063de6b923866cc4c482fc4b3705a29))
+
 ## [1.0.0-dev.2](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-11-22)
 
 ### ✨ New Features
