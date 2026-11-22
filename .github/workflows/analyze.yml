@@ -79,7 +79,6 @@ on:
 
 permissions:
   contents: write
-  actions: write
 
 jobs:
   analyze:
@@ -192,12 +191,6 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "Pushed patch to dev."
           fi
-
-      - name: Trigger pre-release build
-        if: steps.commit.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh workflow run release.yml --repo "$GITHUB_REPOSITORY" --ref dev
 
       - name: Job summary
         run: |

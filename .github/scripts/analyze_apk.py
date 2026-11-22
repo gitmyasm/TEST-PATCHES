@@ -36,12 +36,12 @@ info: dict = {
 
 classes: list[str] = []
 try:
-    from androguard.core.dex import DEXParser
+    from androguard.core.dex import DEX
 
     dex = apk.get_dex()
     if isinstance(dex, (list, tuple)):
         dex = dex[0] if dex else b""
-    parser = DEXParser(dex)
+    parser = DEX(dex)
     classes = [c.get_name() for c in parser.get_classes()]
 except Exception as exc:  # analysis must not fail because of one malformed dex
     info["dex_error"] = str(exc)
