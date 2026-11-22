@@ -9,7 +9,7 @@ object BillingEntitlementFingerprint : Fingerprint(
     returnType = "V",
     parameters = listOf(
         "Landroid/content/Context;",
-        "Lcom/deshkeyboard/billing/d$a;",
+        "Lcom/deshkeyboard/billing/d${'$'}a;",
     ),
 )
 
