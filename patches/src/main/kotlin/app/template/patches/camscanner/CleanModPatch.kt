@@ -1,10 +1,16 @@
 package app.template.patches.camscanner
 
+import app.morphe.patcher.extensions.replaceInstruction
 import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.classDefForEach
 import app.morphe.patcher.patch.deleteResource
+import app.morphe.patcher.patch.mutableClassDefBy
 import app.morphe.patcher.patch.packageMetadata
 import app.morphe.patcher.patch.patch
-import app.morphe.patcher.patch.replaceStrings
+import com.android.tools.smali.dexlib2.Opcode
+import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
+import com.android.tools.smali.dexlib2.iface.reference.StringReference
 
 /**
  * Removes the modder's traces from the supplied CamScanner mod.
@@ -15,9 +21,9 @@ import app.morphe.patcher.patch.replaceStrings
  * youarefinished signature files so the resulting APK is free of the modder's
  * branding.
  *
- * Strings are replaced through Morphe's bytecode API so the DEX string table
- * stays sorted and valid. Editing raw DEX string bytes directly would break
- * ART's string_ids ordering and make the app crash on startup.
+ * The strings are replaced through the bytecode API, which keeps DEX string
+ * tables sorted and valid. Editing raw DEX string bytes directly breaks ART's
+ * string_ids ordering and makes the app crash on startup.
  */
 @Suppress("unused")
 val cleanCamScannerModPatch = patch(
@@ -34,10 +40,39 @@ val cleanCamScannerModPatch = patch(
             )
         }
 
-        val removed = replaceStrings(
-            "Patched by youarefinished " to "",
-            "Smob - Mod obfuscation tool v4.6 by Kirlif'" to "",
+        val markers = setOf(
+            "Patched by youarefinished ",
+            "Smob - Mod obfuscation tool v4.6 by Kirlif'",
         )
+        var removed = 0
+
+        classDefForEach { classDef ->
+            val mutableClass = mutableClassDefBy(classDef)
+            classDef.methods.forEach { method ->
+                val instructions = method.implementation?.instructions?.toList() ?: return@forEach
+                val methodParameters = method.parameters.map { it.type }
+                val mutableMethod = mutableClass.methods.first {
+                    it.name == method.name && it.parameters.map { p -> p.type } == methodParameters &&
+                        it.returnType == method.returnType
+                }
+                instructions.forEachIndexed { index, instruction ->
+                    val opcode = instruction.opcode
+                    if (opcode != Opcode.CONST_STRING && opcode != Opcode.CONST_STRING_JUMBO) {
+                        return@forEachIndexed
+                    }
+                    val value = (instruction as ReferenceInstruction)
+                        .reference
+                        .let { it as? StringReference }
+                        ?.string ?: return@forEachIndexed
+                    if (value !in markers) return@forEachIndexed
+
+                    val register = (instruction as OneRegisterInstruction).registerA
+                    mutableMethod.replaceInstruction(index, "const-string v$register, \"\"")
+                    removed++
+                }
+            }
+        }
+
         if (removed == 0) {
             throw PatchException(
                 "No modder markers found; this is not the expected CamScanner mod.",
