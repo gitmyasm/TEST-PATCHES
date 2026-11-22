@@ -2,6 +2,7 @@ package app.template.patches.nicemind
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.packageMetadata
 import app.morphe.patcher.patch.patch
 
 /**
