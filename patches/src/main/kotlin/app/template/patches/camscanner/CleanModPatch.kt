@@ -4,6 +4,8 @@ import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.deleteResource
 import app.morphe.patcher.patch.packageMetadata
 import app.morphe.patcher.patch.rawResourcePatch
+import java.security.MessageDigest
+import java.util.zip.Adler32
 
 /**
  * Removes the modder's traces from the supplied CamScanner mod.
@@ -53,7 +55,10 @@ val cleanCamScannerModPatch = rawResourcePatch(
                     changed = true
                 }
             }
-            if (changed) file.writeBytes(bytes)
+            if (changed) {
+                fixDexHeader(bytes)
+                file.writeBytes(bytes)
+            }
         }
 
         if (removed == 0) {
@@ -63,6 +68,22 @@ val cleanCamScannerModPatch = rawResourcePatch(
         deleteResource("META-INF/YOUAREFINISHED.RSA")
         deleteResource("META-INF/YOUAREFINISHED.SF")
     }
+}
+
+/** Restore the DEX header checksum and SHA-1 signature after editing string data. */
+private fun fixDexHeader(bytes: ByteArray) {
+    require(bytes.size > 32) { "Invalid DEX file" }
+    val signature = MessageDigest.getInstance("SHA-1")
+        .digest(bytes.copyOfRange(32, bytes.size))
+    signature.copyInto(bytes, 12)
+
+    val adler = Adler32()
+    adler.update(bytes, 12, bytes.size - 12)
+    val checksum = adler.value.toInt()
+    bytes[8] = checksum.toByte()
+    bytes[9] = (checksum ushr 8).toByte()
+    bytes[10] = (checksum ushr 16).toByte()
+    bytes[11] = (checksum ushr 24).toByte()
 }
 
 private fun indexOfBytes(haystack: ByteArray, needle: ByteArray): Int {
