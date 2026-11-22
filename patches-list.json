@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.6",
+  "version": "1.0.0-dev.7",
   "patches": [
     {
       "name": "Remove Ads",
@@ -30,6 +30,33 @@
       "options": []
     },
     {
+      "name": "Remove Ads",
+      "description": "Removes advertising identifiers and ad SDK components from Noji.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.vedasapps.flashcards",
+          "name": "Noji",
+          "description": null,
+          "apkFileType": "APKS",
+          "appIconColor": "#6A1B9A",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.44.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Remove Trackers",
       "description": "Removes analytics, crash reporting, messaging and install-referrer components.",
       "default": false,
@@ -46,6 +73,33 @@
           "targets": [
             {
               "version": "17.7.3",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Trackers",
+      "description": "Removes analytics, install-referrer, crash, and diagnostics components from Noji.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.vedasapps.flashcards",
+          "name": "Noji",
+          "description": null,
+          "apkFileType": "APKS",
+          "appIconColor": "#6A1B9A",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.44.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -100,6 +154,33 @@
           "targets": [
             {
               "version": "17.7.3",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Premium",
+      "description": "Marks the existing Qonversion Premium entitlement as active.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.vedasapps.flashcards",
+          "name": "Noji",
+          "description": null,
+          "apkFileType": "APKS",
+          "appIconColor": "#6A1B9A",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.44.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

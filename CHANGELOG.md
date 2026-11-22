@@ -1,3 +1,9 @@
+## [1.0.0-dev.7](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.6...v1.0.0-dev.7) (2026-11-22)
+
+### ✨ New Features
+
+* **noji:** add selectable unlock, ads, and trackers patches ([a39e417](https://github.com/gitmyasm/TEST-PATCHES/commit/a39e41774afe18cd4573b475786395fcdafbdfc1))
+
 ## [1.0.0-dev.6](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.5...v1.0.0-dev.6) (2026-11-22)
 
 ### 🐛 Bug Fixes
