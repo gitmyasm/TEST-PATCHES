@@ -1,3 +1,19 @@
+## [1.0.0-dev.4](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-11-22)
+
+### ✨ New Features
+
+* Add Bangla Keyboard premium unlock ([2630335](https://github.com/gitmyasm/TEST-PATCHES/commit/26303350c2467eafb09cd67f48d3d1043f6ee06c))
+* Add CamScanner clean-mod patch ([c3fcd25](https://github.com/gitmyasm/TEST-PATCHES/commit/c3fcd256c8ea1b1fb8d5ea1628f9a0ff43eea600))
+* Add CamScanner clean-mod patch ([05f4d00](https://github.com/gitmyasm/TEST-PATCHES/commit/05f4d00cf422cdbdd7fad99a8f33360167fd9400))
+
+### 🐛 Bug Fixes
+
+* Correct replaceInstruction import ([f82fc21](https://github.com/gitmyasm/TEST-PATCHES/commit/f82fc2151523b014707e5067a8b48b40effa7e56))
+* Escape type name in billing fingerprint ([38589ce](https://github.com/gitmyasm/TEST-PATCHES/commit/38589ceae0b27be4d4eb78fb23f1dea1bf470b99))
+* Recompute DEX checksum after marker removal ([1f6176a](https://github.com/gitmyasm/TEST-PATCHES/commit/1f6176a52ec4b1a3ada88df0d0b9b4a19d39a137))
+* Replace marker const-strings via bytecode ([ffd15c6](https://github.com/gitmyasm/TEST-PATCHES/commit/ffd15c6f9e7766ea776d76e167339d81464d98e3))
+* Replace marker strings through bytecode API ([3121e4c](https://github.com/gitmyasm/TEST-PATCHES/commit/3121e4c91eb89aa36d1980781d950cdbe7850df9))
+
 ## [1.0.0-dev.6](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.5...v1.0.0-dev.6) (2026-11-22)
 
 ### 🐛 Bug Fixes

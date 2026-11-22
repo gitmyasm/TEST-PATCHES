@@ -13,11 +13,11 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.6](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.6)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**2 patches** across **2 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+> **[v1.0.0-dev.4](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.4)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**2 patches** across **2 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
 
 | # | App | Patches | Version | Package |
 |---|---|---|---|---|
-| 1 | [**CamScanner**](PATCHES.md#camscanner-comintsigcamscanner) | 1 | `7.29.5.2611170000` | [`com.intsig.camscanner`](https://play.google.com/store/apps/details?id=com.intsig.camscanner) |
+| 1 | [**Bangla Keyboard**](PATCHES.md#bangla-keyboard-combanglakeyboardforandroid) | 1 | `17.7.3` | [`com.bangla.keyboard.for.android`](https://play.google.com/store/apps/details?id=com.bangla.keyboard.for.android) |
 | 2 | [**Nice Mind**](PATCHES.md#nice-mind-mindmapmindmap) | 1 | `12.8.0`, `12.7.0` | [`mind.map.mindmap`](https://play.google.com/store/apps/details?id=mind.map.mindmap) |
 <!-- PATCHES_END -->
 

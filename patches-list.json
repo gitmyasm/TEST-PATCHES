@@ -1,16 +1,16 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.6",
+  "version": "1.0.0-dev.4",
   "patches": [
     {
-      "name": "Clean CamScanner Mod",
-      "description": "Removes modder markers from the supplied CamScanner 7.29.5 modded APK.",
+      "name": "Unlock Premium",
+      "description": "Unlocks Bangla Keyboard premium features that are checked locally.",
       "default": true,
       "category": null,
       "compatiblePackages": [
         {
-          "packageName": "com.intsig.camscanner",
-          "name": "CamScanner",
+          "packageName": "com.bangla.keyboard.for.android",
+          "name": "Bangla Keyboard",
           "description": null,
           "apkFileType": "APK",
           "appIconColor": "#1976D2",
@@ -18,7 +18,7 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": "7.29.5.2611170000",
+              "version": "17.7.3",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
