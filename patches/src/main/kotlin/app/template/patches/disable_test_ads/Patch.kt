@@ -4,7 +4,7 @@ import app.morphe.patcher.patch.patch
 import app.morphe.patcher.util.returnEarly
 
 @Suppress("unused")
-val disable_Test_Ads = patch(
+val disableTestAds = patch(
     name = "Disable Test Ads",
     description = "Generated patch for Test App.",
     default = true
