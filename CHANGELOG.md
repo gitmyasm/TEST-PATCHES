@@ -1,3 +1,9 @@
+## [1.0.0-dev.4](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-11-22)
+
+### ✨ New Features
+
+* Add CamScanner clean-mod patch ([05f4d00](https://github.com/gitmyasm/TEST-PATCHES/commit/05f4d00cf422cdbdd7fad99a8f33360167fd9400))
+
 ## [1.0.0-dev.3](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-11-22)
 
 ### ✨ New Features
