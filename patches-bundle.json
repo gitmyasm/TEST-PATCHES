@@ -1,7 +1,7 @@
 {
-  "created_at": "",
-  "description": "",
-  "download_url": "",
+  "created_at": "2026-11-22T06:05:03",
+  "description": "## 1.0.0-dev.1 (2026-11-22)\n\n### ✨ New Features\n\n* Add Disable Test Ads ([58534cd](https://github.com/gitmyasm/TEST-PATCHES/commit/58534cdfc8d28684e71e9a32acd2506f45718907))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.1/patches-1.0.0-dev.1.mpp",
   "signature_download_url": "",
-  "version": ""
+  "version": "1.0.0-dev.1"
 }

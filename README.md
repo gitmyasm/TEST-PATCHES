@@ -13,7 +13,11 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-No patches yet. New patches will appear here after the first release.
+> **[v1.0.0-dev.1](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.1)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**1 patches** across **1 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+
+| # | App | Patches | Version | Package |
+|---|---|---|---|---|
+| 1 | [**Test App**](PATCHES.md#test-app-testsandroguard) | 1 | `1.0` | [`tests.androguard`](https://play.google.com/store/apps/details?id=tests.androguard) |
 <!-- PATCHES_END -->
 
 ## Cloud reversing (no local tools needed)
