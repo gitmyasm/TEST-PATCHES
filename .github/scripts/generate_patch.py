@@ -141,12 +141,12 @@ else:
     body = "// TODO: implement the patch logic for this target."
 
 # --------------------------------------------------------------- Patch file
-value = IDENT_RE.sub("", patch_name.replace(" ", "_").replace("-", "_"))
-if not value:
-    value = "GeneratedPatch"
+words = [w for w in re.split(r"[^A-Za-z0-9]+", patch_name) if w]
+if not words:
+    words = ["Generated", "Patch"]
+value = "".join(w[0].upper() + w[1:] for w in words)
 if value[0].isdigit():
     value = "P" + value
-value = value[0].upper() + value[1:]
 val_name = value[0].lower() + value[1:]
 if val_name in ("class", "val", "fun", "object", "return"):
     val_name = "generatedPatch"
