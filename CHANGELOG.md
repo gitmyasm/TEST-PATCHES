@@ -1,3 +1,9 @@
+## [1.0.0-dev.29](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.28...v1.0.0-dev.29) (2026-11-23)
+
+### ✨ New Features
+
+* Add Paytm root detection bypass patch ([3e47183](https://github.com/gitmyasm/TEST-PATCHES/commit/3e4718323b621644e9a823b694384c1b8046bb7a))
+
 ## [1.0.0-dev.28](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.27...v1.0.0-dev.28) (2026-11-23)
 
 ### ✨ New Features
