@@ -12,7 +12,7 @@ import app.morphe.patcher.util.returnEarly
 @Suppress("unused")
 val bypassRootDetectionPatch = bytecodePatch(
     name = "Bypass Root Detection",
-    description = "Bypasses a local Paytm root-path detection check.",
+    description = "Bypasses a local Paytm OAuth rooted-device check.",
 ) {
     compatibleWith(COMPATIBILITY_PAYTM)
 
