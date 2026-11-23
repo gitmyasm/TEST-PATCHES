@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-23T13:16:00",
-  "description": "## [1.0.0-dev.19](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.18...v1.0.0-dev.19) (2026-11-23)\n\n### 🐛 Bug Fixes\n\n* remove promoted Bangla and Nice Mind patches ([6b18696](https://github.com/gitmyasm/TEST-PATCHES/commit/6b186962d08a5b0811a8f1e21ee60af15275aa1e))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.19/patches-1.0.0-dev.19.mpp",
+  "created_at": "2026-11-23T13:50:34",
+  "description": "## [1.0.0-dev.20](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.19...v1.0.0-dev.20) (2026-11-23)\n\n### 🐛 Bug Fixes\n\n* remove promoted CamScanner patches ([6a051ee](https://github.com/gitmyasm/TEST-PATCHES/commit/6a051ee33f2a26390060716e60e3f7f2279f4dd9))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.20/patches-1.0.0-dev.20.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.19"
+  "version": "1.0.0-dev.20"
 }
