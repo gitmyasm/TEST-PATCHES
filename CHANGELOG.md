@@ -1,3 +1,9 @@
+## [1.0.0-dev.8](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.7...v1.0.0-dev.8) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **noji:** spoof Play Store install source ([35deb73](https://github.com/gitmyasm/TEST-PATCHES/commit/35deb73f3dc4a944eab4aed437b84ed593e5abdb))
+
 ## [1.0.0-dev.7](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.6...v1.0.0-dev.7) (2026-11-22)
 
 ### ✨ New Features

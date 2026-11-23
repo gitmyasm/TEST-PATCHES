@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.7",
+  "version": "1.0.0-dev.8",
   "patches": [
     {
       "name": "Remove Ads",
@@ -127,6 +127,33 @@
           "targets": [
             {
               "version": "17.7.3",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof Play Store Install",
+      "description": "Treats sideloaded Noji installations as Play Store installations.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.vedasapps.flashcards",
+          "name": "Noji",
+          "description": null,
+          "apkFileType": "APKS",
+          "appIconColor": "#6A1B9A",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.44.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
