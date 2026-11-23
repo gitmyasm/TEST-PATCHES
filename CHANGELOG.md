@@ -1,3 +1,9 @@
+## [1.0.0-dev.19](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.18...v1.0.0-dev.19) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* remove promoted Bangla and Nice Mind patches ([6b18696](https://github.com/gitmyasm/TEST-PATCHES/commit/6b186962d08a5b0811a8f1e21ee60af15275aa1e))
+
 ## [1.0.0-dev.18](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.17...v1.0.0-dev.18) (2026-11-23)
 
 ### 🐛 Bug Fixes

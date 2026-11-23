@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.18",
+  "version": "1.0.0-dev.19",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -153,33 +153,6 @@
       "options": []
     },
     {
-      "name": "Remove Ads & Promoted Apps",
-      "description": "Removes ad identifiers, promotional app screens, and the promoted app row above the keyboard.",
-      "default": false,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.bangla.keyboard.for.android",
-          "name": "Bangla Keyboard",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1976D2",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "17.7.3",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
       "name": "Remove Network Components",
       "description": "Removes upload, push, ad and telemetry components that expect network access, and disables remaining analytics flags.",
       "default": false,
@@ -245,33 +218,6 @@
     },
     {
       "name": "Remove Trackers",
-      "description": "Disables analytics, crash reporting and ad-identifier collection while keeping app startup intact.",
-      "default": false,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.bangla.keyboard.for.android",
-          "name": "Bangla Keyboard",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1976D2",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "17.7.3",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Trackers",
       "description": "Removes analytics, install-referrer, crash, and diagnostics components from Noji.",
       "default": false,
       "category": null,
@@ -287,33 +233,6 @@
           "targets": [
             {
               "version": "26.44.0",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Spoof app signature",
-      "description": "Reports the certificate from the APK being patched to the app after re-signing, preserving in-app signature checks.",
-      "default": false,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.bangla.keyboard.for.android",
-          "name": "Bangla Keyboard",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1976D2",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "17.7.3",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -347,33 +266,6 @@
                 "X86_64": 72701,
                 "X86": 72701
               },
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Unlock Premium",
-      "description": "Unlocks Bangla Keyboard premium features that are checked locally.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.bangla.keyboard.for.android",
-          "name": "Bangla Keyboard",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1976D2",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "17.7.3",
-              "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -432,40 +324,6 @@
           "targets": [
             {
               "version": "26.44.0",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Unlock Prime",
-      "description": "Unlocks Nice Mind Prime features that are checked locally.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "mind.map.mindmap",
-          "name": "Nice Mind",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#3F51B5",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "12.8.0",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            },
-            {
-              "version": "12.7.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

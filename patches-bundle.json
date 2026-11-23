@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-23T12:51:18",
-  "description": "## [1.0.0-dev.18](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.17...v1.0.0-dev.18) (2026-11-23)\n\n### 🐛 Bug Fixes\n\n* **banglakeyboard:** keep spoof patch self-contained ([2515326](https://github.com/gitmyasm/TEST-PATCHES/commit/2515326a11fc6ed077e066ecc012a7103416d0a5))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.18/patches-1.0.0-dev.18.mpp",
+  "created_at": "2026-11-23T13:16:00",
+  "description": "## [1.0.0-dev.19](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.18...v1.0.0-dev.19) (2026-11-23)\n\n### 🐛 Bug Fixes\n\n* remove promoted Bangla and Nice Mind patches ([6b18696](https://github.com/gitmyasm/TEST-PATCHES/commit/6b186962d08a5b0811a8f1e21ee60af15275aa1e))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.19/patches-1.0.0-dev.19.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.18"
+  "version": "1.0.0-dev.19"
 }
