@@ -46,3 +46,12 @@ object OAuthRootedDeviceFingerprint : Fingerprint(
     returnType = "Z",
     parameters = emptyList(),
 )
+
+/** Local Frida hook detection aggregator. */
+object FridaHookDetectionFingerprint : Fingerprint(
+    definingClass = "LN5/SFMiYa;",
+    name = "eszJ2B0a",
+    isStatic = true,
+    returnType = "Z",
+    parameters = listOf("Ljava/util/List;"),
+)
