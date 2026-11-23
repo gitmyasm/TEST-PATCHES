@@ -1,3 +1,9 @@
+## [1.0.0-dev.9](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.8...v1.0.0-dev.9) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **noji:** report Play Store installer to app code ([96e4232](https://github.com/gitmyasm/TEST-PATCHES/commit/96e4232893a89911e4847785e64a0db4731d95ab))
+
 ## [1.0.0-dev.8](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.7...v1.0.0-dev.8) (2026-11-23)
 
 ### 🐛 Bug Fixes
