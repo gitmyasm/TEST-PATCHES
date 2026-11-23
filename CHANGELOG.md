@@ -1,3 +1,9 @@
+## [1.0.0-dev.20](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.19...v1.0.0-dev.20) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* remove promoted CamScanner patches ([6a051ee](https://github.com/gitmyasm/TEST-PATCHES/commit/6a051ee33f2a26390060716e60e3f7f2279f4dd9))
+
 ## [1.0.0-dev.19](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.18...v1.0.0-dev.19) (2026-11-23)
 
 ### 🐛 Bug Fixes
