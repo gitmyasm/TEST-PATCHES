@@ -1,3 +1,9 @@
+## [1.0.0-dev.28](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.27...v1.0.0-dev.28) (2026-11-23)
+
+### ✨ New Features
+
+* Add Paytm SSL pinning disable patch ([c17c2d8](https://github.com/gitmyasm/TEST-PATCHES/commit/c17c2d8228eb34dcaa2d7cb2e7fd2ab15b9fdad8))
+
 ## [1.0.0-dev.27](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.26...v1.0.0-dev.27) (2026-11-23)
 
 ### ✨ New Features
