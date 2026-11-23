@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.17",
+  "version": "1.0.0-dev.18",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -326,7 +326,7 @@
     },
     {
       "name": "Spoof app signature",
-      "description": "Reports the certificate from the APK being patched to the app after re-signing, preserving in-app signature checks.",
+      "description": "Reports the original signing certificate to the app so tamper and licence checks pass.",
       "default": false,
       "category": null,
       "compatiblePackages": [

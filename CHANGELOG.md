@@ -1,3 +1,9 @@
+## [1.0.0-dev.18](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.17...v1.0.0-dev.18) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **banglakeyboard:** keep spoof patch self-contained ([2515326](https://github.com/gitmyasm/TEST-PATCHES/commit/2515326a11fc6ed077e066ecc012a7103416d0a5))
+
 ## [1.0.0-dev.17](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.16...v1.0.0-dev.17) (2026-11-23)
 
 ### ✨ New Features
