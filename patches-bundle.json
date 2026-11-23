@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-23T21:24:26",
-  "description": "## [1.0.0-dev.23](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.22...v1.0.0-dev.23) (2026-11-23)\n\n### ✨ New Features\n\n* Add EdrawMind UI removal patches ([6c3dd0e](https://github.com/gitmyasm/TEST-PATCHES/commit/6c3dd0e5a1b98f9d3d217a926bfc2f9897f1906f))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.23/patches-1.0.0-dev.23.mpp",
+  "created_at": "2026-11-23T21:29:43",
+  "description": "## [1.0.0-dev.24](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.23...v1.0.0-dev.24) (2026-11-23)\n\n### 🐛 Bug Fixes\n\n* Use valid const/16 for View.GONE ([8df7920](https://github.com/gitmyasm/TEST-PATCHES/commit/8df7920bee530b1e2f7d9d1d8d394e1c1f386471))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.24/patches-1.0.0-dev.24.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.23"
+  "version": "1.0.0-dev.24"
 }

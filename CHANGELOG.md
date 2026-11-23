@@ -1,3 +1,9 @@
+## [1.0.0-dev.24](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.23...v1.0.0-dev.24) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* Use valid const/16 for View.GONE ([8df7920](https://github.com/gitmyasm/TEST-PATCHES/commit/8df7920bee530b1e2f7d9d1d8d394e1c1f386471))
+
 ## [1.0.0-dev.23](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.22...v1.0.0-dev.23) (2026-11-23)
 
 ### ✨ New Features
