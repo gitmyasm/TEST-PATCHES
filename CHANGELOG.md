@@ -1,3 +1,9 @@
+## [1.0.0-dev.25](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.24...v1.0.0-dev.25) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* Keep poster tab index after AI tab removal ([1ac2a78](https://github.com/gitmyasm/TEST-PATCHES/commit/1ac2a78ce9e6d8d2e4577fabbac81ee4edc691bf))
+
 ## [1.0.0-dev.24](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.23...v1.0.0-dev.24) (2026-11-23)
 
 ### 🐛 Bug Fixes
