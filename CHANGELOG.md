@@ -1,3 +1,9 @@
+## [1.0.0-dev.21](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.20...v1.0.0-dev.21) (2026-11-23)
+
+### ✨ New Features
+
+* Add EdrawMind patches ([f4fbe16](https://github.com/gitmyasm/TEST-PATCHES/commit/f4fbe16581cd9396a36900b2e54d2b62424ce392))
+
 ## [1.0.0-dev.20](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.19...v1.0.0-dev.20) (2026-11-23)
 
 ### 🐛 Bug Fixes

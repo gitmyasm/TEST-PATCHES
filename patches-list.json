@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.20",
+  "version": "1.0.0-dev.21",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -57,6 +57,60 @@
       "options": []
     },
     {
+      "name": "Remove Feature Limits",
+      "description": "Bypasses the local paid-feature limit checks used across the app.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.edrawsoft.mindmasterg",
+          "name": "EdrawMind",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#1A73E8",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.10.15",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Promotional Banners",
+      "description": "Hides operation banners, popups and snackbars in the main app screens.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.edrawsoft.mindmasterg",
+          "name": "EdrawMind",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#1A73E8",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.10.15",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Remove Trackers",
       "description": "Removes analytics, install-referrer, crash, and diagnostics components from Noji.",
       "default": false,
@@ -100,6 +154,33 @@
           "targets": [
             {
               "version": "26.44.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Premium Membership",
+      "description": "Marks the local subscription, lifetime and cross-platform entitlement checks as active.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.edrawsoft.mindmasterg",
+          "name": "EdrawMind",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#1A73E8",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.10.15",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
