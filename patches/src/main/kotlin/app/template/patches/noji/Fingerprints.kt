@@ -21,7 +21,7 @@ object QonversionEntitlementMapperFingerprint : Fingerprint(
 object PairipLocalInstallerCheckFingerprint : Fingerprint(
     definingClass = "Lcom/pairip/licensecheck/LicenseClient;",
     name = "performLocalInstallerCheck",
-    isStatic = true,
+    isStatic = false,
     returnType = "Z",
     parameters = emptyList(),
 )
