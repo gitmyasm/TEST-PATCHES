@@ -4,6 +4,8 @@ import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.removeInstructions
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.returnEarly
+import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
+import com.android.tools.smali.dexlib2.iface.reference.StringReference
 
 /**
  * Removes the server-backed Edraw AI tab from the global home screen.
@@ -21,7 +23,14 @@ val removeHomeAITabPatch = bytecodePatch(
 
     execute {
         // Remove the block that creates and adds the /edrawAi/aiHome fragment.
-        GlobalMainFragmentsFingerprint.method.removeInstructions(65, 6)
+        val method = GlobalMainFragmentsFingerprint.method
+        val impl = method.implementation!!
+        val aiRouteIndex = impl.instructions.indexOfFirst { insn ->
+            val ref = (insn as? ReferenceInstruction)?.reference as? StringReference
+            ref?.string == "/edrawAi/aiHome"
+        }
+        if (aiRouteIndex < 2) error("AI route string not found in main fragments method")
+        method.removeInstructions(aiRouteIndex - 2, 6)
 
         // Shift POSTER_INDEX from 3 to 2 now that the AI tab is gone.
         MainPageIndicesFingerprint.method.addInstructions(
