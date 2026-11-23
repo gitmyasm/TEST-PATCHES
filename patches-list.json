@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.21",
+  "version": "1.0.0-dev.22",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -127,6 +127,33 @@
           "targets": [
             {
               "version": "26.44.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof AI Credit Balance",
+      "description": "Reports a large local AI credit balance so local credit checks pass.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.edrawsoft.mindmasterg",
+          "name": "EdrawMind",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#1A73E8",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.10.15",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

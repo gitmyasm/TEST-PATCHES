@@ -1,3 +1,9 @@
+## [1.0.0-dev.22](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.21...v1.0.0-dev.22) (2026-11-23)
+
+### ✨ New Features
+
+* Add EdrawMind AI credit spoof ([c4a871e](https://github.com/gitmyasm/TEST-PATCHES/commit/c4a871e5c3f00f4519b5bb4bc3eb092eebfa5837))
+
 ## [1.0.0-dev.21](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.20...v1.0.0-dev.21) (2026-11-23)
 
 ### ✨ New Features

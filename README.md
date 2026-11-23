@@ -13,11 +13,11 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.21](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.21)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**7 patches** across **2 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+> **[v1.0.0-dev.22](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.22)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**8 patches** across **2 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
 
 | # | App | Patches | Version | Package |
 |---|---|---|---|---|
-| 1 | [**EdrawMind**](PATCHES.md#edrawmind-comedrawsoftmindmasterg) | 3 | `7.10.15` | [`com.edrawsoft.mindmasterg`](https://play.google.com/store/apps/details?id=com.edrawsoft.mindmasterg) |
+| 1 | [**EdrawMind**](PATCHES.md#edrawmind-comedrawsoftmindmasterg) | 4 | `7.10.15` | [`com.edrawsoft.mindmasterg`](https://play.google.com/store/apps/details?id=com.edrawsoft.mindmasterg) |
 | 2 | [**Noji**](PATCHES.md#noji-comvedasappsflashcards) | 4 | `26.44.0` | [`com.vedasapps.flashcards`](https://play.google.com/store/apps/details?id=com.vedasapps.flashcards) |
 <!-- PATCHES_END -->
 
