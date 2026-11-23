@@ -1,3 +1,9 @@
+## [1.0.0-dev.17](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.16...v1.0.0-dev.17) (2026-11-23)
+
+### ✨ New Features
+
+* **banglakeyboard:** add spoof app signature patch ([7298611](https://github.com/gitmyasm/TEST-PATCHES/commit/729861175babc1d6060499e6d2e00063a099aeb6))
+
 ## [1.0.0-dev.16](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.15...v1.0.0-dev.16) (2026-11-23)
 
 ### ✨ New Features

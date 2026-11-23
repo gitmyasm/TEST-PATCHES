@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.16",
+  "version": "1.0.0-dev.17",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -299,7 +299,34 @@
     },
     {
       "name": "Spoof app signature",
-      "description": "Reports the original signing certificate to the app so tamper and licence checks pass.",
+      "description": "Reports the certificate from the APK being patched to the app after re-signing, preserving in-app signature checks.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.bangla.keyboard.for.android",
+          "name": "Bangla Keyboard",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#1976D2",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "17.7.3",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof app signature",
+      "description": "Reports the certificate from the APK being patched to the app after re-signing, preserving in-app signature checks.",
       "default": false,
       "category": null,
       "compatiblePackages": [
