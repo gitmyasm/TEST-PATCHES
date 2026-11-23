@@ -34,25 +34,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # GitHub rejects semantic-release's refs/notes pushes in this repository.
-      # Skip only that push so the tag, release commit, and asset upload finish.
-      - name: Skip semantic-release git notes push
-        run: |
-          mkdir -p .ci-bin
-          real_git="$(command -v git)"
-          cat > .ci-bin/git <<EOF
-          #!/usr/bin/env bash
-          for arg in "\$@"; do
-            if [[ "\$arg" == refs/notes/* ]]; then
-              echo "Skipping unsupported git notes push: \$arg"
-              exit 0
-            fi
-          done
-          exec "$real_git" "\$@"
-          EOF
-          chmod +x .ci-bin/git
-          echo "$PWD/.ci-bin" >> "$GITHUB_PATH"
-
       # Semantic release runs its own Gradle build command.
       # Only dev and main branch will generate a release as specified by .releaserc
       - name: Release
