@@ -3,6 +3,16 @@
 ### 🐛 Bug Fixes
 
 * clean up release workflow comments ([f711d63](https://github.com/gitmyasm/TEST-PATCHES/commit/f711d63395d15d27667d60fc4231f43170b47e19))
+* **noji:** match Pairip installer check as instance method ([9e20a6e](https://github.com/gitmyasm/TEST-PATCHES/commit/9e20a6e5a01ef6c5c7d2206ba497576f037e2d23))
+* **noji:** report Play Store installer to app code ([96e4232](https://github.com/gitmyasm/TEST-PATCHES/commit/96e4232893a89911e4847785e64a0db4731d95ab))
+* **noji:** spoof Play Store install source ([35deb73](https://github.com/gitmyasm/TEST-PATCHES/commit/35deb73f3dc4a944eab4aed437b84ed593e5abdb))
+* skip unsupported git notes push during release ([791bab9](https://github.com/gitmyasm/TEST-PATCHES/commit/791bab96365132c1910ae281af405383893f24a6))
+
+## [1.0.0-dev.8](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.7...v1.0.0-dev.8) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* clean up release workflow comments ([f711d63](https://github.com/gitmyasm/TEST-PATCHES/commit/f711d63395d15d27667d60fc4231f43170b47e19))
 * **noji:** report Play Store installer to app code ([96e4232](https://github.com/gitmyasm/TEST-PATCHES/commit/96e4232893a89911e4847785e64a0db4731d95ab))
 * **noji:** spoof Play Store install source ([35deb73](https://github.com/gitmyasm/TEST-PATCHES/commit/35deb73f3dc4a944eab4aed437b84ed593e5abdb))
 * skip unsupported git notes push during release ([791bab9](https://github.com/gitmyasm/TEST-PATCHES/commit/791bab96365132c1910ae281af405383893f24a6))
