@@ -1,3 +1,9 @@
+## [1.0.0-dev.27](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.26...v1.0.0-dev.27) (2026-11-23)
+
+### ✨ New Features
+
+* Add Paytm signature check bypass patch ([d01b28c](https://github.com/gitmyasm/TEST-PATCHES/commit/d01b28c84013b6bb9429d19ef8d5513a3943dcdd))
+
 ## [1.0.0-dev.26](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.25...v1.0.0-dev.26) (2026-11-23)
 
 ### ✨ New Features
