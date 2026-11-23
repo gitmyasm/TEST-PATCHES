@@ -11,7 +11,8 @@ import app.morphe.patcher.patch.bytecodePatch
  * register to true keeps the surrounding logging, branches, and exception
  * handling intact while making the local check pass. The device-info accessor
  * is also pointed at the store package so any app-level install-source logic
- * sees the same answer.
+ * sees the same answer. This patch is independent of the premium, ads, and
+ * trackers patches.
  */
 @Suppress("unused")
 val spoofPlayStoreInstallPatch = bytecodePatch(
