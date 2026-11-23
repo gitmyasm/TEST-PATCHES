@@ -1,3 +1,9 @@
+## [1.0.0-dev.10](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.9...v1.0.0-dev.10) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **noji:** disable Pairip checks for AOSP installations ([aa5b197](https://github.com/gitmyasm/TEST-PATCHES/commit/aa5b197f0fb7ba4c0a60c7566f964104a1c30ffb))
+
 ## [1.0.0-dev.9](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.8...v1.0.0-dev.9) (2026-11-23)
 
 ### 🐛 Bug Fixes
