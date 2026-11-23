@@ -20,3 +20,11 @@ object PremiumUiCallbackFingerprint : Fingerprint(
     returnType = "V",
     parameters = listOf("Ljava/lang/Object;"),
 )
+
+/** Applies promoted-tiles visibility state changes. */
+object PromotedTilesVisibilityFingerprint : Fingerprint(
+    definingClass = "Lcom/deshkeyboard/promotedtiles/c;",
+    name = "C",
+    returnType = "V",
+    parameters = listOf("Lcom/deshkeyboard/promotedtiles/e;"),
+)
