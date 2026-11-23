@@ -69,6 +69,51 @@ object PreferenceReaderFingerprint : Fingerprint(
     ),
 )
 
+/** Entry point that decides whether the rating dialog is shown. */
+object RatingDialogTriggerFingerprint : Fingerprint(
+    definingClass = "Lcom/edrawsoft/mindmaster/view/app_view/dialog/ScoreDialog;",
+    name = "Z",
+    isStatic = true,
+    returnType = "V",
+    parameters = listOf("Lcom/edrawsoft/mindmaster/view/base/EDBaseActivity;"),
+)
+
+/** Builds the global main screen fragment list, including the home AI tab. */
+object GlobalMainFragmentsFingerprint : Fingerprint(
+    definingClass = "Lcom/edrawsoft/mindmaster/view/app_view/main/PhoneGlobalMainImpl;",
+    name = "s",
+    isStatic = false,
+    returnType = "V",
+    parameters = emptyList(),
+)
+
+/** Initializes the home tab indices. */
+object MainPageIndicesFingerprint : Fingerprint(
+    definingClass = "Lcom/edrawsoft/mindmaster/view/app_view/main/MainPageConst;",
+    name = "<clinit>",
+    isStatic = true,
+    returnType = "V",
+    parameters = emptyList(),
+)
+
+/** Sets up navigation tab click listeners in the global main screen. */
+object GlobalMainTabSetupFingerprint : Fingerprint(
+    definingClass = "Lcom/edrawsoft/mindmaster/view/app_view/main/PhoneGlobalMainImpl;",
+    name = "t",
+    isStatic = false,
+    returnType = "V",
+    parameters = emptyList(),
+)
+
+/** Special router callback for the AI coin purchase page. */
+object AICoinPurchaseRouteFingerprint : Fingerprint(
+    definingClass = "Lcom/edrawsoft/mindmaster/biz/route/RouterManager;",
+    name = "f",
+    isStatic = true,
+    returnType = "Z",
+    parameters = listOf("Landroid/content/Context;", "Landroid/net/Uri;"),
+)
+
 /** Renders operation banners in home, community, mine and member screens. */
 object OperationBannerRendererFingerprint : Fingerprint(
     definingClass = "Lcom/edrawsoft/mindmaster/biz/operation/OperationHelper;",
