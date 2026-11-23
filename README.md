@@ -13,11 +13,11 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.10](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.10)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**9 patches** across **3 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+> **[v1.0.0-dev.11](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.11)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**10 patches** across **3 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
 
 | # | App | Patches | Version | Package |
 |---|---|---|---|---|
-| 1 | [**Bangla Keyboard**](PATCHES.md#bangla-keyboard-combanglakeyboardforandroid) | 4 | `17.7.3` | [`com.bangla.keyboard.for.android`](https://play.google.com/store/apps/details?id=com.bangla.keyboard.for.android) |
+| 1 | [**Bangla Keyboard**](PATCHES.md#bangla-keyboard-combanglakeyboardforandroid) | 5 | `17.7.3` | [`com.bangla.keyboard.for.android`](https://play.google.com/store/apps/details?id=com.bangla.keyboard.for.android) |
 | 2 | [**Nice Mind**](PATCHES.md#nice-mind-mindmapmindmap) | 1 | `12.8.0`, `12.7.0` | [`mind.map.mindmap`](https://play.google.com/store/apps/details?id=mind.map.mindmap) |
 | 3 | [**Noji**](PATCHES.md#noji-comvedasappsflashcards) | 4 | `26.44.0` | [`com.vedasapps.flashcards`](https://play.google.com/store/apps/details?id=com.vedasapps.flashcards) |
 <!-- PATCHES_END -->

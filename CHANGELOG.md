@@ -1,3 +1,9 @@
+## [1.0.0-dev.11](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.10...v1.0.0-dev.11) (2026-11-23)
+
+### ✨ New Features
+
+* **banglakeyboard:** add promoted suggestions removal patch ([e594265](https://github.com/gitmyasm/TEST-PATCHES/commit/e594265e90da95545565b0f5e84a54181123b50a))
+
 ## [1.0.0-dev.10](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.9...v1.0.0-dev.10) (2026-11-23)
 
 ### 🐛 Bug Fixes
