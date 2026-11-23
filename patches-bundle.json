@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-23T10:42:37",
-  "description": "## [1.0.0-dev.12](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.11...v1.0.0-dev.12) (2026-11-23)\n\n### 🐛 Bug Fixes\n\n* **banglakeyboard:** keep Firebase init when disabling trackers ([44aa8c6](https://github.com/gitmyasm/TEST-PATCHES/commit/44aa8c6d8db0f5141c513dc50d48bfb5b9b9f84a))\n* **banglakeyboard:** use explicit appendChild lambda parameter ([6031cf8](https://github.com/gitmyasm/TEST-PATCHES/commit/6031cf8ab948fdbae1fa2191a5bb23cb1d113227))\n* **banglakeyboard:** use receiver-style appendChild lambda ([545ad7d](https://github.com/gitmyasm/TEST-PATCHES/commit/545ad7dc57917a962d9ae4c09ba80008de5a53bb))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.12/patches-1.0.0-dev.12.mpp",
+  "created_at": "2026-11-23T12:02:24",
+  "description": "## [1.0.0-dev.13](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.12...v1.0.0-dev.13) (2026-11-23)\n\n### ✨ New Features\n\n* **camscanner:** add selectable ads, piracy, premium, watermark patches ([87bc817](https://github.com/gitmyasm/TEST-PATCHES/commit/87bc817090d56c8bdc75f70a99d0a913e3bf7b94))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.13/patches-1.0.0-dev.13.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.12"
+  "version": "1.0.0-dev.13"
 }

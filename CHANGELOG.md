@@ -1,3 +1,9 @@
+## [1.0.0-dev.13](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.12...v1.0.0-dev.13) (2026-11-23)
+
+### ✨ New Features
+
+* **camscanner:** add selectable ads, piracy, premium, watermark patches ([87bc817](https://github.com/gitmyasm/TEST-PATCHES/commit/87bc817090d56c8bdc75f70a99d0a913e3bf7b94))
+
 ## [1.0.0-dev.12](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.11...v1.0.0-dev.12) (2026-11-23)
 
 ### 🐛 Bug Fixes

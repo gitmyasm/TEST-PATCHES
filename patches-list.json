@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.12",
+  "version": "1.0.0-dev.13",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -20,6 +20,38 @@
             {
               "version": "26.44.0",
               "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide Piracy Warning",
+      "description": "Removes the local genuine-copy warning dialog and toast without changing the app's internal state.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.intsig.camscanner",
+          "name": "CamScanner",
+          "description": null,
+          "apkFileType": "APKM_REQUIRED",
+          "appIconColor": "#19BCAA",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.27.0.2609220000",
+              "versionCodes": {
+                "ARM64_V8A": 72701,
+                "ARMEABI_V7A": 72701,
+                "X86_64": 72701,
+                "X86": 72701
+              },
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -58,6 +90,38 @@
     },
     {
       "name": "Remove Ads",
+      "description": "Blocks ad requests at the interceptor choke point. Ad SDKs stay bundled but receive no requests.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.intsig.camscanner",
+          "name": "CamScanner",
+          "description": null,
+          "apkFileType": "APKM_REQUIRED",
+          "appIconColor": "#19BCAA",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.27.0.2609220000",
+              "versionCodes": {
+                "ARM64_V8A": 72701,
+                "ARMEABI_V7A": 72701,
+                "X86_64": 72701,
+                "X86": 72701
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Ads",
       "description": "Removes advertising identifiers and ad SDK components from Noji.",
       "default": false,
       "category": null,
@@ -74,6 +138,38 @@
             {
               "version": "26.44.0",
               "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove PDF Watermark",
+      "description": "Stops the PDF watermark from being drawn into exported and shared PDFs.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.intsig.camscanner",
+          "name": "CamScanner",
+          "description": null,
+          "apkFileType": "APKM_REQUIRED",
+          "appIconColor": "#19BCAA",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.27.0.2609220000",
+              "versionCodes": {
+                "ARM64_V8A": 72701,
+                "ARMEABI_V7A": 72701,
+                "X86_64": 72701,
+                "X86": 72701
+              },
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -209,6 +305,38 @@
             {
               "version": "17.7.3",
               "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Premium",
+      "description": "Reports local VIP status and a far-future expiry. Server-validated work remains remote.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.intsig.camscanner",
+          "name": "CamScanner",
+          "description": null,
+          "apkFileType": "APKM_REQUIRED",
+          "appIconColor": "#19BCAA",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.27.0.2609220000",
+              "versionCodes": {
+                "ARM64_V8A": 72701,
+                "ARMEABI_V7A": 72701,
+                "X86_64": 72701,
+                "X86": 72701
+              },
               "isExperimental": false,
               "minSdk": null,
               "description": null
