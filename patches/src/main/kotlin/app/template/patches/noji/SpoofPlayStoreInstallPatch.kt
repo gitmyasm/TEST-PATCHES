@@ -17,7 +17,7 @@ import app.morphe.patcher.patch.bytecodePatch
 @Suppress("unused")
 val spoofPlayStoreInstallPatch = bytecodePatch(
     name = "Spoof Play Store Install",
-    description = "Treats sideloaded Noji installations as Play Store installations.",
+    description = "Treats sideloaded Noji installations as Play Store installations and reports the Play Store installer to app code.",
     default = true,
 ) {
     compatibleWith(COMPATIBILITY_NOJI)
