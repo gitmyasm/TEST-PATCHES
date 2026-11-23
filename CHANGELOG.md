@@ -1,3 +1,9 @@
+## [1.0.0-dev.14](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.13...v1.0.0-dev.14) (2026-11-23)
+
+### ✨ New Features
+
+* **banglakeyboard:** consolidate ads and promoted apps patch ([6769d65](https://github.com/gitmyasm/TEST-PATCHES/commit/6769d6538b2addb26e63c9a2f447295b010e53b0))
+
 ## [1.0.0-dev.13](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.12...v1.0.0-dev.13) (2026-11-23)
 
 ### ✨ New Features

@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.13",
+  "version": "1.0.0-dev.14",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -52,33 +52,6 @@
                 "X86_64": 72701,
                 "X86": 72701
               },
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Ads",
-      "description": "Removes ad identifiers and promotional app-suggestion screens from Bangla Keyboard.",
-      "default": false,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.bangla.keyboard.for.android",
-          "name": "Bangla Keyboard",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1976D2",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "17.7.3",
-              "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -148,6 +121,33 @@
       "options": []
     },
     {
+      "name": "Remove Ads & Promoted Apps",
+      "description": "Removes ad identifiers, promotional app screens, and the promoted app row above the keyboard.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.bangla.keyboard.for.android",
+          "name": "Bangla Keyboard",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#1976D2",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "17.7.3",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Remove PDF Watermark",
       "description": "Stops the PDF watermark from being drawn into exported and shared PDFs.",
       "default": false,
@@ -170,33 +170,6 @@
                 "X86_64": 72701,
                 "X86": 72701
               },
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Promoted Suggestions",
-      "description": "Hides the promoted app-suggestion row above the keyboard.",
-      "default": false,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.bangla.keyboard.for.android",
-          "name": "Bangla Keyboard",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1976D2",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "17.7.3",
-              "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -250,33 +223,6 @@
           "targets": [
             {
               "version": "26.44.0",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Unnecessary Garbage",
-      "description": "Removes testing/debug screens and build-only files from Bangla Keyboard.",
-      "default": false,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.bangla.keyboard.for.android",
-          "name": "Bangla Keyboard",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1976D2",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "17.7.3",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
