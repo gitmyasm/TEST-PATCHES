@@ -1,3 +1,9 @@
+## [1.0.0-dev.23](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.22...v1.0.0-dev.23) (2026-11-23)
+
+### ✨ New Features
+
+* Add EdrawMind UI removal patches ([6c3dd0e](https://github.com/gitmyasm/TEST-PATCHES/commit/6c3dd0e5a1b98f9d3d217a926bfc2f9897f1906f))
+
 ## [1.0.0-dev.22](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.21...v1.0.0-dev.22) (2026-11-23)
 
 ### ✨ New Features
