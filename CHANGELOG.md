@@ -1,3 +1,168 @@
+## [1.0.0-dev.19](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.18...v1.0.0-dev.19) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* remove promoted Bangla and Nice Mind patches ([6b18696](https://github.com/gitmyasm/TEST-PATCHES/commit/6b186962d08a5b0811a8f1e21ee60af15275aa1e))
+
+## [1.0.0-dev.18](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.17...v1.0.0-dev.18) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **banglakeyboard:** keep spoof patch self-contained ([2515326](https://github.com/gitmyasm/TEST-PATCHES/commit/2515326a11fc6ed077e066ecc012a7103416d0a5))
+
+## [1.0.0-dev.17](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.16...v1.0.0-dev.17) (2026-11-23)
+
+### ✨ New Features
+
+* **banglakeyboard:** add spoof app signature patch ([7298611](https://github.com/gitmyasm/TEST-PATCHES/commit/729861175babc1d6060499e6d2e00063a099aeb6))
+
+## [1.0.0-dev.16](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.15...v1.0.0-dev.16) (2026-11-23)
+
+### ✨ New Features
+
+* **camscanner:** add offline mode patches ([7167287](https://github.com/gitmyasm/TEST-PATCHES/commit/7167287fda80e73b80d9788b8bb935fd5fc2e69e))
+
+## [1.0.0-dev.15](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-11-23)
+
+### ✨ New Features
+
+* **camscanner:** add spoof app signature patch ([4069a5e](https://github.com/gitmyasm/TEST-PATCHES/commit/4069a5ef507514ea700e14e7dd22e489aeeda538))
+
+## [1.0.0-dev.14](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.13...v1.0.0-dev.14) (2026-11-23)
+
+### ✨ New Features
+
+* **banglakeyboard:** consolidate ads and promoted apps patch ([6769d65](https://github.com/gitmyasm/TEST-PATCHES/commit/6769d6538b2addb26e63c9a2f447295b010e53b0))
+
+## [1.0.0-dev.13](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.12...v1.0.0-dev.13) (2026-11-23)
+
+### ✨ New Features
+
+* **camscanner:** add selectable ads, piracy, premium, watermark patches ([87bc817](https://github.com/gitmyasm/TEST-PATCHES/commit/87bc817090d56c8bdc75f70a99d0a913e3bf7b94))
+
+## [1.0.0-dev.12](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.11...v1.0.0-dev.12) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **banglakeyboard:** keep Firebase init when disabling trackers ([44aa8c6](https://github.com/gitmyasm/TEST-PATCHES/commit/44aa8c6d8db0f5141c513dc50d48bfb5b9b9f84a))
+* **banglakeyboard:** use explicit appendChild lambda parameter ([6031cf8](https://github.com/gitmyasm/TEST-PATCHES/commit/6031cf8ab948fdbae1fa2191a5bb23cb1d113227))
+* **banglakeyboard:** use receiver-style appendChild lambda ([545ad7d](https://github.com/gitmyasm/TEST-PATCHES/commit/545ad7dc57917a962d9ae4c09ba80008de5a53bb))
+
+## [1.0.0-dev.11](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.10...v1.0.0-dev.11) (2026-11-23)
+
+### ✨ New Features
+
+* **banglakeyboard:** add promoted suggestions removal patch ([e594265](https://github.com/gitmyasm/TEST-PATCHES/commit/e594265e90da95545565b0f5e84a54181123b50a))
+
+## [1.0.0-dev.10](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.9...v1.0.0-dev.10) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **noji:** disable Pairip checks for AOSP installations ([aa5b197](https://github.com/gitmyasm/TEST-PATCHES/commit/aa5b197f0fb7ba4c0a60c7566f964104a1c30ffb))
+
+## [1.0.0-dev.9](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.8...v1.0.0-dev.9) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **noji:** match Pairip installer check as instance method ([9e20a6e](https://github.com/gitmyasm/TEST-PATCHES/commit/9e20a6e5a01ef6c5c7d2206ba497576f037e2d23))
+* restore semantic-release git notes publishing ([9035f17](https://github.com/gitmyasm/TEST-PATCHES/commit/9035f17f46a1922c6199f9fef09d797a5096b01b))
+
+## [1.0.0-dev.8](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.7...v1.0.0-dev.8) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* clean up release workflow comments ([f711d63](https://github.com/gitmyasm/TEST-PATCHES/commit/f711d63395d15d27667d60fc4231f43170b47e19))
+* **noji:** match Pairip installer check as instance method ([9e20a6e](https://github.com/gitmyasm/TEST-PATCHES/commit/9e20a6e5a01ef6c5c7d2206ba497576f037e2d23))
+* **noji:** report Play Store installer to app code ([96e4232](https://github.com/gitmyasm/TEST-PATCHES/commit/96e4232893a89911e4847785e64a0db4731d95ab))
+* **noji:** spoof Play Store install source ([35deb73](https://github.com/gitmyasm/TEST-PATCHES/commit/35deb73f3dc4a944eab4aed437b84ed593e5abdb))
+* skip unsupported git notes push during release ([791bab9](https://github.com/gitmyasm/TEST-PATCHES/commit/791bab96365132c1910ae281af405383893f24a6))
+
+## [1.0.0-dev.8](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.7...v1.0.0-dev.8) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* clean up release workflow comments ([f711d63](https://github.com/gitmyasm/TEST-PATCHES/commit/f711d63395d15d27667d60fc4231f43170b47e19))
+* **noji:** report Play Store installer to app code ([96e4232](https://github.com/gitmyasm/TEST-PATCHES/commit/96e4232893a89911e4847785e64a0db4731d95ab))
+* **noji:** spoof Play Store install source ([35deb73](https://github.com/gitmyasm/TEST-PATCHES/commit/35deb73f3dc4a944eab4aed437b84ed593e5abdb))
+* skip unsupported git notes push during release ([791bab9](https://github.com/gitmyasm/TEST-PATCHES/commit/791bab96365132c1910ae281af405383893f24a6))
+
+## [1.0.0-dev.9](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.8...v1.0.0-dev.9) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **noji:** report Play Store installer to app code ([96e4232](https://github.com/gitmyasm/TEST-PATCHES/commit/96e4232893a89911e4847785e64a0db4731d95ab))
+* skip unsupported git notes push during release ([791bab9](https://github.com/gitmyasm/TEST-PATCHES/commit/791bab96365132c1910ae281af405383893f24a6))
+
+## [1.0.0-dev.9](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.8...v1.0.0-dev.9) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **noji:** report Play Store installer to app code ([96e4232](https://github.com/gitmyasm/TEST-PATCHES/commit/96e4232893a89911e4847785e64a0db4731d95ab))
+
+## [1.0.0-dev.8](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.7...v1.0.0-dev.8) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **noji:** spoof Play Store install source ([35deb73](https://github.com/gitmyasm/TEST-PATCHES/commit/35deb73f3dc4a944eab4aed437b84ed593e5abdb))
+
+## [1.0.0-dev.7](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.6...v1.0.0-dev.7) (2026-11-22)
+
+### ✨ New Features
+
+* **noji:** add selectable unlock, ads, and trackers patches ([a39e417](https://github.com/gitmyasm/TEST-PATCHES/commit/a39e41774afe18cd4573b475786395fcdafbdfc1))
+
+## [1.0.0-dev.6](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.5...v1.0.0-dev.6) (2026-11-22)
+
+### 🐛 Bug Fixes
+
+* Remove manifest components from the application element ([379f4d0](https://github.com/gitmyasm/TEST-PATCHES/commit/379f4d0c5c0d686cb42cbe782462d7476725cc53))
+
+## [1.0.0-dev.5](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.4...v1.0.0-dev.5) (2026-11-22)
+
+### ✨ New Features
+
+* Add selectable ad, tracker and junk removal patches ([0670d7b](https://github.com/gitmyasm/TEST-PATCHES/commit/0670d7b8902e8a3b055d3f1ee2770c503b0889fd))
+
+## [1.0.0-dev.4](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-11-22)
+
+### ✨ New Features
+
+* Add Bangla Keyboard premium unlock ([2630335](https://github.com/gitmyasm/TEST-PATCHES/commit/26303350c2467eafb09cd67f48d3d1043f6ee06c))
+* Add CamScanner clean-mod patch ([c3fcd25](https://github.com/gitmyasm/TEST-PATCHES/commit/c3fcd256c8ea1b1fb8d5ea1628f9a0ff43eea600))
+* Add CamScanner clean-mod patch ([05f4d00](https://github.com/gitmyasm/TEST-PATCHES/commit/05f4d00cf422cdbdd7fad99a8f33360167fd9400))
+
+### 🐛 Bug Fixes
+
+* Correct replaceInstruction import ([f82fc21](https://github.com/gitmyasm/TEST-PATCHES/commit/f82fc2151523b014707e5067a8b48b40effa7e56))
+* Escape type name in billing fingerprint ([38589ce](https://github.com/gitmyasm/TEST-PATCHES/commit/38589ceae0b27be4d4eb78fb23f1dea1bf470b99))
+* Recompute DEX checksum after marker removal ([1f6176a](https://github.com/gitmyasm/TEST-PATCHES/commit/1f6176a52ec4b1a3ada88df0d0b9b4a19d39a137))
+* Replace marker const-strings via bytecode ([ffd15c6](https://github.com/gitmyasm/TEST-PATCHES/commit/ffd15c6f9e7766ea776d76e167339d81464d98e3))
+* Replace marker strings through bytecode API ([3121e4c](https://github.com/gitmyasm/TEST-PATCHES/commit/3121e4c91eb89aa36d1980781d950cdbe7850df9))
+
+## [1.0.0-dev.6](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.5...v1.0.0-dev.6) (2026-11-22)
+
+### 🐛 Bug Fixes
+
+* Correct replaceInstruction import ([f82fc21](https://github.com/gitmyasm/TEST-PATCHES/commit/f82fc2151523b014707e5067a8b48b40effa7e56))
+* Replace marker const-strings via bytecode ([ffd15c6](https://github.com/gitmyasm/TEST-PATCHES/commit/ffd15c6f9e7766ea776d76e167339d81464d98e3))
+* Replace marker strings through bytecode API ([3121e4c](https://github.com/gitmyasm/TEST-PATCHES/commit/3121e4c91eb89aa36d1980781d950cdbe7850df9))
+
+## [1.0.0-dev.5](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.4...v1.0.0-dev.5) (2026-11-22)
+
+### ✨ New Features
+
+* Add CamScanner clean-mod patch ([c3fcd25](https://github.com/gitmyasm/TEST-PATCHES/commit/c3fcd256c8ea1b1fb8d5ea1628f9a0ff43eea600))
+
+### 🐛 Bug Fixes
+
+* Recompute DEX checksum after marker removal ([1f6176a](https://github.com/gitmyasm/TEST-PATCHES/commit/1f6176a52ec4b1a3ada88df0d0b9b4a19d39a137))
+
+## [1.0.0-dev.4](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-11-22)
+
+### ✨ New Features
+
+* Add CamScanner clean-mod patch ([05f4d00](https://github.com/gitmyasm/TEST-PATCHES/commit/05f4d00cf422cdbdd7fad99a8f33360167fd9400))
+
 ## [1.0.0-dev.3](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-11-22)
 
 ### ✨ New Features
