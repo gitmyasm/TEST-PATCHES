@@ -47,6 +47,28 @@ object SubscriptionRefuelFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
+/** Returns the locally cached AI credit balance. */
+object AICreditBalanceEventFingerprint : Fingerprint(
+    definingClass = "Lcom/edrawsoft/mindmaster/view/app_view/member/presenter/GetAIDotPresenter\$AIDotEvent;",
+    name = "d",
+    isStatic = false,
+    returnType = "I",
+    parameters = emptyList(),
+)
+
+/** Generic preference reader; used here to intercept the cached AI balance key. */
+object PreferenceReaderFingerprint : Fingerprint(
+    definingClass = "Lcom/edrawsoft/util/SharedPreferenceUtil;",
+    name = "e",
+    isStatic = true,
+    returnType = "Ljava/lang/Object;",
+    parameters = listOf(
+        "Landroid/content/Context;",
+        "Ljava/lang/String;",
+        "Ljava/lang/Object;",
+    ),
+)
+
 /** Renders operation banners in home, community, mine and member screens. */
 object OperationBannerRendererFingerprint : Fingerprint(
     definingClass = "Lcom/edrawsoft/mindmaster/biz/operation/OperationHelper;",
