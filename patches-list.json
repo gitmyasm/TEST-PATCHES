@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.14",
+  "version": "1.0.0-dev.15",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -224,6 +224,38 @@
             {
               "version": "26.44.0",
               "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof app signature",
+      "description": "Reports the original signing certificate to the app so tamper and licence checks pass.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.intsig.camscanner",
+          "name": "CamScanner",
+          "description": null,
+          "apkFileType": "APKM_REQUIRED",
+          "appIconColor": "#19BCAA",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.27.0.2609220000",
+              "versionCodes": {
+                "ARM64_V8A": 72701,
+                "ARMEABI_V7A": 72701,
+                "X86_64": 72701,
+                "X86": 72701
+              },
               "isExperimental": false,
               "minSdk": null,
               "description": null

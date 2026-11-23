@@ -1,3 +1,9 @@
+## [1.0.0-dev.15](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-11-23)
+
+### ✨ New Features
+
+* **camscanner:** add spoof app signature patch ([4069a5e](https://github.com/gitmyasm/TEST-PATCHES/commit/4069a5ef507514ea700e14e7dd22e489aeeda538))
+
 ## [1.0.0-dev.14](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.13...v1.0.0-dev.14) (2026-11-23)
 
 ### ✨ New Features
