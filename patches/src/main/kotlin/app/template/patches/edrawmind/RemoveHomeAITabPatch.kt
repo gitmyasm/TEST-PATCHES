@@ -38,7 +38,7 @@ val removeHomeAITabPatch = bytecodePatch(
                 iget-object v0, p0, Lcom/edrawsoft/mindmaster/view/app_view/main/PhoneGlobalMainImpl;->binding:Lcom/edrawsoft/mindmaster/databinding/ActivityMainPhoneGlobalBinding;
                 iget-object v0, v0, Lcom/edrawsoft/mindmaster/databinding/ActivityMainPhoneGlobalBinding;->layoutMainPageContent:Lcom/edrawsoft/mindmaster/databinding/LayoutMainpageContentBinding;
                 iget-object v0, v0, Lcom/edrawsoft/mindmaster/databinding/LayoutMainpageContentBinding;->linearTabAi:Landroid/widget/LinearLayout;
-                const/4 v1, 0x8
+                const/16 v1, 0x8
                 invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
             """.trimIndent(),
         )
