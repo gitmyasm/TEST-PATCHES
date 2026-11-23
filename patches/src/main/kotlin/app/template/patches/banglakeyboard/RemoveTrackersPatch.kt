@@ -2,73 +2,53 @@ package app.template.patches.banglakeyboard
 
 import app.morphe.patcher.patch.patch
 
+private val TRACKER_PERMISSIONS = setOf(
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+)
+
 private val TRACKER_SERVICES = setOf(
     "com.deshkeyboard.analytics.firebase.messaging.FireBaseNotificationHelper",
     "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
     "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
-    "com.google.android.gms.measurement.AppMeasurementJobService",
-    "com.google.android.gms.measurement.AppMeasurementService",
-    "com.google.firebase.components.ComponentDiscoveryService",
-    "com.google.firebase.messaging.FirebaseMessagingService",
-    "com.google.firebase.sessions.SessionLifecycleService",
 )
 
 private val TRACKER_RECEIVERS = setOf(
     "com.facebook.AuthenticationTokenManager\$CurrentAuthenticationTokenChangedBroadcastReceiver",
     "com.facebook.CurrentAccessTokenExpirationBroadcastReceiver",
     "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
-    "com.google.android.gms.measurement.AppMeasurementReceiver",
-    "com.google.firebase.iid.FirebaseInstanceIdReceiver",
 )
 
-private val TRACKER_PROVIDERS = setOf(
-    "com.facebook.internal.FacebookInitProvider",
-    "com.google.firebase.provider.FirebaseInitProvider",
+/**
+ * The app initializes Firebase Analytics and Crashlytics in its Application
+ * class, so the init providers and component registrars must stay in place.
+ * Disabling collection through metadata stops the tracking without breaking
+ * startup.
+ */
+private val TRACKER_FLAGS = mapOf(
+    "com.facebook.sdk.AdvertiserIDCollectionEnabled" to "false",
+    "com.facebook.sdk.AutoInitEnabled" to "false",
+    "com.facebook.sdk.AutoLogAppEventsEnabled" to "false",
+    "firebase_analytics_collection_deactivated" to "true",
+    "firebase_crashlytics_collection_enabled" to "false",
+    "google_analytics_adid_collection_enabled" to "false",
+    "google_analytics_ssaid_collection_enabled" to "false",
 )
 
-private val TRACKER_PERMISSIONS = setOf(
-    "com.google.android.c2dm.permission.RECEIVE",
-    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
-)
-
-private val TRACKER_META_DATA = setOf(
-    "backend:com.google.android.datatransport.cct.CctBackendFactory",
-    "com.facebook.sdk.ApplicationId",
-    "com.facebook.sdk.AutoInitEnabled",
-    "com.facebook.sdk.AutoLogAppEventsEnabled",
-    "com.facebook.sdk.ClientToken",
-    "com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar",
-    "com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar",
-    "com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar",
-    "com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar",
-    "com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar",
-    "com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar",
-    "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar",
-    "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar",
-    "com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar",
-    "com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar",
-    "com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar",
-    "com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar",
-    "com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar",
-    "com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar",
-)
-
-/** Removes telemetry services, receivers, providers, permissions and metadata. */
+/** Disables telemetry while keeping the SDK initialization the app depends on. */
 @Suppress("unused")
 val removeTrackersPatch = patch(
     name = "Remove Trackers",
-    description = "Removes analytics, crash reporting, messaging and install-referrer components.",
+    description = "Disables analytics, crash reporting and ad-identifier collection while keeping app startup intact.",
     default = false,
 ) {
     compatibleWith(COMPATIBILITY_BANGLA_KEYBOARD)
 
     execute {
         editManifest {
+            removePermissions(TRACKER_PERMISSIONS)
             removeComponents("service", TRACKER_SERVICES)
             removeComponents("receiver", TRACKER_RECEIVERS)
-            removeComponents("provider", TRACKER_PROVIDERS)
-            removePermissions(TRACKER_PERMISSIONS)
-            removeMetaData(TRACKER_META_DATA)
+            TRACKER_FLAGS.forEach { (name, value) -> setMetaData(setOf(name), value) }
         }
     }
 }
