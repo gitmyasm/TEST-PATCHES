@@ -3,6 +3,7 @@ package app.template.patches.edrawmind
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.removeInstructions
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.returnEarly
 
 /**
  * Removes the server-backed Edraw AI tab from the global home screen.
@@ -30,6 +31,8 @@ val removeHomeAITabPatch = bytecodePatch(
                 sput v0, Lcom/edrawsoft/mindmaster/view/app_view/main/MainPageConst;->POSTER_INDEX:I
             """.trimIndent(),
         )
+        // Keep the device-specific recalculation from restoring the old slot.
+        MainPageIndicesDeviceFingerprint.method.returnEarly()
 
         // Hide the AI tab view itself.
         GlobalMainTabSetupFingerprint.method.addInstructions(

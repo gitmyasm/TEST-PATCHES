@@ -96,6 +96,15 @@ object MainPageIndicesFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
+/** Device-specific tab index recalculation that would restore the AI tab slot. */
+object MainPageIndicesDeviceFingerprint : Fingerprint(
+    definingClass = "Lcom/edrawsoft/mindmaster/view/app_view/main/MainPageConst;",
+    name = "b",
+    isStatic = true,
+    returnType = "V",
+    parameters = emptyList(),
+)
+
 /** Sets up navigation tab click listeners in the global main screen. */
 object GlobalMainTabSetupFingerprint : Fingerprint(
     definingClass = "Lcom/edrawsoft/mindmaster/view/app_view/main/PhoneGlobalMainImpl;",
