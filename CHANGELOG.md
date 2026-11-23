@@ -2,6 +2,13 @@
 
 ### 🐛 Bug Fixes
 
+* Clarify Paytm root bypass patch description ([0f40ff6](https://github.com/gitmyasm/TEST-PATCHES/commit/0f40ff6a3236585e23e8ab90202bd8a030c4255d))
+* Target Paytm OAuth rooted-device check ([53962b4](https://github.com/gitmyasm/TEST-PATCHES/commit/53962b46a7e2ed71ffa9026f4fa1d223e98391a7))
+
+## [1.0.0-dev.30](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.29...v1.0.0-dev.30) (2026-11-23)
+
+### 🐛 Bug Fixes
+
 * Target Paytm OAuth rooted-device check ([53962b4](https://github.com/gitmyasm/TEST-PATCHES/commit/53962b46a7e2ed71ffa9026f4fa1d223e98391a7))
 
 ## [1.0.0-dev.29](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.28...v1.0.0-dev.29) (2026-11-23)
