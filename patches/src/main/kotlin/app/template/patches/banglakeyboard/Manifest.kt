@@ -32,9 +32,9 @@ internal fun ResourceXml.setMetaData(names: Set<String>, value: String) {
         if (existing != null) {
             existing.setAttribute(ANDROID_VALUE, value)
         } else {
-            application.appendChild("meta-data") { element ->
-                element.setAttribute(ANDROID_NAME, name)
-                element.setAttribute(ANDROID_VALUE, value)
+            application.appendChild("meta-data") {
+                setAttribute(ANDROID_NAME, name)
+                setAttribute(ANDROID_VALUE, value)
             }
         }
     }
