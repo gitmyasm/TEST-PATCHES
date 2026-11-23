@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-23T12:17:17",
-  "description": "## [1.0.0-dev.15](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-11-23)\n\n### ✨ New Features\n\n* **camscanner:** add spoof app signature patch ([4069a5e](https://github.com/gitmyasm/TEST-PATCHES/commit/4069a5ef507514ea700e14e7dd22e489aeeda538))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.15/patches-1.0.0-dev.15.mpp",
+  "created_at": "2026-11-23T12:29:58",
+  "description": "## [1.0.0-dev.16](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.15...v1.0.0-dev.16) (2026-11-23)\n\n### ✨ New Features\n\n* **camscanner:** add offline mode patches ([7167287](https://github.com/gitmyasm/TEST-PATCHES/commit/7167287fda80e73b80d9788b8bb935fd5fc2e69e))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.16/patches-1.0.0-dev.16.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.15"
+  "version": "1.0.0-dev.16"
 }

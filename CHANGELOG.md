@@ -1,3 +1,9 @@
+## [1.0.0-dev.16](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.15...v1.0.0-dev.16) (2026-11-23)
+
+### ✨ New Features
+
+* **camscanner:** add offline mode patches ([7167287](https://github.com/gitmyasm/TEST-PATCHES/commit/7167287fda80e73b80d9788b8bb935fd5fc2e69e))
+
 ## [1.0.0-dev.15](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.14...v1.0.0-dev.15) (2026-11-23)
 
 ### ✨ New Features

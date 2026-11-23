@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.15",
+  "version": "1.0.0-dev.16",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -32,6 +32,38 @@
     {
       "name": "Hide Piracy Warning",
       "description": "Removes the local genuine-copy warning dialog and toast without changing the app's internal state.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.intsig.camscanner",
+          "name": "CamScanner",
+          "description": null,
+          "apkFileType": "APKM_REQUIRED",
+          "appIconColor": "#19BCAA",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.27.0.2609220000",
+              "versionCodes": {
+                "ARM64_V8A": 72701,
+                "ARMEABI_V7A": 72701,
+                "X86_64": 72701,
+                "X86": 72701
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Offline Mode",
+      "description": "Removes the INTERNET permission so CamScanner cannot open network connections. Local scanning, editing and exports stay available.",
       "default": false,
       "category": null,
       "compatiblePackages": [
@@ -138,6 +170,38 @@
             {
               "version": "17.7.3",
               "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Network Components",
+      "description": "Removes upload, push, ad and telemetry components that expect network access, and disables remaining analytics flags.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.intsig.camscanner",
+          "name": "CamScanner",
+          "description": null,
+          "apkFileType": "APKM_REQUIRED",
+          "appIconColor": "#19BCAA",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.27.0.2609220000",
+              "versionCodes": {
+                "ARM64_V8A": 72701,
+                "ARMEABI_V7A": 72701,
+                "X86_64": 72701,
+                "X86": 72701
+              },
               "isExperimental": false,
               "minSdk": null,
               "description": null
