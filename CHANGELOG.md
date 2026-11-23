@@ -1,3 +1,10 @@
+## [1.0.0-dev.9](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.8...v1.0.0-dev.9) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **noji:** match Pairip installer check as instance method ([9e20a6e](https://github.com/gitmyasm/TEST-PATCHES/commit/9e20a6e5a01ef6c5c7d2206ba497576f037e2d23))
+* restore semantic-release git notes publishing ([9035f17](https://github.com/gitmyasm/TEST-PATCHES/commit/9035f17f46a1922c6199f9fef09d797a5096b01b))
+
 ## [1.0.0-dev.8](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.7...v1.0.0-dev.8) (2026-11-23)
 
 ### 🐛 Bug Fixes
