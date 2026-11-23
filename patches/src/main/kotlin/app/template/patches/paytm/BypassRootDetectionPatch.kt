@@ -17,7 +17,6 @@ val bypassRootDetectionPatch = bytecodePatch(
     compatibleWith(COMPATIBILITY_PAYTM)
 
     execute {
-        RootPathCheckFingerprint.method.returnEarly(false)
-        RootPathScanFingerprint.method.returnEarly(false)
+        OAuthRootedDeviceFingerprint.method.returnEarly(false)
     }
 }

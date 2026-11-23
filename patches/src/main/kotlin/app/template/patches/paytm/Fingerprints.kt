@@ -38,20 +38,11 @@ object SSLPinningCronetPinsFingerprint : Fingerprint(
     parameters = listOf("Landroid/content/Context;"),
 )
 
-/** Local root-path detection helper used by Paytm utilities. */
-object RootPathCheckFingerprint : Fingerprint(
-    definingClass = "Lp497q7/LNd998w;",
-    name = "cn2fu",
-    isStatic = true,
+/** OAuth data provider reports rooted device status to the OAuth module. */
+object OAuthRootedDeviceFingerprint : Fingerprint(
+    definingClass = "Ldc/MY3jR;",
+    name = "isRootedDevice",
+    isStatic = false,
     returnType = "Z",
-    parameters = listOf("Landroid/content/Context;"),
-)
-
-/** Root-path scan implementation. */
-object RootPathScanFingerprint : Fingerprint(
-    definingClass = "Lp497q7/LNd998w;",
-    name = "gbFHS2",
-    isStatic = true,
-    returnType = "Z",
-    parameters = listOf("Landroid/content/Context;", "Lp497q7/W7Cnq5;"),
+    parameters = emptyList(),
 )
