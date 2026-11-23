@@ -1,3 +1,11 @@
+## [1.0.0-dev.12](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.11...v1.0.0-dev.12) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* **banglakeyboard:** keep Firebase init when disabling trackers ([44aa8c6](https://github.com/gitmyasm/TEST-PATCHES/commit/44aa8c6d8db0f5141c513dc50d48bfb5b9b9f84a))
+* **banglakeyboard:** use explicit appendChild lambda parameter ([6031cf8](https://github.com/gitmyasm/TEST-PATCHES/commit/6031cf8ab948fdbae1fa2191a5bb23cb1d113227))
+* **banglakeyboard:** use receiver-style appendChild lambda ([545ad7d](https://github.com/gitmyasm/TEST-PATCHES/commit/545ad7dc57917a962d9ae4c09ba80008de5a53bb))
+
 ## [1.0.0-dev.11](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.10...v1.0.0-dev.11) (2026-11-23)
 
 ### ✨ New Features

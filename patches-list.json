@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.11",
+  "version": "1.0.0-dev.12",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -112,7 +112,7 @@
     },
     {
       "name": "Remove Trackers",
-      "description": "Removes analytics, crash reporting, messaging and install-referrer components.",
+      "description": "Disables analytics, crash reporting and ad-identifier collection while keeping app startup intact.",
       "default": false,
       "category": null,
       "compatiblePackages": [
