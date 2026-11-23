@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.25",
+  "version": "1.0.0-dev.26",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -113,6 +113,33 @@
     {
       "name": "Remove Home AI Tab",
       "description": "Removes the server-backed Edraw AI tab from the home screen.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.edrawsoft.mindmasterg",
+          "name": "EdrawMind",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#1A73E8",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.10.15",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Home Poster Tab",
+      "description": "Removes the poster tab from the home screen.",
       "default": true,
       "category": null,
       "compatiblePackages": [

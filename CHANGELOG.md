@@ -1,3 +1,9 @@
+## [1.0.0-dev.26](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.25...v1.0.0-dev.26) (2026-11-23)
+
+### ✨ New Features
+
+* Add EdrawMind home poster tab removal patch ([3cad928](https://github.com/gitmyasm/TEST-PATCHES/commit/3cad928e23e99b5d87f2ead4fbefe1b3d0fe8cc1))
+
 ## [1.0.0-dev.25](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.24...v1.0.0-dev.25) (2026-11-23)
 
 ### 🐛 Bug Fixes
