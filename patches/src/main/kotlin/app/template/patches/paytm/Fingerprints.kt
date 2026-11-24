@@ -82,3 +82,12 @@ object EmulatorDetectionRuleFingerprint : Fingerprint(
     returnType = "V",
     parameters = listOf("Lai/protectt/app/security/shouldnotobfuscated/dto/Rule;"),
 )
+
+/** Local Paytm ad view JSON rendering entry point. */
+object PaytmAdViewSetAdDataJsonFingerprint : Fingerprint(
+    definingClass = "Lcom/paytm/ads/PaytmAdView;",
+    name = "setAdDataJson",
+    isStatic = false,
+    returnType = "V",
+    parameters = listOf("Ljava/lang/String;"),
+)
