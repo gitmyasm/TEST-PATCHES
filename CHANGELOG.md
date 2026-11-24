@@ -1,3 +1,9 @@
+## [1.0.0-dev.36](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.35...v1.0.0-dev.36) (2026-11-24)
+
+### ✨ New Features
+
+* Add Cool Mind local unlock patches ([588d3da](https://github.com/gitmyasm/TEST-PATCHES/commit/588d3da9886f569aedfe2ea40eebde90ee9785bc))
+
 ## [1.0.0-dev.35](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.34...v1.0.0-dev.35) (2026-11-24)
 
 ### ✨ New Features

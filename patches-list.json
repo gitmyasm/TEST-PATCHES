@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.35",
+  "version": "1.0.0-dev.36",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -19,6 +19,33 @@
           "targets": [
             {
               "version": "26.44.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Cool Mind License Check",
+      "description": "Bypasses the local Pairip license check that can redirect to Play Store.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "mindmap.mind.cool",
+          "name": "Cool Mind",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#3F51B5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.0.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -300,168 +327,6 @@
       "options": []
     },
     {
-      "name": "Remove Coin Purchase Page",
-      "description": "Disables navigation to the AI coin purchase screen.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.edrawsoft.mindmasterg",
-          "name": "EdrawMind",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1A73E8",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "7.10.15",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Feature Limits",
-      "description": "Bypasses the local paid-feature limit checks used across the app.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.edrawsoft.mindmasterg",
-          "name": "EdrawMind",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1A73E8",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "7.10.15",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Home AI Tab",
-      "description": "Removes the server-backed Edraw AI tab from the home screen.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.edrawsoft.mindmasterg",
-          "name": "EdrawMind",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1A73E8",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "7.10.15",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Home Poster Tab",
-      "description": "Removes the poster tab from the home screen.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.edrawsoft.mindmasterg",
-          "name": "EdrawMind",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1A73E8",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "7.10.15",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Promotional Banners",
-      "description": "Hides operation banners, popups and snackbars in the main app screens.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.edrawsoft.mindmasterg",
-          "name": "EdrawMind",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1A73E8",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "7.10.15",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Rating Dialog",
-      "description": "Disables the in-app rating prompt and its counter flow.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.edrawsoft.mindmasterg",
-          "name": "EdrawMind",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1A73E8",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "7.10.15",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
       "name": "Remove Trackers",
       "description": "Removes analytics, install-referrer, crash, and diagnostics components from Noji.",
       "default": false,
@@ -489,22 +354,22 @@
       "options": []
     },
     {
-      "name": "Spoof AI Credit Balance",
-      "description": "Reports a large local AI credit balance so local credit checks pass.",
+      "name": "Spoof Cool Mind Local Purchase",
+      "description": "Reports a synthetic active premium purchase to the local billing bridge.",
       "default": true,
       "category": null,
       "compatiblePackages": [
         {
-          "packageName": "com.edrawsoft.mindmasterg",
-          "name": "EdrawMind",
+          "packageName": "mindmap.mind.cool",
+          "name": "Cool Mind",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#1A73E8",
+          "appIconColor": "#3F51B5",
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": "7.10.15",
+              "version": "4.0.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -532,33 +397,6 @@
           "targets": [
             {
               "version": "26.44.0",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Unlock Premium Membership",
-      "description": "Marks the local subscription, lifetime and cross-platform entitlement checks as active.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.edrawsoft.mindmasterg",
-          "name": "EdrawMind",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#1A73E8",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "7.10.15",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
