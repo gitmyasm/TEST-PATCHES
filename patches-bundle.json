@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-24T08:12:26",
-  "description": "## [1.0.0-dev.36](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.35...v1.0.0-dev.36) (2026-11-24)\n\n### ✨ New Features\n\n* Add Cool Mind local unlock patches ([588d3da](https://github.com/gitmyasm/TEST-PATCHES/commit/588d3da9886f569aedfe2ea40eebde90ee9785bc))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.36/patches-1.0.0-dev.36.mpp",
+  "created_at": "2026-11-24T08:16:00",
+  "description": "## [1.0.0-dev.37](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.36...v1.0.0-dev.37) (2026-11-24)\n\n### 🐛 Bug Fixes\n\n* Use from16 register move in Cool Mind purchase patch ([0c9dc49](https://github.com/gitmyasm/TEST-PATCHES/commit/0c9dc492a7321968c754d1a4ecd1989abe3ec346))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.37/patches-1.0.0-dev.37.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.36"
+  "version": "1.0.0-dev.37"
 }

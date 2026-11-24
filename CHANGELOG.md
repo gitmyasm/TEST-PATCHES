@@ -1,3 +1,9 @@
+## [1.0.0-dev.37](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.36...v1.0.0-dev.37) (2026-11-24)
+
+### 🐛 Bug Fixes
+
+* Use from16 register move in Cool Mind purchase patch ([0c9dc49](https://github.com/gitmyasm/TEST-PATCHES/commit/0c9dc492a7321968c754d1a4ecd1989abe3ec346))
+
 ## [1.0.0-dev.36](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.35...v1.0.0-dev.36) (2026-11-24)
 
 ### ✨ New Features
