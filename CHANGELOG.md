@@ -1,3 +1,9 @@
+## [1.0.0-dev.32](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.31...v1.0.0-dev.32) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm emulator detection bypass patch ([01cbd68](https://github.com/gitmyasm/TEST-PATCHES/commit/01cbd6883915c3e48a1a74b6d119f07d764f15c7))
+
 ## [1.0.0-dev.31](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.30...v1.0.0-dev.31) (2026-11-24)
 
 ### ✨ New Features
