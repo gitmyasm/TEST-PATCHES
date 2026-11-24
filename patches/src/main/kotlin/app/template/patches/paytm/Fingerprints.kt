@@ -100,3 +100,12 @@ object NativeIntegrityPathExistsFingerprint : Fingerprint(
     returnType = "Z",
     parameters = listOf("Ljava/lang/String;"),
 )
+
+/** Local Pairip license check entry point. */
+object PairipLicenseCheckFingerprint : Fingerprint(
+    definingClass = "Lcom/pairip/licensecheck/LicenseClient;",
+    name = "checkLicense",
+    isStatic = true,
+    returnType = "V",
+    parameters = listOf("Landroid/content/Context;"),
+)
