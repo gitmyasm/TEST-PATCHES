@@ -1,3 +1,9 @@
+## [1.0.0-dev.35](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.34...v1.0.0-dev.35) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm license check bypass patch ([6edbeaf](https://github.com/gitmyasm/TEST-PATCHES/commit/6edbeaff6860d8f811d4c3f1bb71eb1569f30918))
+
 ## [1.0.0-dev.34](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.33...v1.0.0-dev.34) (2026-11-24)
 
 ### ✨ New Features
