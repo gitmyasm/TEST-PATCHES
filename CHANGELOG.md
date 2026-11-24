@@ -1,3 +1,9 @@
+## [1.0.0-dev.34](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.33...v1.0.0-dev.34) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm root path checks bypass patch ([b3242f7](https://github.com/gitmyasm/TEST-PATCHES/commit/b3242f73af76c417f6484ad4acfc665766a418c1))
+
 ## [1.0.0-dev.33](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.32...v1.0.0-dev.33) (2026-11-24)
 
 ### ✨ New Features

@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-24T07:16:01",
-  "description": "## [1.0.0-dev.33](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.32...v1.0.0-dev.33) (2026-11-24)\n\n### ✨ New Features\n\n* Add Paytm ads disable patch ([f22627d](https://github.com/gitmyasm/TEST-PATCHES/commit/f22627dde8444fe00b89f77fcf9ded3aa2226701))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.33/patches-1.0.0-dev.33.mpp",
+  "created_at": "2026-11-24T07:24:08",
+  "description": "## [1.0.0-dev.34](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.33...v1.0.0-dev.34) (2026-11-24)\n\n### ✨ New Features\n\n* Add Paytm root path checks bypass patch ([b3242f7](https://github.com/gitmyasm/TEST-PATCHES/commit/b3242f73af76c417f6484ad4acfc665766a418c1))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.34/patches-1.0.0-dev.34.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.33"
+  "version": "1.0.0-dev.34"
 }
