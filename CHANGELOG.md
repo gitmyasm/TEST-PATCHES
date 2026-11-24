@@ -1,3 +1,9 @@
+## [1.0.0-dev.31](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.30...v1.0.0-dev.31) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm developer options bypass patch ([de14637](https://github.com/gitmyasm/TEST-PATCHES/commit/de14637b235b6f4a7155e22c35c054d04bd60da7))
+
 ## [1.0.0-dev.30](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.29...v1.0.0-dev.30) (2026-11-24)
 
 ### ✨ New Features
