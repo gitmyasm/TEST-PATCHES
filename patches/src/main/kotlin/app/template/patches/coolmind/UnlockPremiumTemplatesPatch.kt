@@ -38,7 +38,9 @@ val unlockCoolMindPremiumTemplatesPatch = rawResourcePatch(
         // parser always takes the free-template path.
         val offset = 15_065_808
         val expected = byteArrayOf(0x61, 0x00, 0x00, 0x54)
-        val replacement = byteArrayOf(0x04, 0x00, 0x00, 0x14)
+        // Unconditional `b` to 0xE5E2D4, the existing `add x7, x22, #0x30`
+        // that stores the free-template value before returning.
+        val replacement = byteArrayOf(0x01, 0x00, 0x00, 0x14)
         val actual = bytes.copyOfRange(offset, offset + expected.size)
 
         if (!actual.contentEquals(expected)) {
