@@ -1,3 +1,9 @@
+## [1.0.0-dev.39](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.38...v1.0.0-dev.39) (2026-11-24)
+
+### 🐛 Bug Fixes
+
+* Force free template path in Cool Mind patch ([775e336](https://github.com/gitmyasm/TEST-PATCHES/commit/775e336b5b4f44deaee79765383d309b6ce22b16))
+
 ## [1.0.0-dev.38](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.37...v1.0.0-dev.38) (2026-11-24)
 
 ### ✨ New Features
