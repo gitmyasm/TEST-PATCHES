@@ -1,3 +1,9 @@
+## [1.0.0-dev.33](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.32...v1.0.0-dev.33) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm ads disable patch ([f22627d](https://github.com/gitmyasm/TEST-PATCHES/commit/f22627dde8444fe00b89f77fcf9ded3aa2226701))
+
 ## [1.0.0-dev.32](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.31...v1.0.0-dev.32) (2026-11-24)
 
 ### ✨ New Features
