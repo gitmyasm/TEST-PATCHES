@@ -13,13 +13,13 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.30](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.30)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**15 patches** across **3 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+> **[v1.0.0-dev.30](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.30)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**16 patches** across **3 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
 
 | # | App | Patches | Version | Package |
 |---|---|---|---|---|
 | 1 | [**EdrawMind**](PATCHES.md#edrawmind-comedrawsoftmindmasterg) | 8 | `7.10.15` | [`com.edrawsoft.mindmasterg`](https://play.google.com/store/apps/details?id=com.edrawsoft.mindmasterg) |
 | 2 | [**Noji**](PATCHES.md#noji-comvedasappsflashcards) | 4 | `26.44.0` | [`com.vedasapps.flashcards`](https://play.google.com/store/apps/details?id=com.vedasapps.flashcards) |
-| 3 | [**Paytm**](PATCHES.md#paytm-netone97paytm) | 3 | `10.86.13` | [`net.one97.paytm`](https://play.google.com/store/apps/details?id=net.one97.paytm) |
+| 3 | [**Paytm**](PATCHES.md#paytm-netone97paytm) | 4 | `10.86.13` | [`net.one97.paytm`](https://play.google.com/store/apps/details?id=net.one97.paytm) |
 <!-- PATCHES_END -->
 
 ## Cloud reversing (no local tools needed)

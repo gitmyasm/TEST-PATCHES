@@ -30,6 +30,33 @@
       "options": []
     },
     {
+      "name": "Bypass Frida Detection",
+      "description": "Bypasses a local Paytm Frida hook detection check.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "net.one97.paytm",
+          "name": "Paytm",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00B9F5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "10.86.13",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Bypass Root Detection",
       "description": "Bypasses a local Paytm OAuth rooted-device check.",
       "default": true,
