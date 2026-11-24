@@ -73,3 +73,12 @@ object UsbDebuggingEnabledFingerprint : Fingerprint(
     returnType = "Z",
     parameters = listOf("Landroid/content/Context;"),
 )
+
+/** Local Protectt emulator-detection rule check. */
+object EmulatorDetectionRuleFingerprint : Fingerprint(
+    definingClass = "LZ9/Ncz6mJ;",
+    name = "jwHWK",
+    isStatic = true,
+    returnType = "V",
+    parameters = listOf("Lai/protectt/app/security/shouldnotobfuscated/dto/Rule;"),
+)
