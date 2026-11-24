@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.37",
+  "version": "1.0.0-dev.38",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -357,6 +357,33 @@
       "name": "Spoof Cool Mind Local Purchase",
       "description": "Reports a synthetic active premium purchase to the local billing bridge.",
       "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "mindmap.mind.cool",
+          "name": "Cool Mind",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#3F51B5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Cool Mind Premium Templates",
+      "description": "Clears the local premium flag on template catalog entries so premium maps are not locked locally.",
+      "default": false,
       "category": null,
       "compatiblePackages": [
         {

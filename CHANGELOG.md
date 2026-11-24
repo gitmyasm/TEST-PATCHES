@@ -1,3 +1,9 @@
+## [1.0.0-dev.38](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.37...v1.0.0-dev.38) (2026-11-24)
+
+### ✨ New Features
+
+* Add Cool Mind premium template unlock patch ([b9ef2f0](https://github.com/gitmyasm/TEST-PATCHES/commit/b9ef2f00d6a51f4fdcec8402a20615d41e56db45))
+
 ## [1.0.0-dev.37](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.36...v1.0.0-dev.37) (2026-11-24)
 
 ### 🐛 Bug Fixes
