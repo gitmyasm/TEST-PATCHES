@@ -84,7 +84,8 @@ val spoofCoolMindLocalPurchasePatch = bytecodePatch(
                 invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
                 invoke-virtual {v9, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-                iget-object v10, p0, Lmo3;->c:Ljava/lang/Object;
+                move-object/from16 v10, p0
+                iget-object v10, v10, Lmo3;->c:Ljava/lang/Object;
                 check-cast v10, Lzi1;
                 invoke-virtual {v10, v0, v9}, Lzi1;->g(Lko;Ljava/util/List;)V
 
