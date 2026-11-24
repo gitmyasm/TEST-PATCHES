@@ -55,3 +55,21 @@ object FridaHookDetectionFingerprint : Fingerprint(
     returnType = "Z",
     parameters = listOf("Ljava/util/List;"),
 )
+
+/** Local developer options enabled check. */
+object DeveloperOptionsEnabledFingerprint : Fingerprint(
+    definingClass = "LN5/VVpVRy;",
+    name = "eLbhX59K",
+    isStatic = true,
+    returnType = "Z",
+    parameters = listOf("Landroid/content/Context;"),
+)
+
+/** Local USB/ADB/wireless debugging enabled check. */
+object UsbDebuggingEnabledFingerprint : Fingerprint(
+    definingClass = "LN5/VVpVRy;",
+    name = "ivfTYNl",
+    isStatic = true,
+    returnType = "Z",
+    parameters = listOf("Landroid/content/Context;"),
+)
