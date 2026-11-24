@@ -91,3 +91,12 @@ object PaytmAdViewSetAdDataJsonFingerprint : Fingerprint(
     returnType = "V",
     parameters = listOf("Ljava/lang/String;"),
 )
+
+/** Local integrity file/path existence check used by Paytm security scans. */
+object NativeIntegrityPathExistsFingerprint : Fingerprint(
+    definingClass = "LU4/SFMiYa;",
+    name = "eLbhX59K",
+    isStatic = true,
+    returnType = "Z",
+    parameters = listOf("Ljava/lang/String;"),
+)
