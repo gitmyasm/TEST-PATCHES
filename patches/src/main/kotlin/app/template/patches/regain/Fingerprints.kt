@@ -22,7 +22,7 @@ object SubscriptionManagerProCheckFingerprint : Fingerprint(
     returnType = "Ljava/lang/Object;",
     parameters = listOf(
         "Lcom/revenuecat/purchases/CacheFetchPolicy;",
-        "LBw/f;",
+        "LDw/c;",
     ),
 )
 
