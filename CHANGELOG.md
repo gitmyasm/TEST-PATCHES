@@ -1,3 +1,9 @@
+## [1.0.0-dev.47](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.46...v1.0.0-dev.47) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Keep Temp Mail license activity untouched ([2be0afa](https://github.com/gitmyasm/TEST-PATCHES/commit/2be0afa0736b27640d44bcb5474a9f084769af4d))
+
 ## [1.0.0-dev.46](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.45...v1.0.0-dev.46) (2026-11-25)
 
 ### 🐛 Bug Fixes
