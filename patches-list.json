@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.54",
+  "version": "1.0.0-dev.55",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -437,7 +437,7 @@
     {
       "name": "Remove In-House Ads",
       "description": "Disables Regain's local in-house ad screen state machine.",
-      "default": true,
+      "default": false,
       "category": null,
       "compatiblePackages": [
         {
@@ -572,7 +572,7 @@
     {
       "name": "Spoof Local Pro Status",
       "description": "Forces Regain's local Pro-user gates to return true. Server entitlements are unchanged.",
-      "default": true,
+      "default": false,
       "category": null,
       "compatiblePackages": [
         {

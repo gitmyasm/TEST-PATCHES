@@ -1,3 +1,9 @@
+## [1.0.0-dev.55](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.54...v1.0.0-dev.55) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Correct Regain local patch returns and defaults ([556e201](https://github.com/gitmyasm/TEST-PATCHES/commit/556e201e575c5f0c62847f3e1761e89b81f2f46d))
+
 ## [1.0.0-dev.54](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.53...v1.0.0-dev.54) (2026-11-25)
 
 ### ✨ New Features
