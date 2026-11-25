@@ -1,3 +1,13 @@
+## [1.0.0-dev.43](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.42...v1.0.0-dev.43) (2026-11-25)
+
+### ✨ New Features
+
+* Add Temp Mail patches ([f468d52](https://github.com/gitmyasm/TEST-PATCHES/commit/f468d5203f06b83ad424e677771be4fccb8299b5))
+
+### 🐛 Bug Fixes
+
+* Cover Temp Mail app-open ads and resume update checks ([5662ce6](https://github.com/gitmyasm/TEST-PATCHES/commit/5662ce6eaad7d51ff37a6c6a97377a25e3367202))
+
 ## [1.0.0-dev.42](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.41...v1.0.0-dev.42) (2026-11-25)
 
 ### ✨ New Features

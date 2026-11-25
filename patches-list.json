@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.42",
+  "version": "1.0.0-dev.43",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -246,6 +246,60 @@
       "options": []
     },
     {
+      "name": "Bypass Temp Mail License Check",
+      "description": "Bypasses the local Pairip license-check trigger that can redirect to Play Store.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Temp Mail Signature Check",
+      "description": "Bypasses the local Pairip APK signature verification.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Disable Ads",
       "description": "Disables local Paytm ad view rendering.",
       "default": true,
@@ -327,6 +381,33 @@
       "options": []
     },
     {
+      "name": "Disable Temp Mail Update Check",
+      "description": "Disables Temp Mail's local startup and version comparison update checks.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Remove Ads",
       "description": "Removes advertising identifiers and ad SDK components from Noji.",
       "default": false,
@@ -370,6 +451,33 @@
           "targets": [
             {
               "version": "8.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Temp Mail Ads",
+      "description": "Disables Temp Mail's local ad loading gate for all ad formats.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -532,6 +640,33 @@
           "targets": [
             {
               "version": "26.44.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Temp Mail Premium (Local)",
+      "description": "Makes Temp Mail's local free/paid check report premium. Server-side subscription state is unchanged.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
