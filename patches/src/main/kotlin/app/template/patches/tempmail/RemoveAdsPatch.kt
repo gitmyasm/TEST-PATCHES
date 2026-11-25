@@ -6,9 +6,10 @@ import app.morphe.patcher.util.returnEarly
 /**
  * Disables local ad loading at the central AdManager gate.
  *
- * AdManager.f() is consulted before loading interstitial, rewarded, banner,
- * native and app-open ads. Returning false prevents those local ad loads.
- * Remote ad configuration and server-delivered content are not modified.
+ * AdsIntegrityGate.f() is consulted by AdManager and the app-open observer,
+ * while AdManager.f() gates the remaining local ad loaders. Returning false
+ * from both prevents local ad loads across all formats. Remote ad
+ * configuration and server-delivered content are not modified.
  */
 @Suppress("unused")
 val removeTempMailAdsPatch = bytecodePatch(
@@ -19,6 +20,7 @@ val removeTempMailAdsPatch = bytecodePatch(
     compatibleWith(COMPATIBILITY_TEMP_MAIL)
 
     execute {
+        AdsIntegrityGateFingerprint.method.returnEarly(false)
         AdManagerCanRequestAdsFingerprint.method.returnEarly(false)
     }
 }

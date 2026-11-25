@@ -43,7 +43,16 @@ object AppUtilsIsFreeFingerprint : Fingerprint(
     parameters = listOf("Landroid/content/Context;"),
 )
 
-/** Central ad manager gate consulted before loading any ad format. */
+/** Local ad-integrity gate consulted by AdManager and app-open ads. */
+object AdsIntegrityGateFingerprint : Fingerprint(
+    definingClass = "Lcom/tempmail/data/data_source/integrity/AdsIntegrityGate;",
+    name = "f",
+    isStatic = false,
+    returnType = "Z",
+    parameters = emptyList(),
+)
+
+/** Central ad manager gate consulted before loading most ad formats. */
 object AdManagerCanRequestAdsFingerprint : Fingerprint(
     definingClass = "Lcom/tempmail/data/ads/managers/AdManager;",
     name = "f",
@@ -56,6 +65,15 @@ object AdManagerCanRequestAdsFingerprint : Fingerprint(
 object InAppUpdateStartFingerprint : Fingerprint(
     definingClass = "Lcom/tempmail/ui/lifecycles/InAppUpdateLifecycle;",
     name = "k",
+    isStatic = false,
+    returnType = "V",
+    parameters = emptyList(),
+)
+
+/** Rechecks update info on every activity resume. */
+object InAppUpdateResumeFingerprint : Fingerprint(
+    definingClass = "Lcom/tempmail/ui/lifecycles/InAppUpdateLifecycle;",
+    name = "t",
     isStatic = false,
     returnType = "V",
     parameters = emptyList(),
