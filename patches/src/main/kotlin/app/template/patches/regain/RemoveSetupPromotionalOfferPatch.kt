@@ -20,8 +20,8 @@ val removeSetupPromotionalOfferPatch = bytecodePatch(
 
     execute {
         SetupOfferStateBuilderFingerprint.method.addInstructions(
-            92,
-            "const/4 v41, 0x0",
+            90,
+            "sget-object v6, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;",
         )
     }
 }
