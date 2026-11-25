@@ -1,3 +1,13 @@
+## [1.0.0-dev.48](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.47...v1.0.0-dev.48) (2026-11-25)
+
+### ✨ New Features
+
+* Add local Pairip string restore for Temp Mail ([51d08a4](https://github.com/gitmyasm/TEST-PATCHES/commit/51d08a40eacf3505a787216d8957d45ffc0493b1))
+
+### 🐛 Bug Fixes
+
+* Restore Temp Mail runtime setup locally ([fec66f9](https://github.com/gitmyasm/TEST-PATCHES/commit/fec66f91fe6ed763aa18bbeec9064b29f99e7786))
+
 ## [1.0.0-dev.47](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.46...v1.0.0-dev.47) (2026-11-25)
 
 ### 🐛 Bug Fixes

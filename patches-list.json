@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.47",
+  "version": "1.0.0-dev.48",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -532,6 +532,33 @@
           "targets": [
             {
               "version": "26.44.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Restore Temp Mail Local Runtime (No VM)",
+      "description": "Restores obfuscated local runtime values without running Pairip's startup program.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

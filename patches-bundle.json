@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-25T16:24:29",
-  "description": "## [1.0.0-dev.47](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.46...v1.0.0-dev.47) (2026-11-25)\n\n### 🐛 Bug Fixes\n\n* Keep Temp Mail license activity untouched ([2be0afa](https://github.com/gitmyasm/TEST-PATCHES/commit/2be0afa0736b27640d44bcb5474a9f084769af4d))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.47/patches-1.0.0-dev.47.mpp",
+  "created_at": "2026-11-25T16:45:58",
+  "description": "## [1.0.0-dev.48](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.47...v1.0.0-dev.48) (2026-11-25)\n\n### ✨ New Features\n\n* Add local Pairip string restore for Temp Mail ([51d08a4](https://github.com/gitmyasm/TEST-PATCHES/commit/51d08a40eacf3505a787216d8957d45ffc0493b1))\n\n### 🐛 Bug Fixes\n\n* Restore Temp Mail runtime setup locally ([fec66f9](https://github.com/gitmyasm/TEST-PATCHES/commit/fec66f91fe6ed763aa18bbeec9064b29f99e7786))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.48/patches-1.0.0-dev.48.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.47"
+  "version": "1.0.0-dev.48"
 }
