@@ -1,3 +1,9 @@
+## [1.0.0-dev.51](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.50...v1.0.0-dev.51) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Fix inline smali string escaping ([b9bd37d](https://github.com/gitmyasm/TEST-PATCHES/commit/b9bd37daa7009822a84df6488088b20323b7bcdb))
+
 ## [1.0.0-dev.50](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.49...v1.0.0-dev.50) (2026-11-25)
 
 ### 🐛 Bug Fixes
