@@ -1,3 +1,9 @@
+## [1.0.0-dev.42](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.41...v1.0.0-dev.42) (2026-11-25)
+
+### ✨ New Features
+
+* Add Instant Mail update check disable patch ([57fdcb8](https://github.com/gitmyasm/TEST-PATCHES/commit/57fdcb894b641d4f0b6b4f6b711b609b5a9b4135))
+
 ## [1.0.0-dev.41](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.40...v1.0.0-dev.41) (2026-11-25)
 
 ### 🐛 Bug Fixes

@@ -13,12 +13,12 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.41](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.41)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**19 patches** across **4 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+> **[v1.0.0-dev.42](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.42)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**20 patches** across **4 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
 
 | # | App | Patches | Version | Package |
 |---|---|---|---|---|
 | 1 | [**Cool Mind**](PATCHES.md#cool-mind-mindmapmindcool) | 3 | `4.0.0` | [`mindmap.mind.cool`](https://play.google.com/store/apps/details?id=mindmap.mind.cool) |
-| 2 | [**Instant Mail**](PATCHES.md#instant-mail-comtemporaryemailpro) | 3 | `8.0.0` | [`com.temporary.email.pro`](https://play.google.com/store/apps/details?id=com.temporary.email.pro) |
+| 2 | [**Instant Mail**](PATCHES.md#instant-mail-comtemporaryemailpro) | 4 | `8.0.0` | [`com.temporary.email.pro`](https://play.google.com/store/apps/details?id=com.temporary.email.pro) |
 | 3 | [**Noji**](PATCHES.md#noji-comvedasappsflashcards) | 4 | `26.44.0` | [`com.vedasapps.flashcards`](https://play.google.com/store/apps/details?id=com.vedasapps.flashcards) |
 | 4 | [**Paytm**](PATCHES.md#paytm-netone97paytm) | 9 | `10.86.13` | [`net.one97.paytm`](https://play.google.com/store/apps/details?id=net.one97.paytm) |
 <!-- PATCHES_END -->
