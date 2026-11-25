@@ -2,15 +2,6 @@ package app.template.patches.tempmail
 
 import app.morphe.patcher.Fingerprint
 
-/** Pairip startup VM hook that can trigger store redirects. */
-object PairipStartupLaunchFingerprint : Fingerprint(
-    definingClass = "Lcom/pairip/StartupLauncher;",
-    name = "launch",
-    isStatic = true,
-    returnType = "V",
-    parameters = emptyList(),
-)
-
 /** Pairip signature integrity check entry point. */
 object PairipSignatureVerifyFingerprint : Fingerprint(
     definingClass = "Lcom/pairip/SignatureCheck;",
@@ -36,6 +27,42 @@ object PairipLicenseCheckFingerprint : Fingerprint(
     isStatic = true,
     returnType = "V",
     parameters = listOf("Landroid/content/Context;"),
+)
+
+/** Launcher that hands the patched app to the store paywall. */
+object PairipStartPaywallActivityFingerprint : Fingerprint(
+    definingClass = "Lcom/pairip/licensecheck/LicenseClient;",
+    name = "startPaywallActivity",
+    isStatic = false,
+    returnType = "V",
+    parameters = listOf("Landroid/app/PendingIntent;"),
+)
+
+/** Forced app shutdown scheduled after the paywall handoff. */
+object PairipScheduleShutdownFingerprint : Fingerprint(
+    definingClass = "Lcom/pairip/licensecheck/LicenseClient;",
+    name = "scheduleAppShutdown",
+    isStatic = false,
+    returnType = "V",
+    parameters = emptyList(),
+)
+
+/** Error dialog that also closes the app. */
+object PairipStartErrorDialogFingerprint : Fingerprint(
+    definingClass = "Lcom/pairip/licensecheck/LicenseClient;",
+    name = "startErrorDialogActivity",
+    isStatic = false,
+    returnType = "V",
+    parameters = emptyList(),
+)
+
+/** License activity entry point that sends the paywall intent. */
+object PairipLicenseActivityOnStartFingerprint : Fingerprint(
+    definingClass = "Lcom/pairip/licensecheck/LicenseActivity;",
+    name = "onStart",
+    isStatic = false,
+    returnType = "V",
+    parameters = emptyList(),
 )
 
 /**
