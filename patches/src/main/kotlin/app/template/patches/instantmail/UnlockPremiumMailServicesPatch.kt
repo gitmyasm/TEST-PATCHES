@@ -29,8 +29,12 @@ val unlockInstantMailPremiumMailServicesPatch = rawResourcePatch(
                 listOf(
                     HbcEdit(
                         offset = 4_233_723,
-                        expected = byteArrayOf(0x0B, 0x00, 0x00),
-                        replacement = byteArrayOf(0x79, 0x00, 0x00),
+                        expected = byteArrayOf(
+                            0x0B, 0x00, 0x00, 0x0B, 0x00, 0x00, 0x5C, 0x00,
+                        ),
+                        replacement = byteArrayOf(
+                            0x79, 0x00, 0x5C, 0x00, 0x79, 0x00, 0x5C, 0x00,
+                        ),
                     ),
                 ),
             ),

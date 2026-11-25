@@ -29,7 +29,7 @@ val unlockInstantMailPremiumPatch = rawResourcePatch(
                     HbcEdit(
                         offset = 4_421_519,
                         expected = byteArrayOf(0x11, 0x01, 0x02, 0x01),
-                        replacement = byteArrayOf(0x78, 0x01, 0x00, 0x00),
+                        replacement = byteArrayOf(0x78, 0x01, 0x78, 0x01),
                     ),
                 ),
             ),
