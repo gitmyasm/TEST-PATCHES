@@ -1467,7 +1467,7 @@ val restoreTempMailPairipStringsPatch = bytecodePatch(
             }
             for (entry in RESTORE_METHOD_FIELDS) {
                 append("const-string v0, ").append(entry.second).append("\n")
-                append("invoke-static {v0}, Lapp/template/patches/tempmail/RestoreMethodBridge;->get(Ljava/lang/String;)Ljava/lang/reflect/Method;\n")
+                append("invoke-static {v0}, Lapp/template/extension/tempmail/RuntimeRestore;->get(Ljava/lang/String;)Ljava/lang/reflect/Method;\n")
                 append("move-result-object v0\n")
                 append("sput-object v0, ").append(entry.first).append("\n")
             }
