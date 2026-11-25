@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.39",
+  "version": "1.0.0-dev.40",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -327,6 +327,33 @@
       "options": []
     },
     {
+      "name": "Remove Instant Mail Ads",
+      "description": "Skips interstitial and rewarded ad display calls so ads are not shown locally.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.temporary.email.pro",
+          "name": "Instant Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#3F51B5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "8.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Remove Trackers",
       "description": "Removes analytics, install-referrer, crash, and diagnostics components from Noji.",
       "default": false,
@@ -397,6 +424,60 @@
           "targets": [
             {
               "version": "4.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Instant Mail Premium",
+      "description": "Makes the local entitlement check report premium as active. Server-side account state is unchanged.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.temporary.email.pro",
+          "name": "Instant Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#3F51B5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "8.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Instant Mail Premium Mail Services",
+      "description": "Treats locally gated premium mail services as free. Remote service authorization is unchanged.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.temporary.email.pro",
+          "name": "Instant Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#3F51B5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "8.0.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

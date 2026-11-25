@@ -1,3 +1,13 @@
+## [1.0.0-dev.40](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.39...v1.0.0-dev.40) (2026-11-25)
+
+### ✨ New Features
+
+* Add Instant Mail local unlock and ad patches ([11cf27a](https://github.com/gitmyasm/TEST-PATCHES/commit/11cf27a8a8419c720f34c8b3ed76f5db046615b8))
+
+### 🐛 Bug Fixes
+
+* Use signed byte literals in Instant Mail ad patch ([05ab0fd](https://github.com/gitmyasm/TEST-PATCHES/commit/05ab0fdc0bfb0aea292da0c0bb265265ad9dd1bf))
+
 ## [1.0.0-dev.39](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.38...v1.0.0-dev.39) (2026-11-24)
 
 ### 🐛 Bug Fixes

@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-24T09:32:52",
-  "description": "## [1.0.0-dev.39](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.38...v1.0.0-dev.39) (2026-11-24)\n\n### 🐛 Bug Fixes\n\n* Force free template path in Cool Mind patch ([775e336](https://github.com/gitmyasm/TEST-PATCHES/commit/775e336b5b4f44deaee79765383d309b6ce22b16))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.39/patches-1.0.0-dev.39.mpp",
+  "created_at": "2026-11-25T04:20:53",
+  "description": "## [1.0.0-dev.40](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.39...v1.0.0-dev.40) (2026-11-25)\n\n### ✨ New Features\n\n* Add Instant Mail local unlock and ad patches ([11cf27a](https://github.com/gitmyasm/TEST-PATCHES/commit/11cf27a8a8419c720f34c8b3ed76f5db046615b8))\n\n### 🐛 Bug Fixes\n\n* Use signed byte literals in Instant Mail ad patch ([05ab0fd](https://github.com/gitmyasm/TEST-PATCHES/commit/05ab0fdc0bfb0aea292da0c0bb265265ad9dd1bf))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.40/patches-1.0.0-dev.40.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.39"
+  "version": "1.0.0-dev.40"
 }
