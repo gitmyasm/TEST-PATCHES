@@ -2,6 +2,15 @@ package app.template.patches.tempmail
 
 import app.morphe.patcher.Fingerprint
 
+/** Pairip startup program that can trigger the store paywall. */
+object PairipStartupLaunchFingerprint : Fingerprint(
+    definingClass = "Lcom/pairip/StartupLauncher;",
+    name = "launch",
+    isStatic = true,
+    returnType = "V",
+    parameters = emptyList(),
+)
+
 /** Pairip signature integrity check entry point. */
 object PairipSignatureVerifyFingerprint : Fingerprint(
     definingClass = "Lcom/pairip/SignatureCheck;",
