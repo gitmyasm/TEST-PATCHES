@@ -1,3 +1,9 @@
+## [1.0.0-dev.46](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.45...v1.0.0-dev.46) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Preserve license activity labels when closing paywall ([ba7ee41](https://github.com/gitmyasm/TEST-PATCHES/commit/ba7ee4186ca318db722d62150951249cb525ccb4))
+
 ## [1.0.0-dev.45](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.44...v1.0.0-dev.45) (2026-11-25)
 
 ### 🐛 Bug Fixes
