@@ -56,15 +56,6 @@ object PairipStartErrorDialogFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
-/** License activity entry point that sends the paywall intent. */
-object PairipLicenseActivityOnStartFingerprint : Fingerprint(
-    definingClass = "Lcom/pairip/licensecheck/LicenseActivity;",
-    name = "onStart",
-    isStatic = false,
-    returnType = "V",
-    parameters = emptyList(),
-)
-
 /**
  * Local free/paid gate.
  *
