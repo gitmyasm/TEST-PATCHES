@@ -1,3 +1,9 @@
+## [1.0.0-dev.58](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.57...v1.0.0-dev.58) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Use valid registers in Regain setup offer patch ([99d27b2](https://github.com/gitmyasm/TEST-PATCHES/commit/99d27b2b573514b817e2c40913b2633378fca4ec))
+
 ## [1.0.0-dev.57](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.56...v1.0.0-dev.57) (2026-11-25)
 
 ### ✨ New Features
