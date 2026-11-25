@@ -26,6 +26,15 @@ object SubscriptionManagerProCheckFingerprint : Fingerprint(
     ),
 )
 
+/** Higher-level local Pro wrapper used by app UI gates. */
+object SubscriptionWrapperFingerprint : Fingerprint(
+    definingClass = "Lmd/a;",
+    name = "d",
+    isStatic = false,
+    returnType = "Ljava/lang/Object;",
+    parameters = listOf("LDw/c;"),
+)
+
 /** In-house ad view-model UI event handler. */
 object InHouseAdEventHandlerFingerprint : Fingerprint(
     definingClass = "Lwd/F;",

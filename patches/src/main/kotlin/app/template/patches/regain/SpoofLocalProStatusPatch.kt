@@ -1,7 +1,7 @@
 package app.template.patches.regain
 
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patcher.util.returnEarly
 
 /**
  * Forces Regain's local "is Pro user" checks to report true.
@@ -14,11 +14,23 @@ import app.morphe.patcher.util.returnEarly
 val spoofLocalProStatusPatch = bytecodePatch(
     name = "Spoof Local Pro Status",
     description = "Forces Regain's local Pro-user gates to return true. Server entitlements are unchanged.",
+    default = false,
 ) {
     compatibleWith(COMPATIBILITY_REGAIN)
 
     execute {
-        ProUserUseCaseFingerprint.method.returnEarly(true)
-        SubscriptionManagerProCheckFingerprint.method.returnEarly(true)
+        listOf(
+            ProUserUseCaseFingerprint.method,
+            SubscriptionManagerProCheckFingerprint.method,
+            SubscriptionWrapperFingerprint.method,
+        ).forEach { method ->
+            method.addInstructions(
+                0,
+                """
+                    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+                    return-object v0
+                """.trimIndent(),
+            )
+        }
     }
 }

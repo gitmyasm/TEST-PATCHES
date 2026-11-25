@@ -14,6 +14,7 @@ import app.morphe.patcher.util.returnEarly
 val removeInHouseAdsPatch = bytecodePatch(
     name = "Remove In-House Ads",
     description = "Disables Regain's local in-house ad screen state machine.",
+    default = false,
 ) {
     compatibleWith(COMPATIBILITY_REGAIN)
 
