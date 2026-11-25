@@ -13,7 +13,7 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.49](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.49)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**27 patches** across **5 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+> **[v1.0.0-dev.50](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.50)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**27 patches** across **5 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
 
 | # | App | Patches | Version | Package |
 |---|---|---|---|---|

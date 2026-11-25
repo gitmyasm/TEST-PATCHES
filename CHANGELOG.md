@@ -1,3 +1,9 @@
+## [1.0.0-dev.50](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.49...v1.0.0-dev.50) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Inline Temp Mail runtime restore ([91d25a8](https://github.com/gitmyasm/TEST-PATCHES/commit/91d25a8fa7115bccce37acc84bdb7c06ed8ac2f7))
+
 ## [1.0.0-dev.49](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.48...v1.0.0-dev.49) (2026-11-25)
 
 ### 🐛 Bug Fixes
