@@ -1,3 +1,9 @@
+## [1.0.0-dev.52](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.51...v1.0.0-dev.52) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Use valid registers in Temp Mail restore ([51973b9](https://github.com/gitmyasm/TEST-PATCHES/commit/51973b99cf1dcc70fa1ab7ed713e3ad6f9946901))
+
 ## [1.0.0-dev.51](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.50...v1.0.0-dev.51) (2026-11-25)
 
 ### 🐛 Bug Fixes
