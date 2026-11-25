@@ -1,6 +1,6 @@
 package app.template.patches.tempmail
 
-import app.morphe.patcher.extensions.InstructionExtensions.replaceInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.returnEarly
 
@@ -25,11 +25,13 @@ val bypassTempMailPlayStoreRedirectPatch = bytecodePatch(
         PairipScheduleShutdownFingerprint.method.returnEarly()
         PairipStartErrorDialogFingerprint.method.returnEarly()
 
-        // Keep Activity.onStart() valid, but close the blank license screen
-        // instead of sending the stored Play Store PendingIntent.
-        PairipLicenseActivityOnStartFingerprint.method.replaceInstructions(
-            14,
+        // Keep Activity.onStart() valid, but close the license screen before it
+        // can send the stored Play Store PendingIntent. Original instructions
+        // stay after the early return, so existing labels remain intact.
+        PairipLicenseActivityOnStartFingerprint.method.addInstructions(
+            0,
             """
+            invoke-super {p0}, Landroid/app/Activity;->onStart()V
             invoke-virtual {p0}, Landroid/app/Activity;->finish()V
             return-void
             """.trimIndent(),
