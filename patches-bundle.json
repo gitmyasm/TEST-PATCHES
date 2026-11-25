@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-25T22:15:45",
-  "description": "## [1.0.0-dev.58](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.57...v1.0.0-dev.58) (2026-11-25)\n\n### 🐛 Bug Fixes\n\n* Use valid registers in Regain setup offer patch ([99d27b2](https://github.com/gitmyasm/TEST-PATCHES/commit/99d27b2b573514b817e2c40913b2633378fca4ec))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.58/patches-1.0.0-dev.58.mpp",
+  "created_at": "2026-11-25T22:22:30",
+  "description": "## [1.0.0-dev.59](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.58...v1.0.0-dev.59) (2026-11-25)\n\n### 🐛 Bug Fixes\n\n* Target correct Regain setup offer comparison ([2989090](https://github.com/gitmyasm/TEST-PATCHES/commit/29890901004ff8661cd12c94b697fbe86877abfc))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.59/patches-1.0.0-dev.59.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.58"
+  "version": "1.0.0-dev.59"
 }

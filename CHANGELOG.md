@@ -1,3 +1,9 @@
+## [1.0.0-dev.59](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.58...v1.0.0-dev.59) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Target correct Regain setup offer comparison ([2989090](https://github.com/gitmyasm/TEST-PATCHES/commit/29890901004ff8661cd12c94b697fbe86877abfc))
+
 ## [1.0.0-dev.58](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.57...v1.0.0-dev.58) (2026-11-25)
 
 ### 🐛 Bug Fixes
