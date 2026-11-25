@@ -1,3 +1,9 @@
+## [1.0.0-dev.49](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.48...v1.0.0-dev.49) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Move Temp Mail runtime helper into extension dex ([2539a05](https://github.com/gitmyasm/TEST-PATCHES/commit/2539a05e1b379e89f9a3e6c8887498e59af581a7))
+
 ## [1.0.0-dev.48](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.47...v1.0.0-dev.48) (2026-11-25)
 
 ### ✨ New Features
