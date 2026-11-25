@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-25T21:09:16",
-  "description": "## [1.0.0-dev.56](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.55...v1.0.0-dev.56) (2026-11-25)\n\n### 🐛 Bug Fixes\n\n* Match Regain subscription manager fingerprint ([26f9c86](https://github.com/gitmyasm/TEST-PATCHES/commit/26f9c86da5bf1eaf74cef50b2726c1aedf991c92))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.56/patches-1.0.0-dev.56.mpp",
+  "created_at": "2026-11-25T22:09:43",
+  "description": "## [1.0.0-dev.57](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.56...v1.0.0-dev.57) (2026-11-25)\n\n### ✨ New Features\n\n* Add Regain setup promotional offer patch ([37ae344](https://github.com/gitmyasm/TEST-PATCHES/commit/37ae3443ff4a15db547e377069c42ca37e6fef16))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.57/patches-1.0.0-dev.57.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.56"
+  "version": "1.0.0-dev.57"
 }

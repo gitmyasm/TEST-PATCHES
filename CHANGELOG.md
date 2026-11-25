@@ -1,3 +1,9 @@
+## [1.0.0-dev.57](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.56...v1.0.0-dev.57) (2026-11-25)
+
+### ✨ New Features
+
+* Add Regain setup promotional offer patch ([37ae344](https://github.com/gitmyasm/TEST-PATCHES/commit/37ae3443ff4a15db547e377069c42ca37e6fef16))
+
 ## [1.0.0-dev.56](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.55...v1.0.0-dev.56) (2026-11-25)
 
 ### 🐛 Bug Fixes
