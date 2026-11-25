@@ -52,3 +52,12 @@ object InHouseAdStateHandlerFingerprint : Fingerprint(
     returnType = "V",
     parameters = listOf("Lm1/c;"),
 )
+
+/** Builds the local onboarding state, including the setup unlock-offer text flag. */
+object SetupOfferStateBuilderFingerprint : Fingerprint(
+    definingClass = "Loa/b0;",
+    name = "invokeSuspend",
+    isStatic = false,
+    returnType = "Ljava/lang/Object;",
+    parameters = listOf("Ljava/lang/Object;"),
+)
