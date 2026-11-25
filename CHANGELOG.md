@@ -1,3 +1,9 @@
+## [1.0.0-dev.41](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.40...v1.0.0-dev.41) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Avoid executable unreachable opcodes in Instant Mail patches ([90c5c2e](https://github.com/gitmyasm/TEST-PATCHES/commit/90c5c2eb3d93ed2f618bd45f658dc7b265b8ed6b))
+
 ## [1.0.0-dev.40](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.39...v1.0.0-dev.40) (2026-11-25)
 
 ### ✨ New Features
