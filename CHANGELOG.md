@@ -1,3 +1,9 @@
+## [1.0.0-dev.45](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.44...v1.0.0-dev.45) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Block Temp Mail store paywall without disabling VM startup ([3e0d3a1](https://github.com/gitmyasm/TEST-PATCHES/commit/3e0d3a1557ebaeeb0ada806ee3915fa7bde8fa50))
+
 ## [1.0.0-dev.44](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.43...v1.0.0-dev.44) (2026-11-25)
 
 ### 🐛 Bug Fixes
