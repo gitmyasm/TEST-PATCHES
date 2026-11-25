@@ -1,3 +1,9 @@
+## [1.0.0-dev.56](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.55...v1.0.0-dev.56) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Match Regain subscription manager fingerprint ([26f9c86](https://github.com/gitmyasm/TEST-PATCHES/commit/26f9c86da5bf1eaf74cef50b2726c1aedf991c92))
+
 ## [1.0.0-dev.55](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.54...v1.0.0-dev.55) (2026-11-25)
 
 ### 🐛 Bug Fixes
