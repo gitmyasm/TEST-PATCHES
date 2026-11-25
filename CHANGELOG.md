@@ -1,3 +1,9 @@
+## [1.0.0-dev.54](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.53...v1.0.0-dev.54) (2026-11-25)
+
+### ✨ New Features
+
+* Add local Regain patches ([596b6b9](https://github.com/gitmyasm/TEST-PATCHES/commit/596b6b93afd87295d96c5a73a87e79d1acc62c8f))
+
 ## [1.0.0-dev.53](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.52...v1.0.0-dev.53) (2026-11-25)
 
 ### 🐛 Bug Fixes
