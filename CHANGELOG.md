@@ -1,3 +1,9 @@
+## [1.0.0-dev.53](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.52...v1.0.0-dev.53) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Remove promoted Instant Mail patches ([e664116](https://github.com/gitmyasm/TEST-PATCHES/commit/e664116fb9f2c4be385e823d8a952c19400ba50a))
+
 ## [1.0.0-dev.52](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.51...v1.0.0-dev.52) (2026-11-25)
 
 ### 🐛 Bug Fixes
