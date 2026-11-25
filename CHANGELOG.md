@@ -1,3 +1,9 @@
+## [1.0.0-dev.44](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.43...v1.0.0-dev.44) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Fix Temp Mail Play Store redirect ([21935eb](https://github.com/gitmyasm/TEST-PATCHES/commit/21935ebe4c2e5d33a816b237e5bd1524a1c23c98))
+
 ## [1.0.0-dev.43](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.42...v1.0.0-dev.43) (2026-11-25)
 
 ### ✨ New Features

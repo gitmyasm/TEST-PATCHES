@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.43",
+  "version": "1.0.0-dev.44",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -248,6 +248,33 @@
     {
       "name": "Bypass Temp Mail License Check",
       "description": "Bypasses the local Pairip license-check trigger that can redirect to Play Store.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Temp Mail Play Store Redirect",
+      "description": "Disables local Pairip startup, signature, and license checks that can redirect to Play Store.",
       "default": false,
       "category": null,
       "compatiblePackages": [
