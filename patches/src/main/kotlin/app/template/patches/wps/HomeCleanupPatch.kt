@@ -30,7 +30,7 @@ val hideWpsTransferAssistantCardPatch = bytecodePatch(
 @Suppress("unused")
 val hideWpsHomeShareTabPatch = bytecodePatch(
     name = "Hide WPS Home Share Tab",
-    description = "Skips local registration of the Share tab on the phone home tab bar.",
+    description = "Skips local registration of the Share tab label and its content page so the Starred tab keeps its own documents.",
     default = false,
 ) {
     compatibleWith(COMPATIBILITY_WPS_OFFICE)
@@ -53,5 +53,25 @@ val hideWpsHomeShareTabPatch = bytecodePatch(
 
         method.replaceInstruction(index, "const/4 v0, 0x0")
         method.replaceInstruction(index + 1, "nop")
+
+        val constructor = WpsRoamingTabControllerConstructorFingerprint.method
+        val constructorInstructions = constructor.implementation?.instructions
+        guard(constructorInstructions != null, "roaming tab controller constructor has no body")
+
+        val contentIndex = constructorInstructions!!.indexOfFirst { instruction ->
+            val reference = (instruction as? ReferenceInstruction)?.reference as? MethodReference
+            reference?.definingClass ==
+                    "Lcn/wps/moffice/main/local/home/phone/homedataprovider/HomeShareMgr;" &&
+                    reference.name == "j"
+        }
+        guard(contentIndex >= 0, "share tab content registration call not found")
+        guard(
+            contentIndex + 1 < constructorInstructions.size &&
+                    constructorInstructions[contentIndex + 1].opcode == Opcode.MOVE_RESULT,
+            "share tab content registration result not found",
+        )
+
+        constructor.replaceInstruction(contentIndex, "const/4 v5, 0x0")
+        constructor.replaceInstruction(contentIndex + 1, "nop")
     }
 }

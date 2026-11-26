@@ -193,6 +193,21 @@ internal object WpsMainTabBarFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
+internal const val WPS_ROAMING_RECORD_TAB_CONTROLLER =
+    "Lcn/wps/moffice/main/local/home/phone/v2/ext/roaming/RoamingRecordTabController;"
+
+internal object WpsRoamingTabControllerConstructorFingerprint : Fingerprint(
+    definingClass = WPS_ROAMING_RECORD_TAB_CONTROLLER,
+    name = "<init>",
+    returnType = "V",
+    parameters = listOf(
+        "Landroid/app/Activity;",
+        "Lcn/wps/moffice/main/local/home/phone/v2/ext/roaming/AbsRoamingTab\$MultiSelectCallback;",
+        "Lcn/wps/moffice/main/local/home/phone/multiselect/MultiSelectHomeActivityTitleControl;",
+        "Lcn/wps/moffice/main/cloud/drive/docinfo/IListInfoPanel;",
+    ),
+)
+
 internal const val WPS_ME_FEATURE_VIEW_MODEL =
     "Lcn/wps/moffice/main/local/home/me/MeFeatureViewModel;"
 
