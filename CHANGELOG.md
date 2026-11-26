@@ -1,3 +1,9 @@
+## [1.0.0-dev.71](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.70...v1.0.0-dev.71) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Align home Share tab content with tab bar ([cf4846a](https://github.com/gitmyasm/TEST-PATCHES/commit/cf4846ab9f1f133dcc0bf4d41daef57406b37d54))
+
 ## [1.0.0-dev.70](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.69...v1.0.0-dev.70) (2026-11-26)
 
 ### 🐛 Bug Fixes

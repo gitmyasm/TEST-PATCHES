@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.70",
+  "version": "1.0.0-dev.71",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -441,7 +441,7 @@
     },
     {
       "name": "Hide WPS Home Share Tab",
-      "description": "Skips local registration of the Share tab on the phone home tab bar.",
+      "description": "Skips local registration of the Share tab label and its content page so the Starred tab keeps its own documents.",
       "default": false,
       "category": null,
       "compatiblePackages": [
