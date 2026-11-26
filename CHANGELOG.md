@@ -1,3 +1,9 @@
+## [1.0.0-dev.79](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.78...v1.0.0-dev.79) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Repair Tools tab bytecode mapping ([c8bb5ad](https://github.com/gitmyasm/TEST-PATCHES/commit/c8bb5ad308546531de9efda05616e98fa0abe6dd))
+
 ## [1.0.0-dev.78](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.77...v1.0.0-dev.78) (2026-11-26)
 
 ### ✨ New Features
