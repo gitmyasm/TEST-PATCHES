@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.64",
+  "version": "1.0.0-dev.65",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -440,8 +440,72 @@
       "options": []
     },
     {
+      "name": "Hide WPS Home Share Tab",
+      "description": "Skips local registration of the Share tab on the phone home tab bar.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Hide WPS Home Small Shortcuts",
       "description": "Returns an empty lower home shortcut list locally, so the quick-tools row is not drawn.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Transfer Assistant Card",
+      "description": "Prevents the local Transfer Assistant row from being added to the device home list.",
       "default": false,
       "category": null,
       "compatiblePackages": [

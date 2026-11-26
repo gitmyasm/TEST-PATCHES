@@ -1,3 +1,9 @@
+## [1.0.0-dev.65](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.64...v1.0.0-dev.65) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Add home cleanup patches ([89ce7b6](https://github.com/gitmyasm/TEST-PATCHES/commit/89ce7b6a0bb029536740a460cf7ffa395efe8d68))
+
 ## [1.0.0-dev.64](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.63...v1.0.0-dev.64) (2026-11-26)
 
 ### ✨ New Features
