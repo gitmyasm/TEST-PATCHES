@@ -193,14 +193,25 @@ internal object WpsMainTabBarFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
-internal const val WPS_HOME_SEARCH_WORD_CONFIG =
-    "Lcn/wps/moffice/docer/search/home/HomeSearchWordConfig;"
+internal const val WPS_USER_SIGN_VIEW_RENDERER =
+    "Lcn/wps/moffice/main/local/home/me/feature/UserSignViewRenderer;"
 
-internal object WpsHomeSearchWordUsableFingerprint : Fingerprint(
-    definingClass = WPS_HOME_SEARCH_WORD_CONFIG,
-    name = "isUsable",
-    returnType = "Z",
-    parameters = emptyList(),
+internal object WpsUserSignRendererInitFingerprint : Fingerprint(
+    definingClass = WPS_USER_SIGN_VIEW_RENDERER,
+    name = "c",
+    returnType = "V",
+    parameters = listOf(
+        "Lcn/wps/moffice/main/local/home/me/core/MeFeatureContext;",
+        "Landroid/view/ViewGroup;",
+        "Lcn/wps/moffice/main/local/home/me/core/FeatureData;",
+    ),
+)
+
+internal object WpsUserSignRendererWebPromoFingerprint : Fingerprint(
+    definingClass = WPS_USER_SIGN_VIEW_RENDERER,
+    name = "k",
+    returnType = "V",
+    parameters = listOf("Landroid/content/Context;"),
 )
 
 internal const val WPS_ROAMING_RECORD_TAB_CONTROLLER =

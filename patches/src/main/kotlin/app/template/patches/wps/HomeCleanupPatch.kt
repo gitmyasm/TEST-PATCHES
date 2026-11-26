@@ -28,22 +28,25 @@ val hideWpsTransferAssistantCardPatch = bytecodePatch(
 }
 
 @Suppress("unused")
-val hideWpsHomeSearchKeywordAdPatch = bytecodePatch(
-    name = "Hide WPS Home Search Keyword Ad",
-    description = "Prevents the local home search-bar keyword promotion from being shown or opened.",
+val hideWpsHomeCashSignPromoPatch = bytecodePatch(
+    name = "Hide WPS Home Cash Sign Promo",
+    description = "Skips the home header sign-in promo view and blocks its local web promo launcher.",
     default = false,
 ) {
     compatibleWith(COMPATIBILITY_WPS_OFFICE)
 
     execute {
-        WpsHomeSearchWordUsableFingerprint.method.replaceWithCleanBody(
-            owner = WpsHomeSearchWordUsableFingerprint.classDef,
-            registerCount = 1,
-            label = "HomeSearchWordConfig.isUsable",
-            smaliBody = """
-                const/4 v0, 0x0
-                return v0
-            """,
+        WpsUserSignRendererInitFingerprint.method.replaceWithCleanBody(
+            owner = WpsUserSignRendererInitFingerprint.classDef,
+            registerCount = 4,
+            label = "UserSignViewRenderer.c",
+            smaliBody = "return-void",
+        )
+        WpsUserSignRendererWebPromoFingerprint.method.replaceWithCleanBody(
+            owner = WpsUserSignRendererWebPromoFingerprint.classDef,
+            registerCount = 2,
+            label = "UserSignViewRenderer.k",
+            smaliBody = "return-void",
         )
     }
 }
