@@ -13,7 +13,7 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.81](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.81)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**40 patches** across **5 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+> **[v1.0.0-dev.82](https://github.com/gitmyasm/TEST-PATCHES/releases/tag/v1.0.0-dev.82)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**41 patches** across **5 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
 
 | # | App | Patches | Version | Package |
 |---|---|---|---|---|
@@ -21,7 +21,7 @@ into [SM-PATCHES](https://github.com/gitmyasm/SM-PATCHES).
 | 2 | [**Noji**](PATCHES.md#noji-comvedasappsflashcards) | 4 | `26.44.0` | [`com.vedasapps.flashcards`](https://play.google.com/store/apps/details?id=com.vedasapps.flashcards) |
 | 3 | [**Paytm**](PATCHES.md#paytm-netone97paytm) | 9 | `10.86.13` | [`net.one97.paytm`](https://play.google.com/store/apps/details?id=net.one97.paytm) |
 | 4 | [**Temp Mail**](PATCHES.md#temp-mail-comtempmail) | 7 | `4.12` | [`com.tempmail`](https://play.google.com/store/apps/details?id=com.tempmail) |
-| 5 | [**WPS Office**](PATCHES.md#wps-office-cnwpsmoffice_eng) | 17 | `26.11.1` | [`cn.wps.moffice_eng`](https://play.google.com/store/apps/details?id=cn.wps.moffice_eng) |
+| 5 | [**WPS Office**](PATCHES.md#wps-office-cnwpsmoffice_eng) | 18 | `26.11.1` | [`cn.wps.moffice_eng`](https://play.google.com/store/apps/details?id=cn.wps.moffice_eng) |
 <!-- PATCHES_END -->
 
 ## Cloud reversing (no local tools needed)

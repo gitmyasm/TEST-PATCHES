@@ -1,3 +1,9 @@
+## [1.0.0-dev.82](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.81...v1.0.0-dev.82) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Hide bottom Tools tab ([b5f6684](https://github.com/gitmyasm/TEST-PATCHES/commit/b5f668499b4ff0157ad0a0b444930ca679d0c8fe))
+
 ## [1.0.0-dev.81](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.80...v1.0.0-dev.81) (2026-11-26)
 
 ### 🐛 Bug Fixes

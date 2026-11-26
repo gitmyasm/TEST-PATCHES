@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-26T19:04:38",
-  "description": "## [1.0.0-dev.81](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.80...v1.0.0-dev.81) (2026-11-26)\n\n### 🐛 Bug Fixes\n\n* **wps:** Correct Tools page smali constructor ([a3f1d59](https://github.com/gitmyasm/TEST-PATCHES/commit/a3f1d591df5a91974f21f6b3cd376c1cbb006cf1))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.81/patches-1.0.0-dev.81.mpp",
+  "created_at": "2026-11-26T19:34:31",
+  "description": "## [1.0.0-dev.82](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.81...v1.0.0-dev.82) (2026-11-26)\n\n### ✨ New Features\n\n* **wps:** Hide bottom Tools tab ([b5f6684](https://github.com/gitmyasm/TEST-PATCHES/commit/b5f668499b4ff0157ad0a0b444930ca679d0c8fe))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.82/patches-1.0.0-dev.82.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.81"
+  "version": "1.0.0-dev.82"
 }
