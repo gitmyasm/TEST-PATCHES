@@ -46,6 +46,35 @@ val hideWpsHomeCashSignPromoPatch = bytecodePatch(
 }
 
 @Suppress("unused")
+val hideWpsHomePromoBannersPatch = bytecodePatch(
+    name = "Hide WPS Home Promo Banners",
+    description = "Skips local home promo banner operators while keeping the home content chain intact.",
+    default = false,
+) {
+    compatibleWith(COMPATIBILITY_WPS_OFFICE)
+
+    execute {
+        val proceed = """
+            invoke-virtual {p1, p0}, Lcn/wps/moffice/main/local/home/phone/v2/ext/operate/OperateChain;->a(Lcn/wps/moffice/main/local/home/phone/v2/ext/operate/BaseOperator;)V
+            return-void
+        """
+
+        WpsHomeAdBannerRegisterFingerprint.method.replaceWithCleanBody(
+            owner = WpsHomeAdBannerRegisterFingerprint.classDef,
+            registerCount = 3,
+            label = "HomeAdBanner registration",
+            smaliBody = proceed,
+        )
+        WpsBigNoticeColumnAdRegisterFingerprint.method.replaceWithCleanBody(
+            owner = WpsBigNoticeColumnAdRegisterFingerprint.classDef,
+            registerCount = 3,
+            label = "BigNoticeColumnAd registration",
+            smaliBody = proceed,
+        )
+    }
+}
+
+@Suppress("unused")
 val hideWpsHomeShareTabPatch = bytecodePatch(
     name = "Hide WPS Home Share Tab",
     description = "Skips local registration of the Share tab label and its content page so the Starred tab keeps its own documents.",

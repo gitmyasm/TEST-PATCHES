@@ -203,6 +203,26 @@ internal object WpsHomeTitleBarPromoCallbackFingerprint : Fingerprint(
     parameters = listOf("Lcn/wps/moffice/main/ad/s2s/CommonBean;"),
 )
 
+internal const val WPS_HOME_AD_BANNER =
+    "Lcn/wps/moffice/main/local/home/phone/v2/ext/operate/content/ad/HomeAdBanner;"
+
+internal const val WPS_BIG_NOTICE_COLUMN_AD =
+    "Lcn/wps/moffice/main/local/home/phone/v2/ext/operate/content/ad/BigNoticeColumnAd;"
+
+internal object WpsHomeAdBannerRegisterFingerprint : Fingerprint(
+    definingClass = WPS_HOME_AD_BANNER,
+    name = "a",
+    returnType = "V",
+    parameters = listOf("Lcn/wps/moffice/main/local/home/phone/v2/ext/operate/OperateChain;"),
+)
+
+internal object WpsBigNoticeColumnAdRegisterFingerprint : Fingerprint(
+    definingClass = WPS_BIG_NOTICE_COLUMN_AD,
+    name = "a",
+    returnType = "V",
+    parameters = listOf("Lcn/wps/moffice/main/local/home/phone/v2/ext/operate/OperateChain;"),
+)
+
 internal const val WPS_ROAMING_RECORD_TAB_CONTROLLER =
     "Lcn/wps/moffice/main/local/home/phone/v2/ext/roaming/RoamingRecordTabController;"
 
