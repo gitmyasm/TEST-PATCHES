@@ -251,6 +251,13 @@ internal object WpsRootActExecutorFingerprint : Fingerprint(
     ),
 )
 
+internal object WpsRootWarningRunnableFingerprint : Fingerprint(
+    definingClass = "Lcn/wps/moffice/bridge/impl/HomeControllerImpl\$1\$1;",
+    name = "run",
+    returnType = "V",
+    parameters = emptyList(),
+)
+
 internal const val WPS_HOME_TITLE_BAR_PROMO_CALLBACK =
     "Lcn/wps/moffice/main/common/viewcontrols/HomeViewTitleBar\$4;"
 

@@ -116,7 +116,7 @@ val hideWpsMePromotionBannerPatch = bytecodePatch(
 @Suppress("unused")
 val hideWpsMeCardAndCouponShortcutsPatch = bytecodePatch(
     name = "Hide WPS Me Card And Coupon Shortcuts",
-    description = "Prevents local registration of the card and coupon shortcuts shown on the Me page.",
+    description = "Prevents local registration of the Cards & Coupons row shown on the Me page.",
     default = false,
 ) {
     compatibleWith(COMPATIBILITY_WPS_OFFICE)

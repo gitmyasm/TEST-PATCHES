@@ -159,6 +159,24 @@ val hideWpsHomeCashSignPromoPatch = bytecodePatch(
 }
 
 @Suppress("unused")
+val hideWpsRootedDeviceWarningPatch = bytecodePatch(
+    name = "Hide WPS Rooted Device Warning",
+    description = "Prevents the local rooted-device toast shown every time WPS Office launches.",
+    default = false,
+) {
+    compatibleWith(COMPATIBILITY_WPS_OFFICE)
+
+    execute {
+        WpsRootWarningRunnableFingerprint.method.replaceWithCleanBody(
+            owner = WpsRootWarningRunnableFingerprint.classDef,
+            registerCount = 1,
+            label = "HomeControllerImpl rooted-device warning",
+            smaliBody = "return-void",
+        )
+    }
+}
+
+@Suppress("unused")
 val hideWpsHomePromoBannersPatch = bytecodePatch(
     name = "Hide WPS Home Promo Banners",
     description = "Skips local home promo banner operators while keeping the home content chain intact.",
