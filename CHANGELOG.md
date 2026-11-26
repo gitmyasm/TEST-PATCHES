@@ -1,3 +1,9 @@
+## [1.0.0-dev.74](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.73...v1.0.0-dev.74) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Remove home header promo banners ([a7c827e](https://github.com/gitmyasm/TEST-PATCHES/commit/a7c827ef1e1e63a1836f31a98420b9841261f2f5))
+
 ## [1.0.0-dev.73](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.72...v1.0.0-dev.73) (2026-11-26)
 
 ### 🐛 Bug Fixes

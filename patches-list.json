@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.73",
+  "version": "1.0.0-dev.74",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -441,7 +441,7 @@
     },
     {
       "name": "Hide WPS Home Cash Sign Promo",
-      "description": "Skips the home header sign-in promo view and blocks its local web promo launcher.",
+      "description": "Skips the home header promo banners behind emptySpaceViewWrap and blocks local promo launchers.",
       "default": false,
       "category": null,
       "compatiblePackages": [
