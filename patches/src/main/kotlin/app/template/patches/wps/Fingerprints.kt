@@ -230,6 +230,27 @@ internal object WpsPageTabManagerConstructorFingerprint : Fingerprint(
     ),
 )
 
+internal const val WPS_HOME_APPS_PAGE =
+    "Lcn/wps/moffice/main/local/home/phone/application/HomeAppsPage;"
+
+internal object WpsHomeAppsPageFingerprint : Fingerprint(
+    definingClass = WPS_HOME_APPS_PAGE,
+    name = "b",
+    returnType = "Lcn/wps/moffice/main/framework/IView;",
+    parameters = emptyList(),
+)
+
+internal object WpsRootActExecutorFingerprint : Fingerprint(
+    definingClass = "Lcn/wps/moffice/main/router/impl/RootActExecutor;",
+    name = "a",
+    returnType = "Z",
+    parameters = listOf(
+        "Landroid/content/Context;",
+        "Ljava/lang/String;",
+        "Ljava/util/HashMap;",
+    ),
+)
+
 internal const val WPS_HOME_TITLE_BAR_PROMO_CALLBACK =
     "Lcn/wps/moffice/main/common/viewcontrols/HomeViewTitleBar\$4;"
 
