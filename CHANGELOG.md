@@ -1,3 +1,9 @@
+## [1.0.0-dev.61](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.60...v1.0.0-dev.61) (2026-11-26)
+
+### ✨ New Features
+
+* **regain:** Add local patch to force subscription-state Pro flag ([a8d248b](https://github.com/gitmyasm/TEST-PATCHES/commit/a8d248b07f40934123a51943e43c7ac2a037541e))
+
 ## [1.0.0-dev.60](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.59...v1.0.0-dev.60) (2026-11-26)
 
 ### ✨ New Features

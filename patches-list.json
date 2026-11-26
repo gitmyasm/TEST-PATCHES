@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.60",
+  "version": "1.0.0-dev.61",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -397,6 +397,33 @@
           "targets": [
             {
               "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Force Local Pro Flag In Subscription State",
+      "description": "Forces Regain's local subscription-state Pro flag on. Purchases and server entitlements are unchanged.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "ai.regainapp",
+          "name": "Regain",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#6C4DF6",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "76.1.2139",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
