@@ -217,6 +217,19 @@ internal object WpsHomeBottomBarItemsFingerprint : Fingerprint(
     parameters = listOf("Landroid/content/Context;"),
 )
 
+internal const val WPS_PAGE_TAB_MANAGER =
+    "Lcn/wps/moffice/main/local/PageTabManager;"
+
+internal object WpsPageTabManagerConstructorFingerprint : Fingerprint(
+    definingClass = WPS_PAGE_TAB_MANAGER,
+    name = "<init>",
+    returnType = "V",
+    parameters = listOf(
+        "Landroid/app/Activity;",
+        "Lcn/wps/moffice/home/IHomeBottomToolbar;",
+    ),
+)
+
 internal const val WPS_HOME_TITLE_BAR_PROMO_CALLBACK =
     "Lcn/wps/moffice/main/common/viewcontrols/HomeViewTitleBar\$4;"
 

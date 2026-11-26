@@ -4,6 +4,8 @@ import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import com.android.tools.smali.dexlib2.Opcode
+import com.android.tools.smali.dexlib2.iface.instruction.NarrowLiteralInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
@@ -28,6 +30,36 @@ private fun MutableMethod.disableBooleanRegistration(
 
     replaceInstruction(index, "const/4 $resultRegister, 0x0")
     replaceInstruction(index + 1, "nop")
+}
+
+private fun MutableMethod.replaceResourceId(oldId: Int, newId: Int, label: String) {
+    val instructions = implementation?.instructions
+    guard(instructions != null, "$label has no body")
+
+    val index = instructions!!.indexOfFirst { instruction ->
+        instruction is NarrowLiteralInstruction && instruction.narrowLiteral == oldId
+    }
+    guard(index >= 0, "$label resource id not found")
+
+    val instruction = instructions[index]
+    guard(instruction is OneRegisterInstruction, "$label register not found")
+
+    replaceInstruction(index, "const v${(instruction as OneRegisterInstruction).registerA}, 0x${newId.toString(16)}")
+}
+
+private fun MutableMethod.replaceTypeReferences(oldType: String, newType: String, label: String) {
+    val instructions = implementation?.instructions
+    guard(instructions != null, "$label has no body")
+
+    var replacements = 0
+    instructions!!.forEachIndexed { index, instruction ->
+        val instructionBody = instruction.toString()
+        if (instructionBody.contains(oldType)) {
+            replaceInstruction(index, instructionBody.replace(oldType, newType))
+            replacements++
+        }
+    }
+    guard(replacements >= 2, "$label references not found")
 }
 
 @Suppress("unused")
@@ -144,6 +176,28 @@ val hideWpsScanTabPatch = bytecodePatch(
             name = "a",
             resultRegister = "v1",
             label = "Scan tab registration",
+        )
+    }
+}
+
+@Suppress("unused")
+val useWpsToolsAsBottomDiscoverTabPatch = bytecodePatch(
+    name = "Use WPS Tools As Bottom Discover Tab",
+    description = "Reuses the bottom Discover tab icon as Tools and opens the Tools page instead of Discover.",
+    default = false,
+) {
+    compatibleWith(COMPATIBILITY_WPS_OFFICE)
+
+    execute {
+        WpsPageTabManagerConstructorFingerprint.method.replaceTypeReferences(
+            oldType = "Lcn/wps/moffice/main/discover/ui/AiDiscoverPage;",
+            newType = "Lcn/wps/moffice/main/local/home/phone/application/HomeAppsPage;",
+            label = "bottom Tools page",
+        )
+        WpsHomeBottomBarItemsFingerprint.method.replaceResourceId(
+            oldId = 0x7f154ba5,
+            newId = 0x7f154b8c,
+            label = "bottom Discover label",
         )
     }
 }
