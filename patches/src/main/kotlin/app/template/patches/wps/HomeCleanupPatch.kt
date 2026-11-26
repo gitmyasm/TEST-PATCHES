@@ -30,12 +30,24 @@ val hideWpsTransferAssistantCardPatch = bytecodePatch(
 @Suppress("unused")
 val hideWpsHomeCashSignPromoPatch = bytecodePatch(
     name = "Hide WPS Home Cash Sign Promo",
-    description = "Skips the home header sign-in promo view and blocks its local web promo launcher.",
+    description = "Skips the home header promo banners behind emptySpaceViewWrap and blocks local promo launchers.",
     default = false,
 ) {
     compatibleWith(COMPATIBILITY_WPS_OFFICE)
 
     execute {
+        WpsHomeBigBannerFingerprint.method.replaceWithCleanBody(
+            owner = WpsHomeBigBannerFingerprint.classDef,
+            registerCount = 3,
+            label = "HomeTabTitleController.k",
+            smaliBody = "return-void",
+        )
+        WpsHomeSmallBannerFingerprint.method.replaceWithCleanBody(
+            owner = WpsHomeSmallBannerFingerprint.classDef,
+            registerCount = 3,
+            label = "HomeTabTitleController.m",
+            smaliBody = "return-void",
+        )
         WpsUserSignRendererInitFingerprint.method.replaceWithCleanBody(
             owner = WpsUserSignRendererInitFingerprint.classDef,
             registerCount = 4,

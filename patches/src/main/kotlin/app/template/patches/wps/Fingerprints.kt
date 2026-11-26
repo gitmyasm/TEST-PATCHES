@@ -214,6 +214,29 @@ internal object WpsUserSignRendererWebPromoFingerprint : Fingerprint(
     parameters = listOf("Landroid/content/Context;"),
 )
 
+internal const val WPS_HOME_TAB_TITLE_CONTROLLER =
+    "Lcn/wps/moffice/main/local/home/phone/v2/ext/HomeTabTitleController;"
+
+internal object WpsHomeBigBannerFingerprint : Fingerprint(
+    definingClass = WPS_HOME_TAB_TITLE_CONTROLLER,
+    name = "k",
+    returnType = "V",
+    parameters = listOf(
+        "Landroid/view/View;",
+        "Lcn/wps/moffice/main/common/viewcontrols/StyleConfig;",
+    ),
+)
+
+internal object WpsHomeSmallBannerFingerprint : Fingerprint(
+    definingClass = WPS_HOME_TAB_TITLE_CONTROLLER,
+    name = "m",
+    returnType = "V",
+    parameters = listOf(
+        "Landroid/view/View;",
+        "Lcn/wps/moffice/main/common/viewcontrols/StyleConfig;",
+    ),
+)
+
 internal const val WPS_ROAMING_RECORD_TAB_CONTROLLER =
     "Lcn/wps/moffice/main/local/home/phone/v2/ext/roaming/RoamingRecordTabController;"
 
