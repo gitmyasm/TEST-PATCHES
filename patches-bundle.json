@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-26T16:39:33",
-  "description": "## [1.0.0-dev.75](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.74...v1.0.0-dev.75) (2026-11-26)\n\n### 🐛 Bug Fixes\n\n* **wps:** Remove home title-bar promo icon ([9187a75](https://github.com/gitmyasm/TEST-PATCHES/commit/9187a750d3d15112dcf3d30ddb35aecf91155de9))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.75/patches-1.0.0-dev.75.mpp",
+  "created_at": "2026-11-26T17:12:02",
+  "description": "## [1.0.0-dev.76](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.75...v1.0.0-dev.76) (2026-11-26)\n\n### 🐛 Bug Fixes\n\n* **wps:** Skip home promo banner operators ([d3ce3ad](https://github.com/gitmyasm/TEST-PATCHES/commit/d3ce3add9195f4209918626f9532d54f1715034f))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.76/patches-1.0.0-dev.76.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.75"
+  "version": "1.0.0-dev.76"
 }

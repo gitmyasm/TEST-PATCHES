@@ -1,3 +1,9 @@
+## [1.0.0-dev.76](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.75...v1.0.0-dev.76) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Skip home promo banner operators ([d3ce3ad](https://github.com/gitmyasm/TEST-PATCHES/commit/d3ce3add9195f4209918626f9532d54f1715034f))
+
 ## [1.0.0-dev.75](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.74...v1.0.0-dev.75) (2026-11-26)
 
 ### 🐛 Bug Fixes
