@@ -1,3 +1,9 @@
+## [1.0.0-dev.70](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.69...v1.0.0-dev.70) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Hide account panel operation banner ([f4f9360](https://github.com/gitmyasm/TEST-PATCHES/commit/f4f9360b4c6d388e2c3bd6b625ce9b29bd95db1c))
+
 ## [1.0.0-dev.69](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.68...v1.0.0-dev.69) (2026-11-26)
 
 ### 🐛 Bug Fixes

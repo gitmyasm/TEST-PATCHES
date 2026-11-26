@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-26T12:30:27",
-  "description": "## [1.0.0-dev.69](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.68...v1.0.0-dev.69) (2026-11-26)\n\n### 🐛 Bug Fixes\n\n* **wps:** Hide account panel VIP banner in both layouts ([547c1ee](https://github.com/gitmyasm/TEST-PATCHES/commit/547c1ee728cf788c7d6e8cc00422b7b3895b2c54))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.69/patches-1.0.0-dev.69.mpp",
+  "created_at": "2026-11-26T12:49:16",
+  "description": "## [1.0.0-dev.70](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.69...v1.0.0-dev.70) (2026-11-26)\n\n### 🐛 Bug Fixes\n\n* **wps:** Hide account panel operation banner ([f4f9360](https://github.com/gitmyasm/TEST-PATCHES/commit/f4f9360b4c6d388e2c3bd6b625ce9b29bd95db1c))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.70/patches-1.0.0-dev.70.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.69"
+  "version": "1.0.0-dev.70"
 }
