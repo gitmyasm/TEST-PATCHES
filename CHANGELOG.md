@@ -1,3 +1,9 @@
+## [1.0.0-dev.73](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.72...v1.0.0-dev.73) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Remove home cash sign promo ([ce04cf7](https://github.com/gitmyasm/TEST-PATCHES/commit/ce04cf7aef230a66133f346d2f1d15bd1a6bdd6a))
+
 ## [1.0.0-dev.72](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.71...v1.0.0-dev.72) (2026-11-26)
 
 ### ✨ New Features
