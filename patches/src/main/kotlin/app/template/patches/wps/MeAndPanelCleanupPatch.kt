@@ -160,6 +160,11 @@ val hideWpsSidebarUpgradeCardPatch = bytecodePatch(
                 const/16 v1, 0x8
                 invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
                 :skip_card
+                iget-object v0, p0, $WPS_ACCOUNT_PANEL->K:Landroid/widget/RelativeLayout;
+                if-eqz v0, :skip_vip
+                const/16 v1, 0x8
+                invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+                :skip_vip
                 iget-object v0, p0, $WPS_ACCOUNT_PANEL->J:Landroid/widget/LinearLayout;
                 if-eqz v0, :skip_button
                 const/16 v1, 0x8
@@ -173,19 +178,35 @@ val hideWpsSidebarUpgradeCardPatch = bytecodePatch(
         val instructions = setup.implementation?.instructions
         guard(instructions != null, "account panel setup method has no body")
 
-        val cardAssignment = instructions!!.indexOfFirst { instruction ->
-            instruction.opcode == Opcode.IPUT_OBJECT &&
-                    ((instruction as? ReferenceInstruction)?.reference as? FieldReference)?.name == "k"
+        fun fieldIndex(name: String, opcode: Opcode): Int = instructions!!.indexOfFirst { instruction ->
+            instruction.opcode == opcode &&
+                    ((instruction as? ReferenceInstruction)?.reference as? FieldReference)?.name == name
         }
-        guard(cardAssignment >= 0, "account panel card view assignment not found")
 
-        setup.addInstructions(
-            cardAssignment + 1,
-            """
-                const/16 v6, 0x8
-                invoke-virtual {v3, v6}, Landroid/view/View;->setVisibility(I)V
-            """.trimIndent(),
+        val cardAssignment = fieldIndex("k", Opcode.IPUT_OBJECT)
+        val vipAssignment = fieldIndex("K", Opcode.IPUT_OBJECT)
+        val vipGet = fieldIndex("K", Opcode.IGET_OBJECT)
+        guard(cardAssignment >= 0, "account panel card view assignment not found")
+        guard(vipAssignment >= 0, "account panel VIP view assignment not found")
+        guard(vipGet >= 0, "account panel VIP view access not found")
+
+        val vipShowCall = (vipGet + 1 until instructions!!.size).firstOrNull { index ->
+            val reference = (instructions[index] as? ReferenceInstruction)?.reference as? MethodReference
+            reference?.definingClass == "Landroid/view/View;" && reference.name == "setVisibility"
+        }
+        guard(vipShowCall != null, "account panel VIP show call not found")
+
+        val hideAssignedView = """
+            const/16 v6, 0x8
+            invoke-virtual {v3, v6}, Landroid/view/View;->setVisibility(I)V
+        """.trimIndent()
+
+        setup.addInstructions(cardAssignment + 1, hideAssignedView)
+        setup.replaceInstruction(
+            vipShowCall!!,
+            "invoke-virtual {v3, v5}, Landroid/view/View;->setVisibility(I)V",
         )
+        setup.addInstructions(vipAssignment + 1, hideAssignedView)
     }
 }
 
