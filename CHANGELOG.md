@@ -1,3 +1,9 @@
+## [1.0.0-dev.60](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.59...v1.0.0-dev.60) (2026-11-26)
+
+### ✨ New Features
+
+* **regain:** Add local patch to skip startup onboarding page ([7eb772b](https://github.com/gitmyasm/TEST-PATCHES/commit/7eb772baf5dcec7e7cefe5755c069ad4430690df))
+
 ## [1.0.0-dev.59](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.58...v1.0.0-dev.59) (2026-11-25)
 
 ### 🐛 Bug Fixes

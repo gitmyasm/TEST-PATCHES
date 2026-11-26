@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.59",
+  "version": "1.0.0-dev.60",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -464,6 +464,33 @@
     {
       "name": "Remove Promotional Offer During Setup",
       "description": "Forces Regain's setup unlock-offer prompt off. Remote offers and purchases are unchanged.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "ai.regainapp",
+          "name": "Regain",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#6C4DF6",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "76.1.2139",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Startup Onboarding Page",
+      "description": "Skips Regain's local short onboarding screen at startup. Remote config and account state are unchanged.",
       "default": false,
       "category": null,
       "compatiblePackages": [

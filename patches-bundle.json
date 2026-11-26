@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-25T22:22:30",
-  "description": "## [1.0.0-dev.59](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.58...v1.0.0-dev.59) (2026-11-25)\n\n### 🐛 Bug Fixes\n\n* Target correct Regain setup offer comparison ([2989090](https://github.com/gitmyasm/TEST-PATCHES/commit/29890901004ff8661cd12c94b697fbe86877abfc))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.59/patches-1.0.0-dev.59.mpp",
+  "created_at": "2026-11-26T04:11:13",
+  "description": "## [1.0.0-dev.60](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.59...v1.0.0-dev.60) (2026-11-26)\n\n### ✨ New Features\n\n* **regain:** Add local patch to skip startup onboarding page ([7eb772b](https://github.com/gitmyasm/TEST-PATCHES/commit/7eb772baf5dcec7e7cefe5755c069ad4430690df))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.60/patches-1.0.0-dev.60.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.59"
+  "version": "1.0.0-dev.60"
 }
