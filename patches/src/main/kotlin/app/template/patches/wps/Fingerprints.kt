@@ -193,6 +193,16 @@ internal object WpsMainTabBarFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
+internal const val WPS_HOME_SEARCH_WORD_CONFIG =
+    "Lcn/wps/moffice/docer/search/home/HomeSearchWordConfig;"
+
+internal object WpsHomeSearchWordUsableFingerprint : Fingerprint(
+    definingClass = WPS_HOME_SEARCH_WORD_CONFIG,
+    name = "isUsable",
+    returnType = "Z",
+    parameters = emptyList(),
+)
+
 internal const val WPS_ROAMING_RECORD_TAB_CONTROLLER =
     "Lcn/wps/moffice/main/local/home/phone/v2/ext/roaming/RoamingRecordTabController;"
 

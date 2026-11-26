@@ -28,6 +28,27 @@ val hideWpsTransferAssistantCardPatch = bytecodePatch(
 }
 
 @Suppress("unused")
+val hideWpsHomeSearchKeywordAdPatch = bytecodePatch(
+    name = "Hide WPS Home Search Keyword Ad",
+    description = "Prevents the local home search-bar keyword promotion from being shown or opened.",
+    default = false,
+) {
+    compatibleWith(COMPATIBILITY_WPS_OFFICE)
+
+    execute {
+        WpsHomeSearchWordUsableFingerprint.method.replaceWithCleanBody(
+            owner = WpsHomeSearchWordUsableFingerprint.classDef,
+            registerCount = 1,
+            label = "HomeSearchWordConfig.isUsable",
+            smaliBody = """
+                const/4 v0, 0x0
+                return v0
+            """,
+        )
+    }
+}
+
+@Suppress("unused")
 val hideWpsHomeShareTabPatch = bytecodePatch(
     name = "Hide WPS Home Share Tab",
     description = "Skips local registration of the Share tab label and its content page so the Starred tab keeps its own documents.",
