@@ -61,3 +61,12 @@ object SetupOfferStateBuilderFingerprint : Fingerprint(
     returnType = "Ljava/lang/Object;",
     parameters = listOf("Ljava/lang/Object;"),
 )
+
+/** Decides which local screen Regain shows for the current onboarding step. */
+object OnboardingNavigationFingerprint : Fingerprint(
+    definingClass = "Lz7/o;",
+    name = "invokeSuspend",
+    isStatic = false,
+    returnType = "Ljava/lang/Object;",
+    parameters = listOf("Ljava/lang/Object;"),
+)
