@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.61",
+  "version": "1.0.0-dev.62",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -462,87 +462,6 @@
       "options": []
     },
     {
-      "name": "Remove In-House Ads",
-      "description": "Disables Regain's local in-house ad screen state machine.",
-      "default": false,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "ai.regainapp",
-          "name": "Regain",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#6C4DF6",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "76.1.2139",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Promotional Offer During Setup",
-      "description": "Forces Regain's setup unlock-offer prompt off. Remote offers and purchases are unchanged.",
-      "default": false,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "ai.regainapp",
-          "name": "Regain",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#6C4DF6",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "76.1.2139",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Remove Startup Onboarding Page",
-      "description": "Skips Regain's local short onboarding screen at startup. Remote config and account state are unchanged.",
-      "default": false,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "ai.regainapp",
-          "name": "Regain",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#6C4DF6",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "76.1.2139",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
       "name": "Remove Temp Mail Ads",
       "description": "Disables Temp Mail's local ad loading gate for all ad formats.",
       "default": false,
@@ -640,33 +559,6 @@
           "targets": [
             {
               "version": "4.0.0",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Spoof Local Pro Status",
-      "description": "Forces Regain's local Pro-user gates to return true. Server entitlements are unchanged.",
-      "default": false,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "ai.regainapp",
-          "name": "Regain",
-          "description": null,
-          "apkFileType": "APK",
-          "appIconColor": "#6C4DF6",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "76.1.2139",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

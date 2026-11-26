@@ -1,3 +1,9 @@
+## [1.0.0-dev.62](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.61...v1.0.0-dev.62) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **regain:** Keep only the clean reference-derived local patch ([467e609](https://github.com/gitmyasm/TEST-PATCHES/commit/467e609f1af4418b20e84c899cb4ca3954f9fb5f))
+
 ## [1.0.0-dev.61](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.60...v1.0.0-dev.61) (2026-11-26)
 
 ### ✨ New Features
