@@ -192,3 +192,43 @@ internal object WpsMainTabBarFingerprint : Fingerprint(
     returnType = "V",
     parameters = emptyList(),
 )
+
+internal const val WPS_ME_FEATURE_VIEW_MODEL =
+    "Lcn/wps/moffice/main/local/home/me/MeFeatureViewModel;"
+
+internal object WpsMeFeatureRegistrationsFingerprint : Fingerprint(
+    definingClass = WPS_ME_FEATURE_VIEW_MODEL,
+    name = "<init>",
+    returnType = "V",
+    parameters = emptyList(),
+)
+
+internal const val WPS_USER_FEEDBACK_FEATURE =
+    "Lcn/wps/moffice/main/local/home/me/feature/UserFeedbackFeature;"
+
+internal object WpsUserFeedbackAvailabilityFingerprint : Fingerprint(
+    definingClass = WPS_USER_FEEDBACK_FEATURE,
+    name = "c",
+    returnType = "Z",
+    parameters = listOf("Lcn/wps/moffice/main/local/home/me/core/MeFeatureContext;"),
+)
+
+internal const val WPS_ACCOUNT_PANEL =
+    "Lcn/wps/moffice/main/local/home/accountpanel/AccountPanel;"
+
+internal object WpsAccountPanelRefreshFingerprint : Fingerprint(
+    definingClass = WPS_ACCOUNT_PANEL,
+    name = "E",
+    returnType = "V",
+    parameters = emptyList(),
+)
+
+internal const val WPS_ACCOUNT_PANEL_ROW =
+    "Lcn/wps/moffice/common/widget/AccountPanelPlaceholderView;"
+
+internal object WpsAccountPanelRowTitleFingerprint : Fingerprint(
+    definingClass = WPS_ACCOUNT_PANEL_ROW,
+    name = "f",
+    returnType = "V",
+    parameters = listOf("Ljava/lang/String;"),
+)
