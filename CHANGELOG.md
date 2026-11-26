@@ -1,3 +1,9 @@
+## [1.0.0-dev.77](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.76...v1.0.0-dev.77) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Hide device and scan tabs ([77bedb8](https://github.com/gitmyasm/TEST-PATCHES/commit/77bedb801ece067083c8fa80fc07f5e66630a432))
+
 ## [1.0.0-dev.76](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.75...v1.0.0-dev.76) (2026-11-26)
 
 ### 🐛 Bug Fixes
