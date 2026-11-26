@@ -70,3 +70,12 @@ object OnboardingNavigationFingerprint : Fingerprint(
     returnType = "Ljava/lang/Object;",
     parameters = listOf("Ljava/lang/Object;"),
 )
+
+/** Local subscription-state Pro flag getter. */
+object SubscriptionStateProFlagFingerprint : Fingerprint(
+    definingClass = "Lai/blox100/feature_subscription/domain/model/SubscriptionState;",
+    name = "isProUser",
+    isStatic = false,
+    returnType = "Z",
+    parameters = emptyList(),
+)
