@@ -1,3 +1,9 @@
+## [1.0.0-dev.81](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.80...v1.0.0-dev.81) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Correct Tools page smali constructor ([a3f1d59](https://github.com/gitmyasm/TEST-PATCHES/commit/a3f1d591df5a91974f21f6b3cd376c1cbb006cf1))
+
 ## [1.0.0-dev.80](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.79...v1.0.0-dev.80) (2026-11-26)
 
 ### 🐛 Bug Fixes
