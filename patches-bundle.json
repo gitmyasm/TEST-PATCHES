@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-26T19:34:31",
-  "description": "## [1.0.0-dev.82](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.81...v1.0.0-dev.82) (2026-11-26)\n\n### ✨ New Features\n\n* **wps:** Hide bottom Tools tab ([b5f6684](https://github.com/gitmyasm/TEST-PATCHES/commit/b5f668499b4ff0157ad0a0b444930ca679d0c8fe))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.82/patches-1.0.0-dev.82.mpp",
+  "created_at": "2026-11-26T20:03:19",
+  "description": "## [1.0.0-dev.83](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.82...v1.0.0-dev.83) (2026-11-26)\n\n### ✨ New Features\n\n* **wps:** Hide rooted device warning ([5a1830e](https://github.com/gitmyasm/TEST-PATCHES/commit/5a1830e2a2275e2d40c3d3e07d6df4b35961cc69))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.83/patches-1.0.0-dev.83.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.82"
+  "version": "1.0.0-dev.83"
 }

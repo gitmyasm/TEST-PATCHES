@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.82",
+  "version": "1.0.0-dev.83",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -633,7 +633,7 @@
     },
     {
       "name": "Hide WPS Me Card And Coupon Shortcuts",
-      "description": "Prevents local registration of the card and coupon shortcuts shown on the Me page.",
+      "description": "Prevents local registration of the Cards & Coupons row shown on the Me page.",
       "default": false,
       "category": null,
       "compatiblePackages": [
@@ -762,6 +762,38 @@
     {
       "name": "Hide WPS Me Support Icon",
       "description": "Hides the local help/support icon shown beside the notification bell on the Me page.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Rooted Device Warning",
+      "description": "Prevents the local rooted-device toast shown every time WPS Office launches.",
       "default": false,
       "category": null,
       "compatiblePackages": [

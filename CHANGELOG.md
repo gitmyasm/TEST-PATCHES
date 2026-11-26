@@ -1,3 +1,9 @@
+## [1.0.0-dev.83](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.82...v1.0.0-dev.83) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Hide rooted device warning ([5a1830e](https://github.com/gitmyasm/TEST-PATCHES/commit/5a1830e2a2275e2d40c3d3e07d6df4b35961cc69))
+
 ## [1.0.0-dev.82](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.81...v1.0.0-dev.82) (2026-11-26)
 
 ### ✨ New Features
