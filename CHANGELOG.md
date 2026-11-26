@@ -1,3 +1,9 @@
+## [1.0.0-dev.78](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.77...v1.0.0-dev.78) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Use Tools as bottom Discover tab ([34561ae](https://github.com/gitmyasm/TEST-PATCHES/commit/34561ae1f040badda278a6596ddd18b13fb752bc))
+
 ## [1.0.0-dev.77](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.76...v1.0.0-dev.77) (2026-11-26)
 
 ### ✨ New Features

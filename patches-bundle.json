@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-26T17:29:27",
-  "description": "## [1.0.0-dev.77](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.76...v1.0.0-dev.77) (2026-11-26)\n\n### ✨ New Features\n\n* **wps:** Hide device and scan tabs ([77bedb8](https://github.com/gitmyasm/TEST-PATCHES/commit/77bedb801ece067083c8fa80fc07f5e66630a432))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.77/patches-1.0.0-dev.77.mpp",
+  "created_at": "2026-11-26T18:11:29",
+  "description": "## [1.0.0-dev.78](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.77...v1.0.0-dev.78) (2026-11-26)\n\n### ✨ New Features\n\n* **wps:** Use Tools as bottom Discover tab ([34561ae](https://github.com/gitmyasm/TEST-PATCHES/commit/34561ae1f040badda278a6596ddd18b13fb752bc))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.78/patches-1.0.0-dev.78.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.77"
+  "version": "1.0.0-dev.78"
 }
