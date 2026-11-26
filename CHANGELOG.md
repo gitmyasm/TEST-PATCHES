@@ -1,3 +1,9 @@
+## [1.0.0-dev.80](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.79...v1.0.0-dev.80) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Use original Tools layout in bottom tab ([a196f23](https://github.com/gitmyasm/TEST-PATCHES/commit/a196f2307b6f275e654277dfb9ba3030e5f91d55))
+
 ## [1.0.0-dev.79](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.78...v1.0.0-dev.79) (2026-11-26)
 
 ### 🐛 Bug Fixes
