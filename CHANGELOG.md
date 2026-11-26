@@ -1,3 +1,9 @@
+## [1.0.0-dev.66](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.65...v1.0.0-dev.66) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Correct share tab removal ([38ce6de](https://github.com/gitmyasm/TEST-PATCHES/commit/38ce6de3bfed0b712e9920be5e4622502430f3ec))
+
 ## [1.0.0-dev.65](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.64...v1.0.0-dev.65) (2026-11-26)
 
 ### ✨ New Features
