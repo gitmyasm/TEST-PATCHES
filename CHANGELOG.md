@@ -1,3 +1,9 @@
+## [1.0.0-dev.72](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.71...v1.0.0-dev.72) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Hide home search keyword ad ([490184f](https://github.com/gitmyasm/TEST-PATCHES/commit/490184f057b67c704cac5ff59308be941331973b))
+
 ## [1.0.0-dev.71](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.70...v1.0.0-dev.71) (2026-11-26)
 
 ### 🐛 Bug Fixes
