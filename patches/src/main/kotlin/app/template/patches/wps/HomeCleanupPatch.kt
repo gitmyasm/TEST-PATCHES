@@ -2,6 +2,7 @@ package app.template.patches.wps
 
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
+import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
@@ -45,7 +46,12 @@ val hideWpsHomeShareTabPatch = bytecodePatch(
                     reference.name == "isShareFileEnable"
         }
         guard(index >= 0, "share tab registration call not found")
+        guard(
+            index + 1 < instructions.size && instructions[index + 1].opcode == Opcode.MOVE_RESULT,
+            "share tab registration result not found",
+        )
 
         method.replaceInstruction(index, "const/4 v0, 0x0")
+        method.replaceInstruction(index + 1, "nop")
     }
 }
