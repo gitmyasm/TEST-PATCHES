@@ -230,6 +230,18 @@ internal object WpsAccountPanelSetupFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
+internal const val WPS_ACCOUNT_PANEL_OPERATION_PROXY =
+    "Lcn/wps/moffice/main/local/home/accountpanel/OperationProxy;"
+
+internal object WpsAccountPanelOperationProxyFingerprint : Fingerprint(
+    definingClass = WPS_ACCOUNT_PANEL_OPERATION_PROXY,
+    name = "a",
+    returnType = "V",
+    parameters = listOf(
+        "Lcn/wps/moffice/main/local/home/accountpanel/person/PersonInfoPanelBean;",
+    ),
+)
+
 internal const val WPS_ACCOUNT_PANEL_ROW =
     "Lcn/wps/moffice/common/widget/AccountPanelPlaceholderView;"
 

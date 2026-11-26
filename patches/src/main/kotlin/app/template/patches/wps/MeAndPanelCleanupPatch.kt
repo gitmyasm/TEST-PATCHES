@@ -150,6 +150,20 @@ val hideWpsSidebarUpgradeCardPatch = bytecodePatch(
     compatibleWith(COMPATIBILITY_WPS_OFFICE)
 
     execute {
+        WpsAccountPanelOperationProxyFingerprint.method.replaceWithCleanBody(
+            owner = WpsAccountPanelOperationProxyFingerprint.classDef,
+            registerCount = 3,
+            label = "OperationProxy.a",
+            smaliBody = """
+                iget-object v0, p0, $WPS_ACCOUNT_PANEL_OPERATION_PROXY->a:Landroid/view/ViewGroup;
+                if-eqz v0, :done
+                const/16 v1, 0x8
+                invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+                :done
+                return-void
+            """,
+        )
+
         WpsAccountPanelRefreshFingerprint.method.replaceWithCleanBody(
             owner = WpsAccountPanelRefreshFingerprint.classDef,
             registerCount = 3,
