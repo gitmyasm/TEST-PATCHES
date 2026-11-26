@@ -8,6 +8,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.NarrowLiteralInstructio
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 
 private fun MutableMethod.disableBooleanRegistration(
     definingClass: String,
@@ -47,19 +48,35 @@ private fun MutableMethod.replaceResourceId(oldId: Int, newId: Int, label: Strin
     replaceInstruction(index, "const v${(instruction as OneRegisterInstruction).registerA}, 0x${newId.toString(16)}")
 }
 
-private fun MutableMethod.replaceTypeReferences(oldType: String, newType: String, label: String) {
+private fun MutableMethod.replaceDiscoverPageWithToolsPage(
+    oldType: String,
+    newType: String,
+    label: String,
+) {
     val instructions = implementation?.instructions
     guard(instructions != null, "$label has no body")
 
     var replacements = 0
     instructions!!.forEachIndexed { index, instruction ->
-        val instructionBody = instruction.toString()
-        if (instructionBody.contains(oldType)) {
-            replaceInstruction(index, instructionBody.replace(oldType, newType))
+        val reference = (instruction as? ReferenceInstruction)?.reference
+        val referenceType = when (reference) {
+            is TypeReference -> reference.type
+            is MethodReference -> reference.definingClass
+            else -> null
+        }
+        if (referenceType != oldType) return@forEachIndexed
+
+        val replacement = when (reference) {
+            is TypeReference -> "new-instance p1, $newType"
+            is MethodReference -> "invoke-direct {p1}, $newType-><init>()V"
+            else -> null
+        }
+        if (replacement != null) {
+            replaceInstruction(index, replacement)
             replacements++
         }
     }
-    guard(replacements >= 2, "$label references not found")
+    guard(replacements == 2, "$label references not found")
 }
 
 @Suppress("unused")
@@ -189,7 +206,7 @@ val useWpsToolsAsBottomDiscoverTabPatch = bytecodePatch(
     compatibleWith(COMPATIBILITY_WPS_OFFICE)
 
     execute {
-        WpsPageTabManagerConstructorFingerprint.method.replaceTypeReferences(
+        WpsPageTabManagerConstructorFingerprint.method.replaceDiscoverPageWithToolsPage(
             oldType = "Lcn/wps/moffice/main/discover/ui/AiDiscoverPage;",
             newType = "Lcn/wps/moffice/main/local/home/phone/application/HomeAppsPage;",
             label = "bottom Tools page",
