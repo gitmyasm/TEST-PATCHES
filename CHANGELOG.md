@@ -1,3 +1,9 @@
+## [1.0.0-dev.67](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.66...v1.0.0-dev.67) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** add Me and sidebar cleanup patches ([545c7d2](https://github.com/gitmyasm/TEST-PATCHES/commit/545c7d253089129531b3d030c4b0551dead8f342))
+
 ## [1.0.0-dev.66](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.65...v1.0.0-dev.66) (2026-11-26)
 
 ### 🐛 Bug Fixes
