@@ -1,3 +1,9 @@
+## [1.0.0-dev.63](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.62...v1.0.0-dev.63) (2026-11-26)
+
+### ✨ New Features
+
+* **regain:** Add local patch to allow microG sign-in flow ([092e885](https://github.com/gitmyasm/TEST-PATCHES/commit/092e885f0a559c9f88d2dd9bc596f9297796de5b))
+
 ## [1.0.0-dev.62](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.61...v1.0.0-dev.62) (2026-11-26)
 
 ### 🐛 Bug Fixes
