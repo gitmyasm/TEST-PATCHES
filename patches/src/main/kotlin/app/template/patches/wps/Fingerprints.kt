@@ -193,48 +193,14 @@ internal object WpsMainTabBarFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
-internal const val WPS_USER_SIGN_VIEW_RENDERER =
-    "Lcn/wps/moffice/main/local/home/me/feature/UserSignViewRenderer;"
+internal const val WPS_HOME_TITLE_BAR_PROMO_CALLBACK =
+    "Lcn/wps/moffice/main/common/viewcontrols/HomeViewTitleBar\$4;"
 
-internal object WpsUserSignRendererInitFingerprint : Fingerprint(
-    definingClass = WPS_USER_SIGN_VIEW_RENDERER,
-    name = "c",
+internal object WpsHomeTitleBarPromoCallbackFingerprint : Fingerprint(
+    definingClass = WPS_HOME_TITLE_BAR_PROMO_CALLBACK,
+    name = "a",
     returnType = "V",
-    parameters = listOf(
-        "Lcn/wps/moffice/main/local/home/me/core/MeFeatureContext;",
-        "Landroid/view/ViewGroup;",
-        "Lcn/wps/moffice/main/local/home/me/core/FeatureData;",
-    ),
-)
-
-internal object WpsUserSignRendererWebPromoFingerprint : Fingerprint(
-    definingClass = WPS_USER_SIGN_VIEW_RENDERER,
-    name = "k",
-    returnType = "V",
-    parameters = listOf("Landroid/content/Context;"),
-)
-
-internal const val WPS_HOME_TAB_TITLE_CONTROLLER =
-    "Lcn/wps/moffice/main/local/home/phone/v2/ext/HomeTabTitleController;"
-
-internal object WpsHomeBigBannerFingerprint : Fingerprint(
-    definingClass = WPS_HOME_TAB_TITLE_CONTROLLER,
-    name = "k",
-    returnType = "V",
-    parameters = listOf(
-        "Landroid/view/View;",
-        "Lcn/wps/moffice/main/common/viewcontrols/StyleConfig;",
-    ),
-)
-
-internal object WpsHomeSmallBannerFingerprint : Fingerprint(
-    definingClass = WPS_HOME_TAB_TITLE_CONTROLLER,
-    name = "m",
-    returnType = "V",
-    parameters = listOf(
-        "Landroid/view/View;",
-        "Lcn/wps/moffice/main/common/viewcontrols/StyleConfig;",
-    ),
+    parameters = listOf("Lcn/wps/moffice/main/ad/s2s/CommonBean;"),
 )
 
 internal const val WPS_ROAMING_RECORD_TAB_CONTROLLER =
