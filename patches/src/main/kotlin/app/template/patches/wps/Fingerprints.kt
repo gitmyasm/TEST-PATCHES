@@ -172,3 +172,23 @@ internal object WpsSmallShortcutListFingerprint : Fingerprint(
     returnType = "Ljava/util/List;",
     parameters = listOf("Landroid/app/Activity;"),
 )
+
+internal const val WPS_TRANSFER_HELPER_UTILS =
+    "Lcn/wps/moffice/transfer/TransferHelperUtils;"
+
+internal object WpsTransferHelperAvailabilityFingerprint : Fingerprint(
+    definingClass = WPS_TRANSFER_HELPER_UTILS,
+    name = "c",
+    returnType = "Z",
+    parameters = emptyList(),
+)
+
+internal const val WPS_MAIN_FRAGMENT_TAB_BAR_MANAGER =
+    "Lcn/wps/moffice/main/cloud/roaming/phone/controller/PhoneMainFragmentTabBarManager;"
+
+internal object WpsMainTabBarFingerprint : Fingerprint(
+    definingClass = WPS_MAIN_FRAGMENT_TAB_BAR_MANAGER,
+    name = "e",
+    returnType = "V",
+    parameters = emptyList(),
+)
