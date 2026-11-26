@@ -5,7 +5,6 @@ import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import com.android.tools.smali.dexlib2.Opcode
-import com.android.tools.smali.dexlib2.iface.instruction.FieldReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
@@ -176,7 +175,7 @@ val hideWpsSidebarUpgradeCardPatch = bytecodePatch(
 
         val cardAssignment = instructions!!.indexOfFirst { instruction ->
             instruction.opcode == Opcode.IPUT_OBJECT &&
-                    ((instruction as? FieldReferenceInstruction)?.reference as? FieldReference)?.name == "k"
+                    ((instruction as? ReferenceInstruction)?.reference as? FieldReference)?.name == "k"
         }
         guard(cardAssignment >= 0, "account panel card view assignment not found")
 
