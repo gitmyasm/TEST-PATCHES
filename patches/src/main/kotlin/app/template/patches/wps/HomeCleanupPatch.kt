@@ -238,7 +238,6 @@ val useWpsToolsAsBottomDiscoverTabPatch = bytecodePatch(
             label = "bottom Tools page",
         )
 
-        WpsHomeAppsPageFingerprint.method
         val homeAppsPage = mutableClassDefBy(WPS_HOME_APPS_PAGE)
         val viewField = homeAppsPage.fields.firstOrNull {
             it.name == "i" && it.type == appsPageView
@@ -254,7 +253,7 @@ val useWpsToolsAsBottomDiscoverTabPatch = bytecodePatch(
                 new-instance v0, $padAppsPageView
                 invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
                 move-result-object v1
-                invoke-direct {v0, v1}, $padAppsPageView;-><init>(Landroid/app/Activity;)V
+                invoke-direct {v0, v1}, $padAppsPageView-><init>(Landroid/app/Activity;)V
                 iput-object v0, p0, $WPS_HOME_APPS_PAGE->i:$padAppsPageView
                 const-string v1, "\u516c\u5171\u5e94\u7528\u9875"
                 invoke-static {v1}, Lcn/wps/moffice/main/local/NodeLink;->create(Ljava/lang/String;)Lcn/wps/moffice/main/local/NodeLink;
@@ -318,6 +317,10 @@ val useWpsToolsAsBottomDiscoverTabPatch = bytecodePatch(
                 invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView${'$'}RecycledViewPool;->clear()V
                 :cond_0
                 sget-object v0, Lcn/wps/moffice/main/local/home/phone/applicationv2/AppService;->k:Lcn/wps/moffice/main/local/home/phone/applicationv2/AppService;
+                iget-object v1, p0, $WPS_HOME_APPS_PAGE->i:$padAppsPageView
+                iget-object v1, v1, $padAppsPageView->g:Lcn/wps/moffice/main/local/home/phone/applicationv2/presenter/PadAppsPresenter;
+                invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+                invoke-virtual {v0, v1}, Lcn/wps/moffice/main/local/home/phone/applicationv2/AppService;->t(Lcn/wps/moffice/main/local/home/phone/applicationv2/AppService${'$'}AppLoadedListener;)V
                 iget-object p0, p0, $WPS_HOME_APPS_PAGE->i:$padAppsPageView
                 iget-object p0, p0, $padAppsPageView->h:$accountChangeListener
                 invoke-virtual {v0, p0}, Lcn/wps/moffice/main/local/home/phone/applicationv2/AppService;->s($accountChangeListener)V
