@@ -1,3 +1,9 @@
+## [1.0.0-dev.75](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.74...v1.0.0-dev.75) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Remove home title-bar promo icon ([9187a75](https://github.com/gitmyasm/TEST-PATCHES/commit/9187a750d3d15112dcf3d30ddb35aecf91155de9))
+
 ## [1.0.0-dev.74](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.73...v1.0.0-dev.74) (2026-11-26)
 
 ### 🐛 Bug Fixes
