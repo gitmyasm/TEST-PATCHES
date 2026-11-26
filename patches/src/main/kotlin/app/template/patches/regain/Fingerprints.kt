@@ -10,3 +10,12 @@ object SubscriptionStateProFlagFingerprint : Fingerprint(
     returnType = "Z",
     parameters = emptyList(),
 )
+
+/** Credential Manager's local Google Play Services availability gate. */
+object CredentialProviderGmsAvailabilityFingerprint : Fingerprint(
+    definingClass = "Landroidx/credentials/playservices/CredentialProviderPlayServicesImpl;",
+    name = "isGooglePlayServicesAvailable",
+    isStatic = false,
+    returnType = "I",
+    parameters = listOf("Landroid/content/Context;"),
+)
