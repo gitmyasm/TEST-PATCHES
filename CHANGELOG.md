@@ -1,3 +1,10 @@
+## [1.0.0-dev.68](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.67...v1.0.0-dev.68) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Correct sidebar row visibility and card removal ([6296a17](https://github.com/gitmyasm/TEST-PATCHES/commit/6296a17cf19d3d1323fc4e1ccaefd898f8705d09))
+* **wps:** Restore MPP compilation ([adc4c50](https://github.com/gitmyasm/TEST-PATCHES/commit/adc4c50df2cba2ddc22869d35a6836986518d917))
+
 ## [1.0.0-dev.67](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.66...v1.0.0-dev.67) (2026-11-26)
 
 ### ✨ New Features
