@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-26T07:11:17",
-  "description": "## [1.0.0-dev.63](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.62...v1.0.0-dev.63) (2026-11-26)\n\n### ✨ New Features\n\n* **regain:** Add local patch to allow microG sign-in flow ([092e885](https://github.com/gitmyasm/TEST-PATCHES/commit/092e885f0a559c9f88d2dd9bc596f9297796de5b))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.63/patches-1.0.0-dev.63.mpp",
+  "created_at": "2026-11-26T08:43:00",
+  "description": "## [1.0.0-dev.64](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.63...v1.0.0-dev.64) (2026-11-26)\n\n### ✨ New Features\n\n* **wps:** Add WPS patches for local testing ([8bc4efb](https://github.com/gitmyasm/TEST-PATCHES/commit/8bc4efb9cd7fc557c5f09857424f1770ecba8ffa))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.64/patches-1.0.0-dev.64.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.63"
+  "version": "1.0.0-dev.64"
 }

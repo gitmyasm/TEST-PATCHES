@@ -1,3 +1,9 @@
+## [1.0.0-dev.64](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.63...v1.0.0-dev.64) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Add WPS patches for local testing ([8bc4efb](https://github.com/gitmyasm/TEST-PATCHES/commit/8bc4efb9cd7fc557c5f09857424f1770ecba8ffa))
+
 ## [1.0.0-dev.63](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.62...v1.0.0-dev.63) (2026-11-26)
 
 ### ✨ New Features

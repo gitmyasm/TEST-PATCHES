@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.63",
+  "version": "1.0.0-dev.64",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -408,26 +408,31 @@
       "options": []
     },
     {
-      "name": "Enable Sign-In With Alternative Google Services Provider",
-      "description": "Allows Regain's existing Google sign-in flow to run with any microG GmsCore variant. Account tokens and backend authentication are unchanged.",
+      "name": "Hide WPS Home Big Shortcuts",
+      "description": "Returns an empty upper home shortcut list locally, so the top shortcut row is not drawn.",
       "default": false,
       "category": null,
       "compatiblePackages": [
         {
-          "packageName": "ai.regainapp",
-          "name": "Regain",
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#6C4DF6",
+          "appIconColor": "#E64A19",
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": "76.1.2139",
-              "versionCodes": null,
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
               "isExperimental": false,
-              "minSdk": null,
-              "description": null
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
             }
           ]
         }
@@ -435,26 +440,31 @@
       "options": []
     },
     {
-      "name": "Force Local Pro Flag In Subscription State",
-      "description": "Forces Regain's local subscription-state Pro flag on. Purchases and server entitlements are unchanged.",
+      "name": "Hide WPS Home Small Shortcuts",
+      "description": "Returns an empty lower home shortcut list locally, so the quick-tools row is not drawn.",
       "default": false,
       "category": null,
       "compatiblePackages": [
         {
-          "packageName": "ai.regainapp",
-          "name": "Regain",
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#6C4DF6",
+          "appIconColor": "#E64A19",
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": "76.1.2139",
-              "versionCodes": null,
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
               "isExperimental": false,
-              "minSdk": null,
-              "description": null
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
             }
           ]
         }
@@ -676,6 +686,129 @@
         }
       ],
       "options": []
+    },
+    {
+      "name": "Unlock premium features",
+      "description": "Changes local privilege answers so premium tool menus and local UI states are shown. No account, purchase, or stored state is modified.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "bypassPrivilegeInterceptor",
+          "title": "Unlock premium tools (main switch)",
+          "description": "Answers the local VAS interceptor chain with a success response.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "unlockPremiumIdentity",
+          "title": "Show a Pro account",
+          "description": "Reports the local Pro flag used by upgrade UI.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "unlockMemberLevel",
+          "title": "Open Pro menus",
+          "description": "Reports local premium SKUs and member level to menus.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "unlockPrivilegeChecks",
+          "title": "Pass ownership checks",
+          "description": "Answers local ownership checks as held.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "removeAds",
+          "title": "Remove ads",
+          "description": "Reports the local ad-free flag to the ad gate.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "hideOwnedPrivilegeDialog",
+          "title": "Hide the \"already a member\" popup",
+          "description": "Suppresses the locally built already-owned dialog.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "bypassAsyncPrivilegeChecks",
+          "title": "Hide the upgrade banner on tool pages",
+          "description": "Suppresses the tool-page upsell banner through its local callback.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "denyAiPrivileges",
+          "title": "Turn AI features off",
+          "description": "Answers local AI privilege ids as not held.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "reportAdGateOffline",
+          "title": "Skip the ad pre-check",
+          "description": "Reports the local ad gate as off before request handling.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "passSignatureCheck",
+          "title": "Report the stock signature",
+          "description": "Reports the local signature result used only by analytics.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        }
+      ]
     }
   ]
 }
