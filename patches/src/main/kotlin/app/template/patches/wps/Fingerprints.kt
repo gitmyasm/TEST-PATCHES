@@ -193,6 +193,30 @@ internal object WpsMainTabBarFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
+internal const val WPS_LOCAL_RECORD_TAB_CONTROLLER =
+    "Lcn/wps/moffice/main/local/home/phone/v2/ext/local/LocalRecordTabController;"
+
+internal object WpsLocalTabControllerConstructorFingerprint : Fingerprint(
+    definingClass = WPS_LOCAL_RECORD_TAB_CONTROLLER,
+    name = "<init>",
+    returnType = "V",
+    parameters = listOf(
+        "Landroid/app/Activity;",
+        "Lcn/wps/moffice/main/local/home/phone/PageViewCallback;",
+        "Lcn/wps/moffice/main/local/home/phone/multiselect/MultiSelectHomeActivityTitleControl;",
+    ),
+)
+
+internal const val WPS_HOME_BOTTOM_BAR_UTIL =
+    "Lcn/wps/moffice/main/push/hometoolbar/CnHomeBottomBarUtil;"
+
+internal object WpsHomeBottomBarItemsFingerprint : Fingerprint(
+    definingClass = WPS_HOME_BOTTOM_BAR_UTIL,
+    name = "defaultHomeToolbarBottomBean",
+    returnType = "Ljava/util/ArrayList;",
+    parameters = listOf("Landroid/content/Context;"),
+)
+
 internal const val WPS_HOME_TITLE_BAR_PROMO_CALLBACK =
     "Lcn/wps/moffice/main/common/viewcontrols/HomeViewTitleBar\$4;"
 

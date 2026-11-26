@@ -2,9 +2,33 @@ package app.template.patches.wps
 
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+
+private fun MutableMethod.disableBooleanRegistration(
+    definingClass: String,
+    name: String,
+    resultRegister: String,
+    label: String,
+) {
+    val instructions = implementation?.instructions
+    guard(instructions != null, "$label has no body")
+
+    val index = instructions!!.indexOfFirst { instruction ->
+        val reference = (instruction as? ReferenceInstruction)?.reference as? MethodReference
+        reference?.definingClass == definingClass && reference.name == name
+    }
+    guard(index >= 0, "$label registration call not found")
+    guard(
+        index + 1 < instructions.size && instructions[index + 1].opcode == Opcode.MOVE_RESULT,
+        "$label registration result not found",
+    )
+
+    replaceInstruction(index, "const/4 $resultRegister, 0x0")
+    replaceInstruction(index + 1, "nop")
+}
 
 @Suppress("unused")
 val hideWpsTransferAssistantCardPatch = bytecodePatch(
@@ -70,6 +94,56 @@ val hideWpsHomePromoBannersPatch = bytecodePatch(
             registerCount = 3,
             label = "BigNoticeColumnAd registration",
             smaliBody = proceed,
+        )
+    }
+}
+
+@Suppress("unused")
+val hideWpsHomeDeviceTabPatch = bytecodePatch(
+    name = "Hide WPS Home This Device Tab",
+    description = "Skips local registration of the This Device top tab and its content pages.",
+    default = false,
+) {
+    compatibleWith(COMPATIBILITY_WPS_OFFICE)
+
+    execute {
+        val deviceTabAvailability = "Lcn/wps/moffice/main/local/home/device/HomeDeviceMgr;"
+
+        WpsMainTabBarFingerprint.method.disableBooleanRegistration(
+            definingClass = deviceTabAvailability,
+            name = "isDeviceTabEnable",
+            resultRegister = "v0",
+            label = "This Device tab label",
+        )
+        WpsLocalTabControllerConstructorFingerprint.method.disableBooleanRegistration(
+            definingClass = deviceTabAvailability,
+            name = "isDeviceTabEnable",
+            resultRegister = "v6",
+            label = "local This Device content",
+        )
+        WpsRoamingTabControllerConstructorFingerprint.method.disableBooleanRegistration(
+            definingClass = deviceTabAvailability,
+            name = "isDeviceTabEnable",
+            resultRegister = "v5",
+            label = "roaming This Device content",
+        )
+    }
+}
+
+@Suppress("unused")
+val hideWpsScanTabPatch = bytecodePatch(
+    name = "Hide WPS Scan Tab",
+    description = "Forces the local bottom-bar scan entry off while keeping the other tabs.",
+    default = false,
+) {
+    compatibleWith(COMPATIBILITY_WPS_OFFICE)
+
+    execute {
+        WpsHomeBottomBarItemsFingerprint.method.disableBooleanRegistration(
+            definingClass = "Lcn/wps/moffice/common/param/wrapper/KModulePraramsWrapper;",
+            name = "a",
+            resultRegister = "v1",
+            label = "Scan tab registration",
         )
     }
 }
