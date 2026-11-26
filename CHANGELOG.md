@@ -1,3 +1,9 @@
+## [1.0.0-dev.69](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.68...v1.0.0-dev.69) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Hide account panel VIP banner in both layouts ([547c1ee](https://github.com/gitmyasm/TEST-PATCHES/commit/547c1ee728cf788c7d6e8cc00422b7b3895b2c54))
+
 ## [1.0.0-dev.68](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.67...v1.0.0-dev.68) (2026-11-26)
 
 ### 🐛 Bug Fixes
