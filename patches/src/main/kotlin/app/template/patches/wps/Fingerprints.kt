@@ -223,6 +223,13 @@ internal object WpsAccountPanelRefreshFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
+internal object WpsAccountPanelSetupFingerprint : Fingerprint(
+    definingClass = WPS_ACCOUNT_PANEL,
+    name = "z",
+    returnType = "V",
+    parameters = emptyList(),
+)
+
 internal const val WPS_ACCOUNT_PANEL_ROW =
     "Lcn/wps/moffice/common/widget/AccountPanelPlaceholderView;"
 

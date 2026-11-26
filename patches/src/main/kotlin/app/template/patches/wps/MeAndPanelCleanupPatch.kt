@@ -1,17 +1,18 @@
 package app.template.patches.wps
 
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import com.android.tools.smali.dexlib2.Opcode
+import com.android.tools.smali.dexlib2.iface.instruction.FieldReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
+import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 
 private const val FEATURE_MANAGER = "Lcn/wps/moffice/main/local/home/me/core/MeFeatureManager;"
 private const val FEATURE_CLASS_PREFIX = "Lcn/wps/moffice/main/local/home/me/feature/"
-private const val ACCOUNT_PANEL_UTIL =
-    "Lcn/wps/moffice/main/local/home/accountpanel/AccountPanelUtil;"
 
 private fun MutableMethod.skipFeatureRegistration(featureName: String) {
     val featureClass = "$FEATURE_CLASS_PREFIX$featureName;"
@@ -47,19 +48,19 @@ private fun accountPanelRowBody(titles: List<String>): String = buildString {
         appendLine("invoke-virtual {v1, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z")
         appendLine("move-result v1")
         val nextLabel = if (index == titles.lastIndex) ":show" else ":check_${index + 1}"
-        appendLine("if-nez v1, $nextLabel")
+        appendLine("if-eqz v1, $nextLabel")
         appendLine("goto :hide")
         if (index != titles.lastIndex) appendLine(":check_${index + 1}")
     }
     appendLine(":hide")
     appendLine("iget-object v1, p0, $WPS_ACCOUNT_PANEL_ROW->j:Landroid/widget/LinearLayout;")
-    appendLine("if-nez v1, :hide_return")
+    appendLine("if-eqz v1, :hide_return")
     appendLine("invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V")
     appendLine(":hide_return")
     appendLine("return-void")
     appendLine(":show")
     appendLine("iget-object v0, p0, $WPS_ACCOUNT_PANEL_ROW->c:Landroid/widget/TextView;")
-    appendLine("if-nez v0, :show_return")
+    appendLine("if-eqz v0, :show_return")
     appendLine("invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V")
     appendLine("invoke-virtual {p0}, $WPS_ACCOUNT_PANEL_ROW->b()V")
     appendLine(":show_return")
@@ -150,23 +151,42 @@ val hideWpsSidebarUpgradeCardPatch = bytecodePatch(
     compatibleWith(COMPATIBILITY_WPS_OFFICE)
 
     execute {
-        val method = WpsAccountPanelRefreshFingerprint.method
-        val instructions = method.implementation?.instructions
-        guard(instructions != null, "account panel refresh method has no body")
-
-        val callIndex = instructions!!.indexOfFirst { instruction ->
-            val reference = (instruction as? ReferenceInstruction)?.reference as? MethodReference
-            reference?.definingClass == ACCOUNT_PANEL_UTIL && reference.name == "i"
-        }
-        guard(callIndex >= 0, "account panel card check not found")
-        guard(
-            callIndex + 1 < instructions.size &&
-                    instructions[callIndex + 1].opcode == Opcode.MOVE_RESULT,
-            "account panel card check result not found",
+        WpsAccountPanelRefreshFingerprint.method.replaceWithCleanBody(
+            owner = WpsAccountPanelRefreshFingerprint.classDef,
+            registerCount = 3,
+            label = "AccountPanel.E",
+            smaliBody = """
+                iget-object v0, p0, $WPS_ACCOUNT_PANEL->k:Landroid/view/View;
+                if-eqz v0, :skip_card
+                const/16 v1, 0x8
+                invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+                :skip_card
+                iget-object v0, p0, $WPS_ACCOUNT_PANEL->J:Landroid/widget/LinearLayout;
+                if-eqz v0, :skip_button
+                const/16 v1, 0x8
+                invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+                :skip_button
+                return-void
+            """,
         )
 
-        method.replaceInstruction(callIndex, "const/4 v0, 0x1")
-        method.replaceInstruction(callIndex + 1, "nop")
+        val setup = WpsAccountPanelSetupFingerprint.method
+        val instructions = setup.implementation?.instructions
+        guard(instructions != null, "account panel setup method has no body")
+
+        val cardAssignment = instructions!!.indexOfFirst { instruction ->
+            instruction.opcode == Opcode.IPUT_OBJECT &&
+                    ((instruction as? FieldReferenceInstruction)?.reference as? FieldReference)?.name == "k"
+        }
+        guard(cardAssignment >= 0, "account panel card view assignment not found")
+
+        setup.addInstructions(
+            cardAssignment + 1,
+            """
+                const/16 v6, 0x8
+                invoke-virtual {v3, v6}, Landroid/view/View;->setVisibility(I)V
+            """.trimIndent(),
+        )
     }
 }
 
