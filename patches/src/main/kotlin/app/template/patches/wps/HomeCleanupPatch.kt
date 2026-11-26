@@ -10,6 +10,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.NarrowLiteralInstructio
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+import com.android.tools.smali.dexlib2.iface.reference.StringReference
 import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 
 private fun MutableMethod.disableBooleanRegistration(
@@ -97,6 +98,25 @@ private fun MutableClass.replaceNamedMethod(
         label = label,
         smaliBody = smaliBody,
     )
+}
+
+private fun MutableMethod.skipBottomToolsTab(label: String) {
+    val instructions = implementation?.instructions
+    guard(instructions != null, "$label has no body")
+
+    val kitsIndex = instructions!!.indexOfFirst { instruction ->
+        val reference = (instruction as? ReferenceInstruction)?.reference
+        reference is StringReference && reference.string == "kits"
+    }
+    guard(kitsIndex >= 0, "$label item tag not found")
+
+    val addIndex = (kitsIndex + 1 until instructions.size).firstOrNull { index ->
+        val reference = (instructions[index] as? ReferenceInstruction)?.reference as? MethodReference
+        reference?.definingClass == "Ljava/util/ArrayList;" && reference.name == "add"
+    }
+    guard(addIndex != null, "$label add call not found")
+
+    replaceInstruction(addIndex!!, "nop")
 }
 
 @Suppress("unused")
@@ -357,6 +377,19 @@ val useWpsToolsAsBottomDiscoverTabPatch = bytecodePatch(
             newId = 0x7f154b8c,
             label = "bottom Discover label",
         )
+    }
+}
+
+@Suppress("unused")
+val hideWpsBottomToolsTabPatch = bytecodePatch(
+    name = "Hide WPS Bottom Tools Tab",
+    description = "Prevents local registration of the bottom Discover/Tools tab item.",
+    default = false,
+) {
+    compatibleWith(COMPATIBILITY_WPS_OFFICE)
+
+    execute {
+        WpsHomeBottomBarItemsFingerprint.method.skipBottomToolsTab("bottom Tools tab")
     }
 }
 
