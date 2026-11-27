@@ -1,3 +1,9 @@
+## [1.0.0-dev.92](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.91...v1.0.0-dev.92) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Remove ineffective font and AI patches ([86d620d](https://github.com/gitmyasm/TEST-PATCHES/commit/86d620d4a7d09ab301eba24652b6bba85463c6dc))
+
 ## [1.0.0-dev.91](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.90...v1.0.0-dev.91) (2026-11-27)
 
 ### 🐛 Bug Fixes
