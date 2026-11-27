@@ -1,3 +1,9 @@
+## [1.0.0-dev.88](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.87...v1.0.0-dev.88) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Use static parameter for material cloud font flags ([f9dfabb](https://github.com/gitmyasm/TEST-PATCHES/commit/f9dfabbec67f834d81c950048db947edee6a50df))
+
 ## [1.0.0-dev.87](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.86...v1.0.0-dev.87) (2026-11-27)
 
 ### 🐛 Bug Fixes
