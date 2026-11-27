@@ -427,3 +427,13 @@ internal object WpsCloudFontLoadingFingerprint : Fingerprint(
     returnType = "Z",
     parameters = emptyList(),
 )
+
+internal object WpsFontFlutterBridgeRecFontListFingerprint : Fingerprint(
+    definingClass = "Lcn/wps/moffice/docer/bridge/flutter/FontFlutterBridge;",
+    name = "getRecFontList",
+    returnType = "V",
+    parameters = listOf(
+        "Lorg/json/JSONObject;",
+        "Lcn/wpsx/support/jsbridge/interf/Callback;",
+    ),
+)
