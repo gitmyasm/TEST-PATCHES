@@ -16,22 +16,6 @@ val hideWpsCloudFontsPatch = bytecodePatch(
             return v0
         """
 
-        WpsMaterialCenterCloudFontFlagsFingerprint.method.replaceWithCleanBody(
-            owner = WpsMaterialCenterCloudFontFlagsFingerprint.classDef,
-            registerCount = 3,
-            label = "material center cloud font flags",
-            smaliBody = """
-                const/4 v0, 0x0
-                const-string v1, "isWriterCloudFontEnable"
-                invoke-virtual {p0, v1, v0}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
-                const-string v1, "isWppCloudFontEnable"
-                invoke-virtual {p0, v1, v0}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
-                const-string v1, "isEtCloudFontEnable"
-                invoke-virtual {p0, v1, v0}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
-                return-void
-            """,
-        )
-
         listOf(
             WpsCloudFontGridFingerprint to "cloud font grid",
             WpsCloudFontPreviewFingerprint to "cloud font preview",
