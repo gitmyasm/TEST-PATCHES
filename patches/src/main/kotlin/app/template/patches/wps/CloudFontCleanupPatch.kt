@@ -23,10 +23,11 @@ private fun MutableMethod.emptyRecommendedCloudFonts(label: String) {
             }
     }
     guard(cacheIndex >= 0, "$label cache call not found")
-    guard(cacheIndex + 2 < instructions.size, "$label cache call is truncated")
+    guard(cacheIndex + 3 < instructions.size, "$label cache call is truncated")
 
     val resultInstruction = instructions[cacheIndex + 1]
     val listCall = instructions[cacheIndex + 2]
+    val listResult = instructions[cacheIndex + 3]
     guard(resultInstruction.opcode == Opcode.MOVE_RESULT_OBJECT, "$label result not found")
     guard(
         listCall is ReferenceInstruction &&
@@ -34,6 +35,7 @@ private fun MutableMethod.emptyRecommendedCloudFonts(label: String) {
             (listCall.reference as? MethodReference)?.name == "f",
         "$label list call not found",
     )
+    guard(listResult.opcode == Opcode.MOVE_RESULT_OBJECT, "$label list result not found")
 
     val resultRegister = (resultInstruction as OneRegisterInstruction).registerA
     val sizeRegister = (listCall as FiveRegisterInstruction).registerD
@@ -43,6 +45,7 @@ private fun MutableMethod.emptyRecommendedCloudFonts(label: String) {
         cacheIndex + 2,
         "invoke-direct {v$resultRegister, v$sizeRegister}, Ljava/util/ArrayList;-><init>(I)V",
     )
+    replaceInstruction(cacheIndex + 3, "nop")
 }
 
 @Suppress("unused")
