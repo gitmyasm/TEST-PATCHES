@@ -258,20 +258,6 @@ internal object WpsRootWarningRunnableFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
-internal object WpsNewBlankAiConfigFingerprint : Fingerprint(
-    definingClass = "Lcn/wps/moffice/ai/base/cowork/newblank/CoworkNewBlankConfig\$Companion;",
-    name = "a",
-    returnType = "Lcom/google/gson/JsonObject;",
-    parameters = emptyList(),
-)
-
-internal object WpsCompactPanelRecommendationsFingerprint : Fingerprint(
-    definingClass = "Lcn/wps/moffice/ai/base/cowork/compact/CoworkCompactPanelConfig;",
-    name = "h",
-    returnType = "Ljava/util/List;",
-    parameters = listOf("Landroid/content/Context;", "Z"),
-)
-
 internal const val WPS_HOME_TITLE_BAR_PROMO_CALLBACK =
     "Lcn/wps/moffice/main/common/viewcontrols/HomeViewTitleBar\$4;"
 
@@ -374,66 +360,4 @@ internal object WpsAccountPanelRowTitleFingerprint : Fingerprint(
     name = "f",
     returnType = "V",
     parameters = listOf("Ljava/lang/String;"),
-)
-
-internal const val WPS_FONT_NAME_UTIL =
-    "Lcn/wps/moffice/common/fontname/shell/util/FontNameUtil;"
-
-internal object WpsCloudFontGridFingerprint : Fingerprint(
-    definingClass = WPS_FONT_NAME_UTIL,
-    name = "g",
-    returnType = "Z",
-    parameters = emptyList(),
-)
-
-internal object WpsCloudFontPreviewFingerprint : Fingerprint(
-    definingClass = WPS_FONT_NAME_UTIL,
-    name = "m",
-    returnType = "Z",
-    parameters = emptyList(),
-)
-
-internal object WpsCloudFontSearchFingerprint : Fingerprint(
-    definingClass = WPS_FONT_NAME_UTIL,
-    name = "n",
-    returnType = "Z",
-    parameters = emptyList(),
-)
-
-internal object WpsMissingFontBannerFingerprint : Fingerprint(
-    definingClass = WPS_FONT_NAME_UTIL,
-    name = "t",
-    returnType = "Z",
-    parameters = emptyList(),
-)
-
-internal object WpsMissingFontOnlineDetailFingerprint : Fingerprint(
-    definingClass = WPS_FONT_NAME_UTIL,
-    name = "v",
-    returnType = "Z",
-    parameters = emptyList(),
-)
-
-internal object WpsStartPanelCloudFontFingerprint : Fingerprint(
-    definingClass = WPS_FONT_NAME_UTIL,
-    name = "w",
-    returnType = "Z",
-    parameters = emptyList(),
-)
-
-internal object WpsCloudFontLoadingFingerprint : Fingerprint(
-    definingClass = "Lcn/wps/moffice/common/oldfont/controller/FontNameController;",
-    name = "E",
-    returnType = "Z",
-    parameters = emptyList(),
-)
-
-internal object WpsFontFlutterBridgeRecFontListFingerprint : Fingerprint(
-    definingClass = "Lcn/wps/moffice/docer/bridge/flutter/FontFlutterBridge;",
-    name = "getRecFontList",
-    returnType = "V",
-    parameters = listOf(
-        "Lorg/json/JSONObject;",
-        "Lcn/wpsx/support/jsbridge/interf/Callback;",
-    ),
 )
