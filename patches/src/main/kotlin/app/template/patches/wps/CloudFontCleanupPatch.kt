@@ -5,7 +5,7 @@ import app.morphe.patcher.patch.bytecodePatch
 @Suppress("unused")
 val hideWpsCloudFontsPatch = bytecodePatch(
     name = "Hide WPS Cloud Fonts",
-    description = "Hides local cloud-font entries, previews, search and missing-font prompts from the font panels while leaving installed fonts unchanged.",
+    description = "Removes cloud-font entries, previews, search and missing-font prompts from the local font panels while leaving installed fonts unchanged.",
     default = false,
 ) {
     compatibleWith(COMPATIBILITY_WPS_OFFICE)
