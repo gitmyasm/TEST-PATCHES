@@ -1,3 +1,9 @@
+## [1.0.0-dev.93](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.92...v1.0.0-dev.93) (2026-11-27)
+
+### ✨ New Features
+
+* **wps:** Support version 26.11.2 ([10defe1](https://github.com/gitmyasm/TEST-PATCHES/commit/10defe1f32522f5aa90833ca9555c001a18031c5))
+
 ## [1.0.0-dev.92](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.91...v1.0.0-dev.92) (2026-11-27)
 
 ### 🐛 Bug Fixes

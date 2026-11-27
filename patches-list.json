@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.92",
+  "version": "1.0.0-dev.93",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -433,6 +433,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -465,6 +477,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -497,6 +521,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -529,6 +565,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -561,6 +609,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -593,6 +653,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -625,6 +697,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -657,6 +741,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -689,6 +785,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -721,6 +829,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -753,6 +873,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -785,6 +917,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -817,6 +961,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -849,6 +1005,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -881,6 +1049,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -913,6 +1093,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -945,6 +1137,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -1193,6 +1397,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
@@ -1316,6 +1532,18 @@
               "isExperimental": false,
               "minSdk": 29,
               "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
