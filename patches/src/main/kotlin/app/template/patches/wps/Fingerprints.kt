@@ -427,3 +427,10 @@ internal object WpsCloudFontLoadingFingerprint : Fingerprint(
     returnType = "Z",
     parameters = emptyList(),
 )
+
+internal object WpsMaterialCenterCloudFontFlagsFingerprint : Fingerprint(
+    definingClass = "Lcn/wps/moffice/docer/materialcenter/MCenterUtils;",
+    name = "B",
+    returnType = "V",
+    parameters = listOf("Landroid/os/Bundle;"),
+)
