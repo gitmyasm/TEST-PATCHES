@@ -1,3 +1,9 @@
+## [1.0.0-dev.87](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.86...v1.0.0-dev.87) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Hide material center cloud fonts ([40059e0](https://github.com/gitmyasm/TEST-PATCHES/commit/40059e03d1cfadb507dd6bb02c1e73dbcac1fc50))
+
 ## [1.0.0-dev.86](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.85...v1.0.0-dev.86) (2026-11-27)
 
 ### ✨ New Features
