@@ -1,3 +1,9 @@
+## [1.0.0-dev.85](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.84...v1.0.0-dev.85) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Hide compact AI recommendation shortcuts ([c71436f](https://github.com/gitmyasm/TEST-PATCHES/commit/c71436fe08934aa5c9288b3b2a9def4527405541))
+
 ## [1.0.0-dev.84](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.83...v1.0.0-dev.84) (2026-11-27)
 
 ### ✨ New Features

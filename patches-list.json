@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.84",
+  "version": "1.0.0-dev.85",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -793,7 +793,7 @@
     },
     {
       "name": "Hide WPS New Blank AI Recommendations",
-      "description": "Prevents the new-blank document AI shortcut bubble from loading Activate WPS AI, Scan Input, and Inspiration marketplace.",
+      "description": "Prevents the new-blank document and compact AI shortcut bars from loading Activate WPS AI, Scan Input, and Inspiration marketplace.",
       "default": false,
       "category": null,
       "compatiblePackages": [

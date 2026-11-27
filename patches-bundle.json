@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-27T05:11:47",
-  "description": "## [1.0.0-dev.84](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.83...v1.0.0-dev.84) (2026-11-27)\n\n### ✨ New Features\n\n* **wps:** Hide new blank AI recommendations ([1a42d43](https://github.com/gitmyasm/TEST-PATCHES/commit/1a42d434bfd9e86fa6dc68c8f8fee4e697c175d4))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.84/patches-1.0.0-dev.84.mpp",
+  "created_at": "2026-11-27T05:35:35",
+  "description": "## [1.0.0-dev.85](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.84...v1.0.0-dev.85) (2026-11-27)\n\n### 🐛 Bug Fixes\n\n* **wps:** Hide compact AI recommendation shortcuts ([c71436f](https://github.com/gitmyasm/TEST-PATCHES/commit/c71436fe08934aa5c9288b3b2a9def4527405541))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.85/patches-1.0.0-dev.85.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.84"
+  "version": "1.0.0-dev.85"
 }
