@@ -375,3 +375,55 @@ internal object WpsAccountPanelRowTitleFingerprint : Fingerprint(
     returnType = "V",
     parameters = listOf("Ljava/lang/String;"),
 )
+
+internal const val WPS_FONT_NAME_UTIL =
+    "Lcn/wps/moffice/common/fontname/shell/util/FontNameUtil;"
+
+internal object WpsCloudFontGridFingerprint : Fingerprint(
+    definingClass = WPS_FONT_NAME_UTIL,
+    name = "g",
+    returnType = "Z",
+    parameters = emptyList(),
+)
+
+internal object WpsCloudFontPreviewFingerprint : Fingerprint(
+    definingClass = WPS_FONT_NAME_UTIL,
+    name = "m",
+    returnType = "Z",
+    parameters = emptyList(),
+)
+
+internal object WpsCloudFontSearchFingerprint : Fingerprint(
+    definingClass = WPS_FONT_NAME_UTIL,
+    name = "n",
+    returnType = "Z",
+    parameters = emptyList(),
+)
+
+internal object WpsMissingFontBannerFingerprint : Fingerprint(
+    definingClass = WPS_FONT_NAME_UTIL,
+    name = "t",
+    returnType = "Z",
+    parameters = emptyList(),
+)
+
+internal object WpsMissingFontOnlineDetailFingerprint : Fingerprint(
+    definingClass = WPS_FONT_NAME_UTIL,
+    name = "v",
+    returnType = "Z",
+    parameters = emptyList(),
+)
+
+internal object WpsStartPanelCloudFontFingerprint : Fingerprint(
+    definingClass = WPS_FONT_NAME_UTIL,
+    name = "w",
+    returnType = "Z",
+    parameters = emptyList(),
+)
+
+internal object WpsCloudFontLoadingFingerprint : Fingerprint(
+    definingClass = "Lcn/wps/moffice/common/oldfont/controller/FontNameController;",
+    name = "E",
+    returnType = "Z",
+    parameters = emptyList(),
+)
