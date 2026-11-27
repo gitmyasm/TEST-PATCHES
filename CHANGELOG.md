@@ -1,3 +1,9 @@
+## [1.0.0-dev.89](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.88...v1.0.0-dev.89) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Restore local font panels ([3fc83ab](https://github.com/gitmyasm/TEST-PATCHES/commit/3fc83ab2a355b8ed74f13623181797efd4e73fae))
+
 ## [1.0.0-dev.88](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.87...v1.0.0-dev.88) (2026-11-27)
 
 ### 🐛 Bug Fixes
