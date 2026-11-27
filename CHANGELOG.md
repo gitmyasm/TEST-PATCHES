@@ -1,3 +1,9 @@
+## [1.0.0-dev.84](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.83...v1.0.0-dev.84) (2026-11-27)
+
+### ✨ New Features
+
+* **wps:** Hide new blank AI recommendations ([1a42d43](https://github.com/gitmyasm/TEST-PATCHES/commit/1a42d434bfd9e86fa6dc68c8f8fee4e697c175d4))
+
 ## [1.0.0-dev.83](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.82...v1.0.0-dev.83) (2026-11-26)
 
 ### ✨ New Features
