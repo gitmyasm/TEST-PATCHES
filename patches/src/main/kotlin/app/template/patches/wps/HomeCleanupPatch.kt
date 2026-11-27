@@ -306,6 +306,22 @@ val useWpsToolsAsBottomDiscoverTabPatch = bytecodePatch(
             """,
         )
 
+        val newGuideSelectActivity =
+            "Lcn/wps/moffice/main/local/home/phone/application/NewGuideSelectActivity;"
+        val activityResultHelper = homeAppsPage.methods
+            .firstOrNull {
+                it.name == "onActivityResult" &&
+                    it.parameters.toList() == listOf("I", "I", "Landroid/content/Intent;")
+            }
+            ?.implementation
+            ?.instructions
+            ?.mapNotNull { (it as? ReferenceInstruction)?.reference as? MethodReference }
+            ?.firstOrNull {
+                it.definingClass == newGuideSelectActivity && it.returnType == "Z"
+            }
+            ?.name
+        guard(activityResultHelper != null, "Tools page activity-result helper not found")
+
         homeAppsPage.replaceNamedMethod(
             name = "onActivityResult",
             registerCount = 10,
@@ -321,7 +337,7 @@ val useWpsToolsAsBottomDiscoverTabPatch = bytecodePatch(
                 move v1, p1
                 move v2, p2
                 move-object v3, p3
-                invoke-static/range {v0 .. v5}, Lcn/wps/moffice/main/local/home/phone/application/NewGuideSelectActivity;->L1(Landroid/app/Activity;IILandroid/content/Intent;Ljava/lang/String;Lcn/wps/moffice/main/local/NodeLink;)Z
+                invoke-static/range {v0 .. v5}, $newGuideSelectActivity->$activityResultHelper(Landroid/app/Activity;IILandroid/content/Intent;Ljava/lang/String;Lcn/wps/moffice/main/local/NodeLink;)Z
                 return-void
             """,
         )

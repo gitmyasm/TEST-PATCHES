@@ -398,37 +398,44 @@ val wpsPremiumPatch = bytecodePatch(
         
         
         if (hideOwnedPrivilegeDialog == true) {
-            val method = WpsOwnedPrivilegeDialogFingerprint.method
-            val instructions = method.implementation?.instructions
-                ?: throw PatchException("owned privilege dialog run() has no body")
-            var showIndex = -1
-            instructions.forEachIndexed { index, instruction ->
-                val reference = (instruction as? ReferenceInstruction)?.reference as? MethodReference
-                    ?: return@forEachIndexed
-                if (reference.definingClass == "Lcn/wps/moffice/common/beans/CustomDialog;" &&
-                    reference.name == "show"
-                ) {
-                    showIndex = index
-                }
-            }
-            
-            
-            
-            
-            if (showIndex < 0) {
-                val alreadyNop = instructions.any { it.opcode == Opcode.NOP }
-                if (alreadyNop) {
-                    println(
-                        "Premium: the \"already owned\" dialog show() call is already removed. Skipping.",
-                    )
-                } else {
-                    throw PatchException(
-                        "WPS premium patch: CustomDialog.show() not found in the owned-privilege " +
-                            "dialog, and no nop is present either, so the method body is unexpected.",
-                    )
-                }
+            val method = runCatching { WpsOwnedPrivilegeDialogFingerprint.method }.getOrNull()
+            if (method == null) {
+                println(
+                    "Premium: the owned-privilege dialog hook is not present in this version. Skipping.",
+                )
             } else {
-                method.replaceInstruction(showIndex, "nop")
+                val instructions = method.implementation?.instructions
+                    ?: throw PatchException("owned privilege dialog run() has no body")
+                var showIndex = -1
+                instructions.forEachIndexed { index, instruction ->
+                    val reference =
+                        (instruction as? ReferenceInstruction)?.reference as? MethodReference
+                            ?: return@forEachIndexed
+                    if (reference.definingClass == "Lcn/wps/moffice/common/beans/CustomDialog;" &&
+                        reference.name == "show"
+                    ) {
+                        showIndex = index
+                    }
+                }
+                
+                
+                
+                
+                if (showIndex < 0) {
+                    val alreadyNop = instructions.any { it.opcode == Opcode.NOP }
+                    if (alreadyNop) {
+                        println(
+                            "Premium: the \"already owned\" dialog show() call is already removed. Skipping.",
+                        )
+                    } else {
+                        throw PatchException(
+                            "WPS premium patch: CustomDialog.show() not found in the owned-privilege " +
+                                "dialog, and no nop is present either, so the method body is unexpected.",
+                        )
+                    }
+                } else {
+                    method.replaceInstruction(showIndex, "nop")
+                }
             }
         }
 

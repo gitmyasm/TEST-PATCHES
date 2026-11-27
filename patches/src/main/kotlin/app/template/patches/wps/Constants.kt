@@ -22,5 +22,16 @@ val COMPATIBILITY_WPS_OFFICE = Compatibility(
             minSdk = 29,
             description = "Standalone APK, build 1651",
         ),
+        AppTarget(
+            version = "26.11.2",
+            versionCodes = mapOf(
+                SupportedAbi.ARM64_V8A to 1653,
+                SupportedAbi.ARMEABI_V7A to 1653,
+                SupportedAbi.X86_64 to 1653,
+                SupportedAbi.X86 to 1653,
+            ),
+            minSdk = 29,
+            description = "Standalone APK, build 1653",
+        ),
     ),
 )
