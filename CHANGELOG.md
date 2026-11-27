@@ -1,3 +1,9 @@
+## [1.0.0-dev.90](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.89...v1.0.0-dev.90) (2026-11-27)
+
+### ✨ New Features
+
+* **wps:** Hide cloud font recommendations only ([881ab22](https://github.com/gitmyasm/TEST-PATCHES/commit/881ab222c8bf7b91e712ec330a4b772c67045ad1))
+
 ## [1.0.0-dev.89](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.88...v1.0.0-dev.89) (2026-11-27)
 
 ### 🐛 Bug Fixes
