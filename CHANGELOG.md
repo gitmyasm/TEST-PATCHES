@@ -1,3 +1,476 @@
+## [1.0.0-dev.93](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.92...v1.0.0-dev.93) (2026-11-27)
+
+### ✨ New Features
+
+* **wps:** Support version 26.11.2 ([10defe1](https://github.com/gitmyasm/TEST-PATCHES/commit/10defe1f32522f5aa90833ca9555c001a18031c5))
+
+## [1.0.0-dev.92](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.91...v1.0.0-dev.92) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Remove ineffective font and AI patches ([86d620d](https://github.com/gitmyasm/TEST-PATCHES/commit/86d620d4a7d09ab301eba24652b6bba85463c6dc))
+
+## [1.0.0-dev.91](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.90...v1.0.0-dev.91) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Keep recommended font patch verifiable ([740da39](https://github.com/gitmyasm/TEST-PATCHES/commit/740da3978add208353c5aabbe69d76087ab09af3))
+
+## [1.0.0-dev.90](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.89...v1.0.0-dev.90) (2026-11-27)
+
+### ✨ New Features
+
+* **wps:** Hide cloud font recommendations only ([881ab22](https://github.com/gitmyasm/TEST-PATCHES/commit/881ab222c8bf7b91e712ec330a4b772c67045ad1))
+
+## [1.0.0-dev.89](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.88...v1.0.0-dev.89) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Restore local font panels ([3fc83ab](https://github.com/gitmyasm/TEST-PATCHES/commit/3fc83ab2a355b8ed74f13623181797efd4e73fae))
+
+## [1.0.0-dev.88](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.87...v1.0.0-dev.88) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Use static parameter for material cloud font flags ([f9dfabb](https://github.com/gitmyasm/TEST-PATCHES/commit/f9dfabbec67f834d81c950048db947edee6a50df))
+
+## [1.0.0-dev.87](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.86...v1.0.0-dev.87) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Hide material center cloud fonts ([40059e0](https://github.com/gitmyasm/TEST-PATCHES/commit/40059e03d1cfadb507dd6bb02c1e73dbcac1fc50))
+
+## [1.0.0-dev.86](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.85...v1.0.0-dev.86) (2026-11-27)
+
+### ✨ New Features
+
+* **wps:** Hide WPS cloud font UI ([d41348e](https://github.com/gitmyasm/TEST-PATCHES/commit/d41348ea75c6624195dd738dfe72276d87eca96f))
+
+### 🐛 Bug Fixes
+
+* **wps:** Clarify cloud font patch description ([bc7f659](https://github.com/gitmyasm/TEST-PATCHES/commit/bc7f6595e44d413411cdd05e5c770c26c1a8253a))
+
+## [1.0.0-dev.85](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.84...v1.0.0-dev.85) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Hide compact AI recommendation shortcuts ([c71436f](https://github.com/gitmyasm/TEST-PATCHES/commit/c71436fe08934aa5c9288b3b2a9def4527405541))
+
+## [1.0.0-dev.84](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.83...v1.0.0-dev.84) (2026-11-27)
+
+### ✨ New Features
+
+* **wps:** Hide new blank AI recommendations ([1a42d43](https://github.com/gitmyasm/TEST-PATCHES/commit/1a42d434bfd9e86fa6dc68c8f8fee4e697c175d4))
+
+## [1.0.0-dev.83](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.82...v1.0.0-dev.83) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Hide rooted device warning ([5a1830e](https://github.com/gitmyasm/TEST-PATCHES/commit/5a1830e2a2275e2d40c3d3e07d6df4b35961cc69))
+
+## [1.0.0-dev.82](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.81...v1.0.0-dev.82) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Hide bottom Tools tab ([b5f6684](https://github.com/gitmyasm/TEST-PATCHES/commit/b5f668499b4ff0157ad0a0b444930ca679d0c8fe))
+
+## [1.0.0-dev.81](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.80...v1.0.0-dev.81) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Correct Tools page smali constructor ([a3f1d59](https://github.com/gitmyasm/TEST-PATCHES/commit/a3f1d591df5a91974f21f6b3cd376c1cbb006cf1))
+
+## [1.0.0-dev.80](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.79...v1.0.0-dev.80) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Use original Tools layout in bottom tab ([a196f23](https://github.com/gitmyasm/TEST-PATCHES/commit/a196f2307b6f275e654277dfb9ba3030e5f91d55))
+
+## [1.0.0-dev.79](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.78...v1.0.0-dev.79) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Repair Tools tab bytecode mapping ([c8bb5ad](https://github.com/gitmyasm/TEST-PATCHES/commit/c8bb5ad308546531de9efda05616e98fa0abe6dd))
+
+## [1.0.0-dev.78](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.77...v1.0.0-dev.78) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Use Tools as bottom Discover tab ([34561ae](https://github.com/gitmyasm/TEST-PATCHES/commit/34561ae1f040badda278a6596ddd18b13fb752bc))
+
+## [1.0.0-dev.77](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.76...v1.0.0-dev.77) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Hide device and scan tabs ([77bedb8](https://github.com/gitmyasm/TEST-PATCHES/commit/77bedb801ece067083c8fa80fc07f5e66630a432))
+
+## [1.0.0-dev.76](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.75...v1.0.0-dev.76) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Skip home promo banner operators ([d3ce3ad](https://github.com/gitmyasm/TEST-PATCHES/commit/d3ce3add9195f4209918626f9532d54f1715034f))
+
+## [1.0.0-dev.75](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.74...v1.0.0-dev.75) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Remove home title-bar promo icon ([9187a75](https://github.com/gitmyasm/TEST-PATCHES/commit/9187a750d3d15112dcf3d30ddb35aecf91155de9))
+
+## [1.0.0-dev.74](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.73...v1.0.0-dev.74) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Remove home header promo banners ([a7c827e](https://github.com/gitmyasm/TEST-PATCHES/commit/a7c827ef1e1e63a1836f31a98420b9841261f2f5))
+
+## [1.0.0-dev.73](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.72...v1.0.0-dev.73) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Remove home cash sign promo ([ce04cf7](https://github.com/gitmyasm/TEST-PATCHES/commit/ce04cf7aef230a66133f346d2f1d15bd1a6bdd6a))
+
+## [1.0.0-dev.72](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.71...v1.0.0-dev.72) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Hide home search keyword ad ([490184f](https://github.com/gitmyasm/TEST-PATCHES/commit/490184f057b67c704cac5ff59308be941331973b))
+
+## [1.0.0-dev.71](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.70...v1.0.0-dev.71) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Align home Share tab content with tab bar ([cf4846a](https://github.com/gitmyasm/TEST-PATCHES/commit/cf4846ab9f1f133dcc0bf4d41daef57406b37d54))
+
+## [1.0.0-dev.70](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.69...v1.0.0-dev.70) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Hide account panel operation banner ([f4f9360](https://github.com/gitmyasm/TEST-PATCHES/commit/f4f9360b4c6d388e2c3bd6b625ce9b29bd95db1c))
+
+## [1.0.0-dev.69](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.68...v1.0.0-dev.69) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Hide account panel VIP banner in both layouts ([547c1ee](https://github.com/gitmyasm/TEST-PATCHES/commit/547c1ee728cf788c7d6e8cc00422b7b3895b2c54))
+
+## [1.0.0-dev.68](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.67...v1.0.0-dev.68) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Correct sidebar row visibility and card removal ([6296a17](https://github.com/gitmyasm/TEST-PATCHES/commit/6296a17cf19d3d1323fc4e1ccaefd898f8705d09))
+* **wps:** Restore MPP compilation ([adc4c50](https://github.com/gitmyasm/TEST-PATCHES/commit/adc4c50df2cba2ddc22869d35a6836986518d917))
+
+## [1.0.0-dev.67](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.66...v1.0.0-dev.67) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** add Me and sidebar cleanup patches ([545c7d2](https://github.com/gitmyasm/TEST-PATCHES/commit/545c7d253089129531b3d030c4b0551dead8f342))
+
+## [1.0.0-dev.66](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.65...v1.0.0-dev.66) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **wps:** Correct share tab removal ([38ce6de](https://github.com/gitmyasm/TEST-PATCHES/commit/38ce6de3bfed0b712e9920be5e4622502430f3ec))
+
+## [1.0.0-dev.65](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.64...v1.0.0-dev.65) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Add home cleanup patches ([89ce7b6](https://github.com/gitmyasm/TEST-PATCHES/commit/89ce7b6a0bb029536740a460cf7ffa395efe8d68))
+
+## [1.0.0-dev.64](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.63...v1.0.0-dev.64) (2026-11-26)
+
+### ✨ New Features
+
+* **wps:** Add WPS patches for local testing ([8bc4efb](https://github.com/gitmyasm/TEST-PATCHES/commit/8bc4efb9cd7fc557c5f09857424f1770ecba8ffa))
+
+## [1.0.0-dev.63](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.62...v1.0.0-dev.63) (2026-11-26)
+
+### ✨ New Features
+
+* **regain:** Add local patch to allow microG sign-in flow ([092e885](https://github.com/gitmyasm/TEST-PATCHES/commit/092e885f0a559c9f88d2dd9bc596f9297796de5b))
+
+## [1.0.0-dev.62](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.61...v1.0.0-dev.62) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* **regain:** Keep only the clean reference-derived local patch ([467e609](https://github.com/gitmyasm/TEST-PATCHES/commit/467e609f1af4418b20e84c899cb4ca3954f9fb5f))
+
+## [1.0.0-dev.61](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.60...v1.0.0-dev.61) (2026-11-26)
+
+### ✨ New Features
+
+* **regain:** Add local patch to force subscription-state Pro flag ([a8d248b](https://github.com/gitmyasm/TEST-PATCHES/commit/a8d248b07f40934123a51943e43c7ac2a037541e))
+
+## [1.0.0-dev.60](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.59...v1.0.0-dev.60) (2026-11-26)
+
+### ✨ New Features
+
+* **regain:** Add local patch to skip startup onboarding page ([7eb772b](https://github.com/gitmyasm/TEST-PATCHES/commit/7eb772baf5dcec7e7cefe5755c069ad4430690df))
+
+## [1.0.0-dev.59](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.58...v1.0.0-dev.59) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Target correct Regain setup offer comparison ([2989090](https://github.com/gitmyasm/TEST-PATCHES/commit/29890901004ff8661cd12c94b697fbe86877abfc))
+
+## [1.0.0-dev.58](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.57...v1.0.0-dev.58) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Use valid registers in Regain setup offer patch ([99d27b2](https://github.com/gitmyasm/TEST-PATCHES/commit/99d27b2b573514b817e2c40913b2633378fca4ec))
+
+## [1.0.0-dev.57](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.56...v1.0.0-dev.57) (2026-11-25)
+
+### ✨ New Features
+
+* Add Regain setup promotional offer patch ([37ae344](https://github.com/gitmyasm/TEST-PATCHES/commit/37ae3443ff4a15db547e377069c42ca37e6fef16))
+
+## [1.0.0-dev.56](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.55...v1.0.0-dev.56) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Match Regain subscription manager fingerprint ([26f9c86](https://github.com/gitmyasm/TEST-PATCHES/commit/26f9c86da5bf1eaf74cef50b2726c1aedf991c92))
+
+## [1.0.0-dev.55](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.54...v1.0.0-dev.55) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Correct Regain local patch returns and defaults ([556e201](https://github.com/gitmyasm/TEST-PATCHES/commit/556e201e575c5f0c62847f3e1761e89b81f2f46d))
+
+## [1.0.0-dev.54](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.53...v1.0.0-dev.54) (2026-11-25)
+
+### ✨ New Features
+
+* Add local Regain patches ([596b6b9](https://github.com/gitmyasm/TEST-PATCHES/commit/596b6b93afd87295d96c5a73a87e79d1acc62c8f))
+
+## [1.0.0-dev.53](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.52...v1.0.0-dev.53) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Remove promoted Instant Mail patches ([e664116](https://github.com/gitmyasm/TEST-PATCHES/commit/e664116fb9f2c4be385e823d8a952c19400ba50a))
+
+## [1.0.0-dev.52](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.51...v1.0.0-dev.52) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Use valid registers in Temp Mail restore ([51973b9](https://github.com/gitmyasm/TEST-PATCHES/commit/51973b99cf1dcc70fa1ab7ed713e3ad6f9946901))
+
+## [1.0.0-dev.51](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.50...v1.0.0-dev.51) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Fix inline smali string escaping ([b9bd37d](https://github.com/gitmyasm/TEST-PATCHES/commit/b9bd37daa7009822a84df6488088b20323b7bcdb))
+
+## [1.0.0-dev.50](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.49...v1.0.0-dev.50) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Inline Temp Mail runtime restore ([91d25a8](https://github.com/gitmyasm/TEST-PATCHES/commit/91d25a8fa7115bccce37acc84bdb7c06ed8ac2f7))
+
+## [1.0.0-dev.49](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.48...v1.0.0-dev.49) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Move Temp Mail runtime helper into extension dex ([2539a05](https://github.com/gitmyasm/TEST-PATCHES/commit/2539a05e1b379e89f9a3e6c8887498e59af581a7))
+
+## [1.0.0-dev.48](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.47...v1.0.0-dev.48) (2026-11-25)
+
+### ✨ New Features
+
+* Add local Pairip string restore for Temp Mail ([51d08a4](https://github.com/gitmyasm/TEST-PATCHES/commit/51d08a40eacf3505a787216d8957d45ffc0493b1))
+
+### 🐛 Bug Fixes
+
+* Restore Temp Mail runtime setup locally ([fec66f9](https://github.com/gitmyasm/TEST-PATCHES/commit/fec66f91fe6ed763aa18bbeec9064b29f99e7786))
+
+## [1.0.0-dev.47](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.46...v1.0.0-dev.47) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Keep Temp Mail license activity untouched ([2be0afa](https://github.com/gitmyasm/TEST-PATCHES/commit/2be0afa0736b27640d44bcb5474a9f084769af4d))
+
+## [1.0.0-dev.46](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.45...v1.0.0-dev.46) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Preserve license activity labels when closing paywall ([ba7ee41](https://github.com/gitmyasm/TEST-PATCHES/commit/ba7ee4186ca318db722d62150951249cb525ccb4))
+
+## [1.0.0-dev.45](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.44...v1.0.0-dev.45) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Block Temp Mail store paywall without disabling VM startup ([3e0d3a1](https://github.com/gitmyasm/TEST-PATCHES/commit/3e0d3a1557ebaeeb0ada806ee3915fa7bde8fa50))
+
+## [1.0.0-dev.44](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.43...v1.0.0-dev.44) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Fix Temp Mail Play Store redirect ([21935eb](https://github.com/gitmyasm/TEST-PATCHES/commit/21935ebe4c2e5d33a816b237e5bd1524a1c23c98))
+
+## [1.0.0-dev.43](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.42...v1.0.0-dev.43) (2026-11-25)
+
+### ✨ New Features
+
+* Add Temp Mail patches ([f468d52](https://github.com/gitmyasm/TEST-PATCHES/commit/f468d5203f06b83ad424e677771be4fccb8299b5))
+
+### 🐛 Bug Fixes
+
+* Cover Temp Mail app-open ads and resume update checks ([5662ce6](https://github.com/gitmyasm/TEST-PATCHES/commit/5662ce6eaad7d51ff37a6c6a97377a25e3367202))
+
+## [1.0.0-dev.42](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.41...v1.0.0-dev.42) (2026-11-25)
+
+### ✨ New Features
+
+* Add Instant Mail update check disable patch ([57fdcb8](https://github.com/gitmyasm/TEST-PATCHES/commit/57fdcb894b641d4f0b6b4f6b711b609b5a9b4135))
+
+## [1.0.0-dev.41](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.40...v1.0.0-dev.41) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* Avoid executable unreachable opcodes in Instant Mail patches ([90c5c2e](https://github.com/gitmyasm/TEST-PATCHES/commit/90c5c2eb3d93ed2f618bd45f658dc7b265b8ed6b))
+
+## [1.0.0-dev.40](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.39...v1.0.0-dev.40) (2026-11-25)
+
+### ✨ New Features
+
+* Add Instant Mail local unlock and ad patches ([11cf27a](https://github.com/gitmyasm/TEST-PATCHES/commit/11cf27a8a8419c720f34c8b3ed76f5db046615b8))
+
+### 🐛 Bug Fixes
+
+* Use signed byte literals in Instant Mail ad patch ([05ab0fd](https://github.com/gitmyasm/TEST-PATCHES/commit/05ab0fdc0bfb0aea292da0c0bb265265ad9dd1bf))
+
+## [1.0.0-dev.39](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.38...v1.0.0-dev.39) (2026-11-24)
+
+### 🐛 Bug Fixes
+
+* Force free template path in Cool Mind patch ([775e336](https://github.com/gitmyasm/TEST-PATCHES/commit/775e336b5b4f44deaee79765383d309b6ce22b16))
+
+## [1.0.0-dev.38](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.37...v1.0.0-dev.38) (2026-11-24)
+
+### ✨ New Features
+
+* Add Cool Mind premium template unlock patch ([b9ef2f0](https://github.com/gitmyasm/TEST-PATCHES/commit/b9ef2f00d6a51f4fdcec8402a20615d41e56db45))
+
+## [1.0.0-dev.37](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.36...v1.0.0-dev.37) (2026-11-24)
+
+### 🐛 Bug Fixes
+
+* Use from16 register move in Cool Mind purchase patch ([0c9dc49](https://github.com/gitmyasm/TEST-PATCHES/commit/0c9dc492a7321968c754d1a4ecd1989abe3ec346))
+
+## [1.0.0-dev.36](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.35...v1.0.0-dev.36) (2026-11-24)
+
+### ✨ New Features
+
+* Add Cool Mind local unlock patches ([588d3da](https://github.com/gitmyasm/TEST-PATCHES/commit/588d3da9886f569aedfe2ea40eebde90ee9785bc))
+
+## [1.0.0-dev.35](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.34...v1.0.0-dev.35) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm license check bypass patch ([6edbeaf](https://github.com/gitmyasm/TEST-PATCHES/commit/6edbeaff6860d8f811d4c3f1bb71eb1569f30918))
+
+## [1.0.0-dev.34](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.33...v1.0.0-dev.34) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm root path checks bypass patch ([b3242f7](https://github.com/gitmyasm/TEST-PATCHES/commit/b3242f73af76c417f6484ad4acfc665766a418c1))
+
+## [1.0.0-dev.33](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.32...v1.0.0-dev.33) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm ads disable patch ([f22627d](https://github.com/gitmyasm/TEST-PATCHES/commit/f22627dde8444fe00b89f77fcf9ded3aa2226701))
+
+## [1.0.0-dev.32](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.31...v1.0.0-dev.32) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm emulator detection bypass patch ([01cbd68](https://github.com/gitmyasm/TEST-PATCHES/commit/01cbd6883915c3e48a1a74b6d119f07d764f15c7))
+
+## [1.0.0-dev.31](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.30...v1.0.0-dev.31) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm developer options bypass patch ([de14637](https://github.com/gitmyasm/TEST-PATCHES/commit/de14637b235b6f4a7155e22c35c054d04bd60da7))
+
+## [1.0.0-dev.30](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.29...v1.0.0-dev.30) (2026-11-24)
+
+### ✨ New Features
+
+* Add Paytm Frida detection bypass patch ([d173f37](https://github.com/gitmyasm/TEST-PATCHES/commit/d173f37b3db15dc33dfd545fd29d7e794ebc6407))
+
+### 🐛 Bug Fixes
+
+* Clarify Paytm root bypass patch description ([0f40ff6](https://github.com/gitmyasm/TEST-PATCHES/commit/0f40ff6a3236585e23e8ab90202bd8a030c4255d))
+* Target Paytm OAuth rooted-device check ([53962b4](https://github.com/gitmyasm/TEST-PATCHES/commit/53962b46a7e2ed71ffa9026f4fa1d223e98391a7))
+
+## [1.0.0-dev.30](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.29...v1.0.0-dev.30) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* Clarify Paytm root bypass patch description ([0f40ff6](https://github.com/gitmyasm/TEST-PATCHES/commit/0f40ff6a3236585e23e8ab90202bd8a030c4255d))
+* Target Paytm OAuth rooted-device check ([53962b4](https://github.com/gitmyasm/TEST-PATCHES/commit/53962b46a7e2ed71ffa9026f4fa1d223e98391a7))
+
+## [1.0.0-dev.30](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.29...v1.0.0-dev.30) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* Target Paytm OAuth rooted-device check ([53962b4](https://github.com/gitmyasm/TEST-PATCHES/commit/53962b46a7e2ed71ffa9026f4fa1d223e98391a7))
+
+## [1.0.0-dev.29](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.28...v1.0.0-dev.29) (2026-11-23)
+
+### ✨ New Features
+
+* Add Paytm root detection bypass patch ([3e47183](https://github.com/gitmyasm/TEST-PATCHES/commit/3e4718323b621644e9a823b694384c1b8046bb7a))
+
+## [1.0.0-dev.28](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.27...v1.0.0-dev.28) (2026-11-23)
+
+### ✨ New Features
+
+* Add Paytm SSL pinning disable patch ([c17c2d8](https://github.com/gitmyasm/TEST-PATCHES/commit/c17c2d8228eb34dcaa2d7cb2e7fd2ab15b9fdad8))
+
+## [1.0.0-dev.27](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.26...v1.0.0-dev.27) (2026-11-23)
+
+### ✨ New Features
+
+* Add Paytm signature check bypass patch ([d01b28c](https://github.com/gitmyasm/TEST-PATCHES/commit/d01b28c84013b6bb9429d19ef8d5513a3943dcdd))
+
+## [1.0.0-dev.26](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.25...v1.0.0-dev.26) (2026-11-23)
+
+### ✨ New Features
+
+* Add EdrawMind home poster tab removal patch ([3cad928](https://github.com/gitmyasm/TEST-PATCHES/commit/3cad928e23e99b5d87f2ead4fbefe1b3d0fe8cc1))
+
+## [1.0.0-dev.25](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.24...v1.0.0-dev.25) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* Keep poster tab index after AI tab removal ([1ac2a78](https://github.com/gitmyasm/TEST-PATCHES/commit/1ac2a78ce9e6d8d2e4577fabbac81ee4edc691bf))
+
+## [1.0.0-dev.24](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.23...v1.0.0-dev.24) (2026-11-23)
+
+### 🐛 Bug Fixes
+
+* Use valid const/16 for View.GONE ([8df7920](https://github.com/gitmyasm/TEST-PATCHES/commit/8df7920bee530b1e2f7d9d1d8d394e1c1f386471))
+
+## [1.0.0-dev.23](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.22...v1.0.0-dev.23) (2026-11-23)
+
+### ✨ New Features
+
+* Add EdrawMind UI removal patches ([6c3dd0e](https://github.com/gitmyasm/TEST-PATCHES/commit/6c3dd0e5a1b98f9d3d217a926bfc2f9897f1906f))
+
+## [1.0.0-dev.22](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.21...v1.0.0-dev.22) (2026-11-23)
+
+### ✨ New Features
+
+* Add EdrawMind AI credit spoof ([c4a871e](https://github.com/gitmyasm/TEST-PATCHES/commit/c4a871e5c3f00f4519b5bb4bc3eb092eebfa5837))
+
+## [1.0.0-dev.21](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.20...v1.0.0-dev.21) (2026-11-23)
+
+### ✨ New Features
+
+* Add EdrawMind patches ([f4fbe16](https://github.com/gitmyasm/TEST-PATCHES/commit/f4fbe16581cd9396a36900b2e54d2b62424ce392))
+
 ## [1.0.0-dev.20](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.19...v1.0.0-dev.20) (2026-11-23)
 
 ### 🐛 Bug Fixes

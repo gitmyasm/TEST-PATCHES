@@ -101,6 +101,7 @@ jobs:
       INPUT_REPLACEMENT: ${{ inputs.replacement }}
       INPUT_RETURN_VALUE: ${{ inputs.return_value }}
       INPUT_APP_ICON_COLOR: ${{ inputs.app_icon_color }}
+      INPUT_PUSH_PATCH: ${{ inputs.push_patch }}
 
     steps:
       - name: Checkout dev
@@ -176,6 +177,7 @@ jobs:
 
       - name: Commit patch to dev
         id: commit
+        if: env.INPUT_PUSH_PATCH == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

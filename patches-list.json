@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.20",
+  "version": "1.0.0-dev.93",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -30,6 +30,1132 @@
       "options": []
     },
     {
+      "name": "Bypass Cool Mind License Check",
+      "description": "Bypasses the local Pairip license check that can redirect to Play Store.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "mindmap.mind.cool",
+          "name": "Cool Mind",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#3F51B5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Developer Options",
+      "description": "Bypasses local Paytm developer-options and USB debugging checks.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "net.one97.paytm",
+          "name": "Paytm",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00B9F5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "10.86.13",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Emulator Detection",
+      "description": "Bypasses a local Protectt emulator-detection rule check.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "net.one97.paytm",
+          "name": "Paytm",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00B9F5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "10.86.13",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Frida Detection",
+      "description": "Bypasses a local Paytm Frida hook detection check.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "net.one97.paytm",
+          "name": "Paytm",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00B9F5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "10.86.13",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass License Check",
+      "description": "Bypasses the local Pairip license check that can redirect to Play Store.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "net.one97.paytm",
+          "name": "Paytm",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00B9F5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "10.86.13",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Magisk/Root Path Checks",
+      "description": "Bypasses local Paytm integrity path-existence checks.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "net.one97.paytm",
+          "name": "Paytm",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00B9F5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "10.86.13",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Root Detection",
+      "description": "Bypasses a local Paytm OAuth rooted-device check.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "net.one97.paytm",
+          "name": "Paytm",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00B9F5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "10.86.13",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Signature Check",
+      "description": "Bypasses the local Pairip APK signature verification check.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "net.one97.paytm",
+          "name": "Paytm",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00B9F5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "10.86.13",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Temp Mail License Check",
+      "description": "Bypasses the local Pairip license-check trigger that can redirect to Play Store.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Temp Mail Play Store Redirect",
+      "description": "Blocks the local Pairip paywall handoff and forced shutdown that can open Play Store.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass Temp Mail Signature Check",
+      "description": "Bypasses the local Pairip APK signature verification.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable Ads",
+      "description": "Disables local Paytm ad view rendering.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "net.one97.paytm",
+          "name": "Paytm",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00B9F5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "10.86.13",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable SSL Pinning",
+      "description": "Disables local SSL certificate pinning in Paytm network utilities.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "net.one97.paytm",
+          "name": "Paytm",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00B9F5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "10.86.13",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable Temp Mail Update Check",
+      "description": "Disables Temp Mail's local startup and version comparison update checks.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Bottom Tools Tab",
+      "description": "Prevents local registration of the bottom Discover/Tools tab item.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Home Big Shortcuts",
+      "description": "Returns an empty upper home shortcut list locally, so the top shortcut row is not drawn.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Home Cash Sign Promo",
+      "description": "Skips the local home title-bar promo callback so the promo icon is not added or opened.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Home Promo Banners",
+      "description": "Skips local home promo banner operators while keeping the home content chain intact.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Home Share Tab",
+      "description": "Skips local registration of the Share tab label and its content page so the Starred tab keeps its own documents.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Home Small Shortcuts",
+      "description": "Returns an empty lower home shortcut list locally, so the quick-tools row is not drawn.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Home This Device Tab",
+      "description": "Skips local registration of the This Device top tab and its content pages.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Me Card And Coupon Shortcuts",
+      "description": "Prevents local registration of the Cards & Coupons row shown on the Me page.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Me Orders Shortcut",
+      "description": "Prevents local registration of the orders shortcut shown on the Me page.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Me Pro Upgrade Card",
+      "description": "Prevents local registration of the membership card shown on the Me page.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Me Promotion Banner",
+      "description": "Prevents local registration of the promotional banner card shown on the Me page.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Me Support Icon",
+      "description": "Hides the local help/support icon shown beside the notification bell on the Me page.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Rooted Device Warning",
+      "description": "Prevents the local rooted-device toast shown every time WPS Office launches.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Scan Tab",
+      "description": "Forces the local bottom-bar scan entry off while keeping the other tabs.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Sidebar Account Rows",
+      "description": "Hides local account-panel rows titled Account and Security, File Transfer, Feedback and Student Verification.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Sidebar Upgrade Card",
+      "description": "Hides the local membership upgrade card in the account panel.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Transfer Assistant Card",
+      "description": "Prevents the local Transfer Assistant row from being added to the device home list.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Remove Ads",
       "description": "Removes advertising identifiers and ad SDK components from Noji.",
       "default": false,
@@ -46,6 +1172,33 @@
           "targets": [
             {
               "version": "26.44.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Temp Mail Ads",
+      "description": "Disables Temp Mail's local ad loading gate for all ad formats.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -84,6 +1237,87 @@
       "options": []
     },
     {
+      "name": "Restore Temp Mail Local Runtime (No VM)",
+      "description": "Restores obfuscated local runtime values without running Pairip's startup program.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof Cool Mind Local Purchase",
+      "description": "Reports a synthetic active premium purchase to the local billing bridge.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "mindmap.mind.cool",
+          "name": "Cool Mind",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#3F51B5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Cool Mind Premium Templates",
+      "description": "Clears the local premium flag on template catalog entries so premium maps are not locked locally.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "mindmap.mind.cool",
+          "name": "Cool Mind",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#3F51B5",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Unlock Premium",
       "description": "Marks the existing Qonversion Premium entitlement as active.",
       "default": true,
@@ -104,6 +1338,212 @@
               "isExperimental": false,
               "minSdk": null,
               "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Temp Mail Premium (Local)",
+      "description": "Makes Temp Mail's local free/paid check report premium. Server-side subscription state is unchanged.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.tempmail",
+          "name": "Temp Mail",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#18CA88",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "4.12",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock premium features",
+      "description": "Changes local privilege answers so premium tool menus and local UI states are shown. No account, purchase, or stored state is modified.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "bypassPrivilegeInterceptor",
+          "title": "Unlock premium tools (main switch)",
+          "description": "Answers the local VAS interceptor chain with a success response.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "unlockPremiumIdentity",
+          "title": "Show a Pro account",
+          "description": "Reports the local Pro flag used by upgrade UI.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "unlockMemberLevel",
+          "title": "Open Pro menus",
+          "description": "Reports local premium SKUs and member level to menus.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "unlockPrivilegeChecks",
+          "title": "Pass ownership checks",
+          "description": "Answers local ownership checks as held.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "removeAds",
+          "title": "Remove ads",
+          "description": "Reports the local ad-free flag to the ad gate.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "hideOwnedPrivilegeDialog",
+          "title": "Hide the \"already a member\" popup",
+          "description": "Suppresses the locally built already-owned dialog.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "bypassAsyncPrivilegeChecks",
+          "title": "Hide the upgrade banner on tool pages",
+          "description": "Suppresses the tool-page upsell banner through its local callback.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "denyAiPrivileges",
+          "title": "Turn AI features off",
+          "description": "Answers local AI privilege ids as not held.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "reportAdGateOffline",
+          "title": "Skip the ad pre-check",
+          "description": "Reports the local ad gate as off before request handling.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "passSignatureCheck",
+          "title": "Report the stock signature",
+          "description": "Reports the local signature result used only by analytics.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Use WPS Tools As Bottom Discover Tab",
+      "description": "Reuses the bottom Discover tab icon as Tools and opens the original Tools page instead of Discover.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            },
+            {
+              "version": "26.11.2",
+              "versionCodes": {
+                "ARM64_V8A": 1653,
+                "ARMEABI_V7A": 1653,
+                "X86_64": 1653,
+                "X86": 1653
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1653"
             }
           ]
         }
