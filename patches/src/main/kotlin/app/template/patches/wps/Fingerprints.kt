@@ -265,6 +265,13 @@ internal object WpsNewBlankAiConfigFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
+internal object WpsCompactPanelRecommendationsFingerprint : Fingerprint(
+    definingClass = "Lcn/wps/moffice/ai/base/cowork/compact/CoworkCompactPanelConfig;",
+    name = "h",
+    returnType = "Ljava/util/List;",
+    parameters = listOf("Landroid/content/Context;", "Z"),
+)
+
 internal const val WPS_HOME_TITLE_BAR_PROMO_CALLBACK =
     "Lcn/wps/moffice/main/common/viewcontrols/HomeViewTitleBar\$4;"
 
