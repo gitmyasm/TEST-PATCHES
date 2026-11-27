@@ -1,3 +1,9 @@
+## [1.0.0-dev.91](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.90...v1.0.0-dev.91) (2026-11-27)
+
+### 🐛 Bug Fixes
+
+* **wps:** Keep recommended font patch verifiable ([740da39](https://github.com/gitmyasm/TEST-PATCHES/commit/740da3978add208353c5aabbe69d76087ab09af3))
+
 ## [1.0.0-dev.90](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.89...v1.0.0-dev.90) (2026-11-27)
 
 ### ✨ New Features

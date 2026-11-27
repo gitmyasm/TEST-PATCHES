@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-27T15:52:39",
-  "description": "## [1.0.0-dev.90](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.89...v1.0.0-dev.90) (2026-11-27)\n\n### ✨ New Features\n\n* **wps:** Hide cloud font recommendations only ([881ab22](https://github.com/gitmyasm/TEST-PATCHES/commit/881ab222c8bf7b91e712ec330a4b772c67045ad1))",
-  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.90/patches-1.0.0-dev.90.mpp",
+  "created_at": "2026-11-27T15:58:34",
+  "description": "## [1.0.0-dev.91](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.90...v1.0.0-dev.91) (2026-11-27)\n\n### 🐛 Bug Fixes\n\n* **wps:** Keep recommended font patch verifiable ([740da39](https://github.com/gitmyasm/TEST-PATCHES/commit/740da3978add208353c5aabbe69d76087ab09af3))",
+  "download_url": "https://github.com/gitmyasm/TEST-PATCHES/releases/download/v1.0.0-dev.91/patches-1.0.0-dev.91.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.90"
+  "version": "1.0.0-dev.91"
 }
