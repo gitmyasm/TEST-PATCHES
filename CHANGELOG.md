@@ -1,3 +1,13 @@
+## [1.0.0-dev.86](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.85...v1.0.0-dev.86) (2026-11-27)
+
+### ✨ New Features
+
+* **wps:** Hide WPS cloud font UI ([d41348e](https://github.com/gitmyasm/TEST-PATCHES/commit/d41348ea75c6624195dd738dfe72276d87eca96f))
+
+### 🐛 Bug Fixes
+
+* **wps:** Clarify cloud font patch description ([bc7f659](https://github.com/gitmyasm/TEST-PATCHES/commit/bc7f6595e44d413411cdd05e5c770c26c1a8253a))
+
 ## [1.0.0-dev.85](https://github.com/gitmyasm/TEST-PATCHES/compare/v1.0.0-dev.84...v1.0.0-dev.85) (2026-11-27)
 
 ### 🐛 Bug Fixes

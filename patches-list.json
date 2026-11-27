@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.85",
+  "version": "1.0.0-dev.86",
   "patches": [
     {
       "name": "AOSP Compatibility (No Google Services)",
@@ -410,6 +410,38 @@
     {
       "name": "Hide WPS Bottom Tools Tab",
       "description": "Prevents local registration of the bottom Discover/Tools tab item.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "cn.wps.moffice_eng",
+          "name": "WPS Office",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E64A19",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.11.1",
+              "versionCodes": {
+                "ARM64_V8A": 1651,
+                "ARMEABI_V7A": 1651,
+                "X86_64": 1651,
+                "X86": 1651
+              },
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": "Standalone APK, build 1651"
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide WPS Cloud Fonts",
+      "description": "Removes cloud-font entries, previews, search and missing-font prompts from the local font panels while leaving installed fonts unchanged.",
       "default": false,
       "category": null,
       "compatiblePackages": [
