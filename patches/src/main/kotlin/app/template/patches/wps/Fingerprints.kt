@@ -258,6 +258,13 @@ internal object WpsRootWarningRunnableFingerprint : Fingerprint(
     parameters = emptyList(),
 )
 
+internal object WpsNewBlankAiConfigFingerprint : Fingerprint(
+    definingClass = "Lcn/wps/moffice/ai/base/cowork/newblank/CoworkNewBlankConfig\$Companion;",
+    name = "a",
+    returnType = "Lcom/google/gson/JsonObject;",
+    parameters = emptyList(),
+)
+
 internal const val WPS_HOME_TITLE_BAR_PROMO_CALLBACK =
     "Lcn/wps/moffice/main/common/viewcontrols/HomeViewTitleBar\$4;"
 
